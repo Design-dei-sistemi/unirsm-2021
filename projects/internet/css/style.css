@@ -1022,15 +1022,17 @@ p {
 #parole {
   position: absolute;
   z-index: 999;
+  height: 100vh;
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: 0%;
   font-size: 2em;
   text-align: center;
+  align-items: center;
   justify-content: center;
   background-color: rgba(30, 30, 30, 0.7);
   opacity: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
   transition: opacity 0.3s;
 }
 .grafico2 {
@@ -1273,20 +1275,6 @@ a:hover {
   }
   .disab {
     pointer-events: none;
-  }
-  #parole {
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    font-size: 1.25em;
-    background-color: rgba(30, 30, 30, 0.7);
-    opacity: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: opacity 0.3s;
   }
   #grafic2 {
     height: 100vh;
