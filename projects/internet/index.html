@@ -43,8 +43,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
 
-
-
     <script>
         // Scritta animata
         var images = [
@@ -90,7 +88,6 @@
 
         // build scene
         var scene = new ScrollMagic.Scene({
-                triggerElement: "#trigger",
                 duration: 1000
             })
             .setTween(tween)
@@ -128,7 +125,6 @@
                     console.log("out");
                     $('.dropup-content').css("display", "none");
                 }
-
             );
 
             $(".elencoStati").hover(
@@ -270,11 +266,12 @@
                         $("#apple text .testo").html(tmpValAppS + "%").css("opacity", "1").css("fill", "#8fff00");
 
                         if (prog > 0.01 && prog <= 0.1) {
-                            $("#parole").css("opacity", "1");
-                            $("#parole").html("Il colosso Apple conta di azzerare la sua intera carbon footprint nei prossimi 20 anni");
+
+                            $(".black-screen").css("opacity", ".3");
+                            $("#parole").delay(500).html("Il colosso Apple conta di azzerare la sua intera carbon footprint nei prossimi 20 anni");
                         } else {
                             $("#parole").css("opacity", "0");
-                            $("#parole").html("");
+                            $("#parole").html("Il colosso Apple conta di azzerare la sua intera carbon footprint nei prossimi 20 anni");
                         }
 
                     } else if ((prog > 0.2) && (prog <= 0.4)) {
@@ -1092,10 +1089,6 @@
                     </g>
                 </svg>
 
-                <div id="linkini"> * Fonte:
-                    <a href="http://globalcarbonatlas.org"> globalcarbonatlas</a>, consulta il report per i nomi dei paesi minori
-                </div>
-
                 <!-- Menu tendina-->
                 <div class="dropup">
                     <div class="dropbtn">Seleziona uno Stato</div>
@@ -1182,6 +1175,11 @@
                         <div class="elencoStati" id="altri">Altri</div>
                     </div>
                 </div>
+
+                <div id="linkini"> * Fonte:
+                    <a href="http://globalcarbonatlas.org"> globalcarbonatlas</a>, consulta il report per i nomi dei paesi minori
+                </div>
+
             </div>
         </div>
 
@@ -1214,8 +1212,9 @@
 
         <div class="row" id="grafic2">
             <div id="parole"> Il colosso di Apple conta di azzerare la sua intera carbon footprint nei prossimi 20 anni </div>
+            <div class="black-screen">&nbsp;</div>
             <div class="grafico2" class="columns twelve">
-                <div class="titoloGrafici"> Energie dell’ICT </div>
+                <div class="titoloGrafici"> Come i colossi dell’ICT si avvalgono delle... </div>
 
                 <!--GRAFICO FONTI ENERGETICHE-->
 
@@ -1223,7 +1222,7 @@
 
 
                     <!--grafico Desktop-->
-                    <svg id="barchartDesk" width="100%" height="100%" viewBox="0 0 664 571" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="barchartDesk" width="100%" height="100%" viewBox="0 0 665 571" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="barChart">
                             <g id="linkedin">
                                 <g class="sost" data-s="10">
@@ -1242,7 +1241,7 @@
                                     <path d="M518.457 447.958L664 447.958L664 425.587L518.457 425.587L518.457 447.958Z" stroke="white" stroke-width="1.6" mask="url(#path-5-inside-5)" />
                                 </g>
                                 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="647.904" y="411.896">0%</tspan>
+                                    <tspan class="testo" x="642.904" y="411.896">0%</tspan>
                                 </text>
                                 <text id="Linkedin_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="518.664" y="411.896">Linkedin</tspan>
@@ -1265,7 +1264,7 @@
                                     <path d="M343.747 442.111L489.29 442.111L489.29 425.587L343.747 425.587L343.747 442.111Z" stroke="white" stroke-width="1.6" mask="url(#path-12-inside-10)" />
                                 </g>
                                 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="473.046" y="411.896">0%</tspan>
+                                    <tspan class="testo" x="468.046" y="411.896">0%</tspan>
                                 </text>
                                 <text id="Twitter_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="343.805" y="411.896">Twitter</tspan>
@@ -1288,7 +1287,7 @@
                                     <path d="M171.151 428.892L316.694 428.892L316.694 425.587L171.151 425.587L171.151 428.892Z" stroke="white" stroke-width="1.6" mask="url(#path-19-inside-15)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="300.391" y="411.896">0%</tspan>
+                                    <tspan class="testo" x="297.391" y="411.896">0%</tspan>
                                 </text>
                                 <text id="Sound-cloud" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="171.151" y="411.896">Sound-cloud</tspan>
@@ -1311,7 +1310,7 @@
                                     <path d="M2.17361 428.892L147.716 428.892L147.716 425.587L2.17361 425.587L2.17361 428.892Z" stroke="white" stroke-width="1.6" mask="url(#path-26-inside-20)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="131.414" y="410.636">0%</tspan>
+                                    <tspan class="testo" x="126.414" y="410.636">0%</tspan>
                                 </text>
                                 <text id="Netflix_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="2.17358" y="410.806">Netflix</tspan>
@@ -1334,7 +1333,7 @@
                                     <path d="M518.457 234.092L664 234.092L664 230.787L518.457 230.787L518.457 234.092Z" stroke="white" stroke-width="1.6" mask="url(#path-33-inside-25)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="647.78" y="216.006">0%</tspan>
+                                    <tspan class="testo" x="642.78" y="216.006">0%</tspan>
                                 </text>
                                 <text id="Amazon_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="518.457" y="216.006">Amazon</tspan>
@@ -1357,7 +1356,7 @@
                                     <path d="M344.583 235.617L490.126 235.617L490.126 230.787L344.583 230.787L344.583 235.617Z" stroke="white" stroke-width="1.6" mask="url(#path-40-inside-30)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="474.375" y="217.588">0%</tspan>
+                                    <tspan class="testo" x="469.375" y="217.588">0%</tspan>
                                 </text>
                                 <text id="Skype_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="343.128" y="217.587">Skype</tspan>
@@ -1380,7 +1379,7 @@
                                     <path d="M171.151 231.295L316.694 231.295L316.694 230.786L171.151 230.786L171.151 231.295Z" stroke="white" stroke-width="1.6" mask="url(#path-47-inside-35)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="300.474" y="213.462">0%</tspan>
+                                    <tspan class="testo" x="295.474" y="213.462">0%</tspan>
                                 </text>
                                 <text id="Vimeo_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="171.151" y="214.019">Vimeo</tspan>
@@ -1403,7 +1402,7 @@
                                     <path d="M0.15567 237.142L145.698 237.142L145.698 230.787L0.155671 230.787L0.15567 237.142Z" stroke="white" stroke-width="1.6" mask="url(#path-54-inside-40)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="129.414" y="213.892">0%</tspan>
+                                    <tspan class="testo" x="124.414" y="213.892">0%</tspan>
                                 </text>
                                 <text id="Spotify_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="0" y="213.892">Spotify</tspan>
@@ -1426,7 +1425,7 @@
                                     <path d="M518.457 38.3464L664 38.3464L664 31.9909L518.457 31.9909L518.457 38.3464Z" stroke="white" stroke-width="1.6" mask="url(#path-61-inside-45)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="646.847" y="17.5744">0%</tspan>
+                                    <tspan class="testo" x="641.847" y="17.5744">0%</tspan>
                                 </text>
                                 <text id="YouTube" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="517.104" y="17.5744">YouTube</tspan>
@@ -1449,7 +1448,7 @@
                                     <path d="M343.747 38.3467L489.29 38.3467L489.29 31.9912L343.747 31.9912L343.747 38.3467Z" stroke="white" stroke-width="1.6" mask="url(#path-68-inside-50)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="473.291" y="12.9746">0%</tspan>
+                                    <tspan class="testo" x="468.491" y="12.9746">0%</tspan>
                                 </text>
                                 <text id="Google_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="343.747" y="13.6164">Google</tspan>
@@ -1472,7 +1471,7 @@
                                     <path d="M171.588 34.0246L317.131 34.0247L317.131 31.9909L171.588 31.9909L171.588 34.0246Z" stroke="white" stroke-width="1.6" mask="url(#path-75-inside-55)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="300.925" y="11.52">0%</tspan>
+                                    <tspan class="testo" x="298.325" y="11.52">0%</tspan>
                                 </text>
                                 <text id="Fb/ WA/ IG" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="171.588" y="12.162">Fb/ WA/ IG
@@ -1496,7 +1495,7 @@
                                     <path d="M0.173737 35.2956L145.717 35.2957L145.717 31.9908L0.173737 31.9908L0.173737 35.2956Z" stroke="white" stroke-width="1.6" mask="url(#path-82-inside-60)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="129.24" y="13.973">0%</tspan>
+                                    <tspan class="testo" x="124.414" y="13.973">0%</tspan>
                                 </text>
                                 <text id="Apple_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="0.173828" y="13.6161">Apple</tspan>
@@ -1547,7 +1546,7 @@
                                     <path d="M115.5 439.364L215.5 439.364L215.5 428L115.5 428L115.5 439.364Z" stroke="white" stroke-width="0.8" mask="url(#path-12-inside-10)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="193.985" y="422.183">0%</tspan>
+                                    <tspan class="testo" x="195.485" y="422.183">0%</tspan>
                                 </text>
                                 <text id="Twitter_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="116.5" y="422.52">Twitter</tspan>
@@ -1570,10 +1569,10 @@
                                     <path d="M1.50004 430.273L101.5 430.273L101.5 428L1.50004 428L1.50004 430.273Z" stroke="white" stroke-width="0.8" mask="url(#path-19-inside-15)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="81.1221" y="422.183">0%</tspan>
+                                    <tspan class="testo" x="80.8221" y="422.183">0%</tspan>
                                 </text>
                                 <text id="Sound-cloud" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan x="1.50002" y="422.183">Sound-cloud</tspan>
+                                    <tspan x="0.40002" y="422.183">Sound-cloud</tspan>
                                 </text>
                             </g>
                             <g id="netflix">
@@ -1593,7 +1592,7 @@
                                     <path d="M232.5 295.273L332.5 295.273L332.5 293L232.5 293L232.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-26-inside-20)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="311.283" y="286.433">0%</tspan>
+                                    <tspan class="testo" x="310.283" y="286.433">0%</tspan>
                                 </text>
                                 <text id="Netflix_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="232.5" y="286.433">Netflix</tspan>
@@ -1639,7 +1638,7 @@
                                     <path d="M1.50002 295.322L101.5 295.322L101.5 292L1.50002 292L1.50002 295.322Z" stroke="white" stroke-width="0.8" mask="url(#path-40-inside-30)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="76.3526" y="286.433">0%</tspan>
+                                    <tspan class="testo" x="81.3526" y="286.433">0%</tspan>
                                 </text>
                                 <text id="Skype_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="0.500004" y="286.52">Skype</tspan>
@@ -1708,7 +1707,7 @@
                                     <path d="M1.50002 161.371L101.5 161.371L101.5 157L1.50002 157L1.50002 161.371Z" stroke="white" stroke-width="0.8" mask="url(#path-61-inside-45)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="77.8586" y="150.684">0%</tspan>
+                                    <tspan class="testo" x="80.8586" y="150.684">0%</tspan>
                                 </text>
                                 <text id="YouTube" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="0.570683" y="150.684">YouTube</tspan>
@@ -1731,7 +1730,7 @@
                                     <path d="M232.5 25.3705L332.5 25.3705L332.5 20.9999L232.5 20.9999L232.5 25.3705Z" stroke="white" stroke-width="0.8" mask="url(#path-68-inside-50)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="310.118" y="11.52">0%</tspan>
+                                    <tspan class="testo" x="312.118" y="11.52">0%</tspan>
                                 </text>
                                 <text id="Google_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="232.5" y="11.9614">Google</tspan>
@@ -1754,7 +1753,7 @@
                                     <path d="M115.5 23.3986L215.5 23.3986L215.5 22L115.5 22L115.5 23.3986Z" stroke="white" stroke-width="0.8" mask="url(#path-75-inside-55)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="193.666" y="11.52">0%</tspan>
+                                    <tspan class="testo" x="196.666" y="11.52">0%</tspan>
                                 </text>
                                 <text id="Fb/ WA/ IG" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="115.5" y="11.9614">Fb/ WA/ IG </tspan>
@@ -1777,7 +1776,7 @@
                                     <path d="M0.500008 23.2727L100.5 23.2727L100.5 21L0.500008 21L0.500008 23.2727Z" stroke="white" stroke-width="0.8" mask="url(#path-82-inside-60)" />
                                 </g>
                                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                                    <tspan class="testo" x="80.7606" y="11.9614">0%</tspan>
+                                    <tspan class="testo" x="85.7606" y="11.9614">0%</tspan>
                                 </text>
                                 <text id="Apple_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                                     <tspan x="0.499996" y="11.9614">Apple</tspan>
