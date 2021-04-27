@@ -2,11 +2,9 @@
 //importo i less
 @import "normalize";
 @import "skeleton"; // variabili colori font
-
 ///////////////////////////////////
 //VARIABILI////////////////////////
 ///////////////////////////////////
-
 //Variabili mobile
 @fontcolor: #ffffff;
 @background-color: #1e1e1e;
@@ -17,14 +15,12 @@
 @h2-fontsize: 1.7em;
 @footer-fontsize: 1.1em;
 @link-fontsize: 0.9em;
-
 //Variabili desktop
 @body-fontsize-desktop: 1.5em;
 @h1-fontsize-desktop: 3.5em;
 @h2-fontsize-desktop: 2em;
 @footer-fontsize-desktop: 1.3em;
 @link-fontsize-desktop: 1.1em;
-
 ///////////////////////////////////
 //DESKTOP////////////////////////
 ///////////////////////////////////
@@ -39,14 +35,12 @@ body {
 	margin: 0;
 	letter-spacing: 0;
 }
-
 // Titoli degli articoli
 h2 {
 	font-size: @h2-fontsize-desktop;
 	font-weight: 500;
 	letter-spacing: 0;
 }
-
 // "Articolo di Biagio Simonetta"
 h3 {
 	font-size: @body-fontsize-desktop;
@@ -57,22 +51,20 @@ h3 {
 	margin-top: -90px;
 	color: @grigetto;
 }
-
 // Ogni paragrafo dei testi
 p {
 	font-size: @body-fontsize-desktop;
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: 0;
+	margin-bottom: 0;
 	color: @grigetto;
 }
-
 // Per animazione dirty cloud
 #myimg {
 	width: 50%;
 	text-align: center;
 }
-
 //box per titolo in alto (contiene img e articolo di Biagio Simonetta)
 .boxTitolo {
 	height: 100vh;
@@ -100,22 +92,20 @@ p {
 	line-height: 1.25em;
 	letter-spacing: 0;
 	margin-bottom: 2%;
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 .grafico2 .titoloGrafici {
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 .articolo h2 {
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 #articolo3 h2 {
-	padding-top: 0px;
-
+	padding-top: 0;
 }
-
 
 .internetStato {
 	font-weight: 500;
@@ -133,11 +123,6 @@ p {
 	width: 40%;
 	font-size: @body-fontsize-desktop;
 }
-
-.ultimoTitolo {
-	margin-top: 7%;
-}
-
 ///////////////////////////////////
 //Vertical menu////////////////////////
 ///////////////////////////////////
@@ -201,7 +186,6 @@ p {
 #internetGrafico {
 	pointer-events: none;
 }
-
 ///////////////////////////////////
 //Nasconditi////////////////////////
 ///////////////////////////////////
@@ -210,7 +194,6 @@ p {
 .nasconditi {
 	display: none;
 }
-
 ///////////////////////////////////
 //Grafico 1////////////////////////
 ///////////////////////////////////
@@ -228,7 +211,6 @@ p {
 .disab {
 	pointer-events: none;
 }
-
 ///////////////////////////////////
 //Grafico 2////////////////////////
 ///////////////////////////////////
@@ -253,9 +235,6 @@ p {
 		line-height: 1.2em;
 	}
 }
-
-
-
 ///////////////////////////////////
 //Bottoni////////////////////////
 ///////////////////////////////////
@@ -274,7 +253,6 @@ p {
 	font-weight: 500;
 	opacity: 0;
 }
-
 ///////////////////////////////////
 //Link////////////////////////
 ///////////////////////////////////
@@ -298,7 +276,7 @@ a:hover {
 }
 
 #articolo3 {
-	margin-top: 7%;
+	margin-top: 60px;
 }
 
 #avantgrade {
@@ -341,7 +319,6 @@ a:hover {
 	transform: translateY(-50%);
 	line-height: 1.3em;
 }
-
 ///////////////////////////////////
 //FOOTER///////////////////////////
 ///////////////////////////////////
@@ -365,17 +342,13 @@ a:hover {
 	width: 80%;
 	margin-bottom: 10%;
 }
-
 ///////////////////////////////////
 //Desktop Luci e Lucre///////////////////////////
 ///////////////////////////////////
-
 @media screen and (max-width: 1280px) {}
-
 ///////////////////////////////////
 //MOBILE///////////////////////////
 ///////////////////////////////////
-
 @media screen and (max-width: 750px) {
 	body {
 		font-size: @body-fontsize;
@@ -468,6 +441,7 @@ a:hover {
 		font-weight: 500;
 		letter-spacing: 0;
 		margin-bottom: 2%;
+		padding-top: 30px;
 	}
 
 	.internetStato {
@@ -489,15 +463,9 @@ a:hover {
 		font-size: @body-fontsize;
 		line-height: 1.2em;
 	}
-
-	.ultimoTitolo {
-		margin-top: 7%;
-	}
-
 	///////////////////////////////////
 	//Vertical menu////////////////////
 	///////////////////////////////////
-
 	.dropup {
 		font-size: @body-fontsize;
 		font-weight: 400;
@@ -558,12 +526,10 @@ a:hover {
 	#internetGrafico {
 		pointer-events: none;
 	}
-
 	///////////////////////////////////
 	//Grafico 1////////////////////////
 	///////////////////////////////////
 	///////////////////////////////////
-
 	.treeMaps {
 		width: 90%;
 		margin-left: 5%;
@@ -578,10 +544,16 @@ a:hover {
 		pointer-events: none;
 	}
 
+	.articolo h2 {
+		padding-top: 30px;
+	}
+
+	.grafico2 .titoloGrafici {
+		padding-top: 30px;
+	}
 	///////////////////////////////////
 	//Bottoni//////////////////////////
 	///////////////////////////////////
-
 	#grafic2 {
 		height: 100vh;
 		width: 100%;
@@ -601,11 +573,9 @@ a:hover {
 		font-weight: 500;
 		opacity: 0;
 	}
-
 	///////////////////////////////////
 	//Link/////////////////////////////
 	///////////////////////////////////
-
 	#linkini {
 		font-weight: 400;
 		font-style: normal;
@@ -625,14 +595,12 @@ a:hover {
 	}
 
 	#articolo3 {
-		margin-top: 3.5%;
+		margin-top: 30px;
 	}
-
 	///////////////////////////////////
 	//FOOTER///////////////////////////
 	///////////////////////////////////
 	///////////////////////////////////
-
 	.footerInBasso {
 		width: 90%;
 	}
