@@ -238,15 +238,21 @@ p {
 #parole {
     position: absolute;
     z-index: 999;
+    
+    height: 100vh;
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: 0%;
+    
     font-size: @h2-fontsize-desktop;
     text-align: center;
+    align-items: center;
     justify-content: center;
+    
     background-color: rgba(30, 30, 30, 0.7);
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    
     transition: opacity 0.3s;
 }
 
@@ -564,26 +570,6 @@ a:hover {
 
     .disab {
         pointer-events: none;
-    }
-
-    ///////////////////////////////////
-    //Grafico 2////////////////////////
-    ///////////////////////////////////
-    ///////////////////////////////////
-
-    #parole {
-        position: absolute;
-        z-index: 999;
-        width: 100%;
-        font-size: @body-fontsize;
-        background-color: rgba(30, 30, 30, 0.7);
-        opacity: 0;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        transition: opacity 0.3s;
     }
 
     ///////////////////////////////////
