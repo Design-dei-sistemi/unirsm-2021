@@ -150,7 +150,6 @@ p {
     display: inline-block;
     width: 99.5%;
     margin-top: 2.3%;
-    margin-bottom: 5%;
     border: 0.8px solid white;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -238,22 +237,31 @@ p {
 #parole {
     position: absolute;
     z-index: 999;
-    
-    height: 100vh;
+
+    height: 100%;
     display: flex;
     padding-left: 15%;
     padding-right: 15%;
-    margin-left: 0%;
-    
+    line-height: 1.1em;
+
     font-size: @h2-fontsize-desktop;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+
     background-color: rgba(30, 30, 30, 0.7);
     opacity: 0;
-    
+
     transition: opacity 0.3s;
+}
+.black-screen{
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 ///////////////////////////////////
@@ -364,6 +372,14 @@ a:hover {
     float: right;
     width: 80%;
     margin-bottom: 10%;
+}
+
+///////////////////////////////////
+//Desktop Luci e Lucre///////////////////////////
+///////////////////////////////////
+
+@media screen and (max-width: 1280px) {
+
 }
 
 ///////////////////////////////////
