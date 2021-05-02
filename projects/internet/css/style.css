@@ -1085,7 +1085,7 @@ a:hover {
 .praticaIntera {
   display: inline-block;
   width: 100%;
-  height: 40px;
+  height: 47px;
   border-bottom: 0.8px solid rgba(255, 255, 255, 0.3);
 }
 #ultima {
@@ -1111,7 +1111,7 @@ a:hover {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  line-height: 1.3em;
+  line-height: 1.1em;
 }
 .footerInBasso {
   max-width: 600px;
