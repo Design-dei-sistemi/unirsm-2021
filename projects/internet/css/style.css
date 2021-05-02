@@ -905,7 +905,7 @@ p {
   text-align: center;
 }
 .boxTitolo {
-  height: 100vh;
+  height: 65vh;
   text-align: center;
   padding-top: 35vh;
 }
@@ -924,7 +924,7 @@ p {
   font-weight: 500;
   line-height: 1.25em;
   letter-spacing: 0;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
   padding-top: 40px;
 }
 .grafico2 .titoloGrafici {
@@ -1043,11 +1043,11 @@ p {
 #parole p {
   width: 60%;
   font-size: 1.5em;
-  margin-top: 36%;
   line-height: 1.2em;
   background-color: #1e1e1e;
   padding: 10px;
   border-radius: 3px;
+  transform: translateY(123%);
   border: 1px solid #1e1e1e;
 }
 .grafico2 {
@@ -1268,8 +1268,8 @@ a:hover {
     font-size: 1.7em;
     font-weight: 500;
     letter-spacing: 0;
-    margin-bottom: 8%;
-    padding-top: 30px;
+    margin-bottom: 4%;
+    padding-top: 16px;
   }
   .internetStato {
     font-weight: 500;
@@ -1296,7 +1296,6 @@ a:hover {
     display: inline-block;
     width: 99.5%;
     margin-top: 2.3%;
-    margin-bottom: 5%;
     border: 0.8px solid white;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -1353,10 +1352,13 @@ a:hover {
     pointer-events: none;
   }
   .articolo h2 {
-    padding-top: 30px;
+    padding-top: 16px;
   }
   .grafico2 .titoloGrafici {
-    padding-top: 30px;
+    padding-top: 16px;
+  }
+  #parole p {
+    transform: translateY(50%);
   }
   #grafic2 {
     width: 100%;
