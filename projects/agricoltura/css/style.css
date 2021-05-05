@@ -909,17 +909,26 @@ there.
   h1 {
     color: #D4D4D4;
     font-family: 'Sole24Serif Big Display';
-    font-size: 4.5rem;
-    margin-top: 320px;
+    font-size: 4.2rem;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin: 250px auto;
   }
   h2 {
     color: #00FFB2;
     font-size: 3rem;
     font-family: 'Sole24Serif Display';
-    margin-top: 300px;
+    margin-top: 700px;
   }
   #main {
     margin-top: 30px;
+  }
+  #video_copertina {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    margin: 0 auto;
   }
   #intro {
     margin-top: 116px;
