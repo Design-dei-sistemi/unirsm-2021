@@ -953,25 +953,10 @@ there.
     width: 50%;
     height: 10px;
   }
-  #img_2020 {
-    position: absolute;
-    z-index: 1;
-  }
-  #img_2030 {
-    position: absolute;
-    z-index: -1;
-  }
-  #img_2040 {
-    position: absolute;
-    z-index: -2;
-  }
-  #img_2050 {
-    position: absolute;
-    z-index: -3;
-  }
-  #button {
-    margin-top: 700px;
-    font-family: 'Sole24Sans';
+  #img_popolazione {
+    width: 70rem;
+    display: block;
+    margin: 0 auto;
   }
   #contenitore_trattore {
     position: absolute;
@@ -1063,20 +1048,71 @@ there.
     box-sizing: border-box;
     font-family: 'Sole24Sans';
   }
-  .scrolling-wrapper {
-    padding-bottom: 20px;
-    padding-top: 30px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+  #contenitore_cards {
+    position: absolute;
+    visibility: hidden;
   }
-  .scrolling-wrapper .card {
+  .card_dk_1 {
     margin-top: 10px;
-    width: 60%;
-    display: inline-block;
+    margin-left: 90px;
+    float: left;
+    width: 55%;
   }
-  .scrolling-wrapper -webkit-scrollbar-track {
-    background-color: grey;
+  .card_dk_2 {
+    margin-top: 10px;
+    float: left;
+    width: 55%;
+    position: absolute;
+    margin-left: 255px;
+  }
+  .card_dk_3 {
+    margin-top: 20px;
+    margin-left: 90px;
+    float: left;
+    width: 55%;
+  }
+  .card_dk_4 {
+    margin-top: 20px;
+    float: left;
+    width: 55%;
+    position: absolute;
+    margin-left: 255px;
+  }
+  .card_dk_5 {
+    margin-top: 20px;
+    margin-left: 90px;
+    float: left;
+    width: 55%;
+  }
+  .card_dk_6 {
+    margin-top: 20px;
+    float: left;
+    width: 55%;
+    position: absolute;
+    margin-left: 255px;
+  }
+  .card_dk_7 {
+    margin-top: 20px;
+    margin-left: 90px;
+    float: left;
+    width: 55%;
+  }
+  .card_dk_8 {
+    margin-top: 20px;
+    float: left;
+    width: 55%;
+    position: absolute;
+    margin-left: 255px;
+  }
+  #grafico_mercato {
+    position: absolute;
+    visibility: hidden;
+  }
+  #grafico_mercato_dk {
+    position: absolute;
+    width: 70rem;
+    display: block;
+    margin: 0 15%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -1128,25 +1164,10 @@ there.
     width: 50%;
     height: 10px;
   }
-  #img_2020 {
-    position: absolute;
-    z-index: 1;
-  }
-  #img_2030 {
-    position: absolute;
-    z-index: -1;
-  }
-  #img_2040 {
-    position: absolute;
-    z-index: -2;
-  }
-  #img_2050 {
-    position: absolute;
-    z-index: -3;
-  }
-  #button {
-    margin-top: 700px;
-    font-family: 'Sole24Sans';
+  #img_popolazione {
+    width: 32rem;
+    display: block;
+    margin: 0 auto;
   }
   #contenitore_trattore {
     position: absolute;
@@ -1231,6 +1252,10 @@ there.
     box-sizing: border-box;
     font-family: 'Sole24Sans';
   }
+  #contenitore_cards_dk {
+    visibility: hidden;
+    position: absolute;
+  }
   .scrolling-wrapper {
     padding-bottom: 20px;
     padding-top: 30px;
@@ -1244,7 +1269,7 @@ there.
     width: 85%;
     display: inline-block;
   }
-  .scrolling-wrapper -webkit-scrollbar-track {
-    background-color: grey;
+  #grafico_mercato_dk {
+    visibility: hidden;
   }
 }
