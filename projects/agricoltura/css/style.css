@@ -1132,11 +1132,13 @@ there.
     color: #D4D4D4;
     font-family: 'Sole24Serif Big Display';
     font-size: 35px;
+    margin-top: 10px;
   }
   h2 {
     color: #00FFB2;
     font-size: 25px;
     font-family: 'Sole24Serif Display';
+    margin-top: 10px;
   }
   #main {
     margin-top: 30px;
