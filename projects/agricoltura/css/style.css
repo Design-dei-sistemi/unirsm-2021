@@ -1125,6 +1125,41 @@ there.
   }
 }
 @media screen and (max-width: 750px) {
+  @font-face {
+    font-family: 'Sole24Serif Big Display';
+    src: url("../font/Sole24SerifBigDisplay-Black.woff2") format('woff2'), url("../font/Sole24SerifBigDisplay-Black.woff") format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sole24Serif Big Display';
+    src: url("../font/Sole24SerifBigDisplay-RegularIt.woff2") format('woff2'), url("../font/Sole24SerifBigDisplay-RegularIt.woff") format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sole24Serif Display';
+    src: url('../font/Sole24SerifDisplay-RegularIt.woff2') format('woff2'), url('../font/Sole24SerifDisplay-RegularIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sole24Sans';
+    src: url("../font/Sole24Sans-Regular.woff2") format('woff2'), url("../font/Sole24Sans-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sole24Sans';
+    src: url("../font/Sole24Sans-Medium.woff2") format('woff2'), url("../font/Sole24Sans-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
   body {
     background-color: #351900;
   }
@@ -1132,13 +1167,13 @@ there.
     color: #D4D4D4;
     font-family: 'Sole24Serif Big Display';
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   h2 {
     color: #00FFB2;
     font-size: 25px;
     font-family: 'Sole24Serif Display';
-    margin-top: 10px;
+    margin-top: 40px;
   }
   #main {
     margin-top: 30px;
