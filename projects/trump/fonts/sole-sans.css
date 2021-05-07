@@ -6,6 +6,13 @@
 @font-face {
   font-family: 'Sole_text';  /*testo corrente*/
   src: url(../fonts/Sole24TextRegular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Sole_text';  /*testo corrente*/
+  src: url(../fonts/Sole24TextBlack.otf);
+  font-weight: 800;
 }
 
 @font-face {
@@ -30,4 +37,10 @@
   font-family: 'SoleSans'; /*testo*/
   src: url(../fonts/Sole24Sans-Bold.otf);
   font-weight: 800;
+}
+
+@font-face {
+  font-family: 'SoleSans'; /*fonte*/
+  src: url(../fonts/Sole24Sans-LightExtended.otf);
+  font-weight: 300;
 }
