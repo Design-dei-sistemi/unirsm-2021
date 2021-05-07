@@ -914,16 +914,6 @@ p {
   margin-bottom: 30px;
   letter-spacing: normal;
 }
-#sottotitolo_copertina {
-  color: white;
-  font-family: "Sole_sub_it";
-  font-size: 18px;
-  font-weight: 400;
-  font-style: italic;
-  text-align: center;
-  line-height: 25px;
-  margin-bottom: 15px;
-}
 #info_copertina {
   font-family: "Sole_sub";
   color: white;
@@ -1062,11 +1052,6 @@ p {
     padding-top: 40px;
     margin-bottom: 30px;
   }
-  #sottotitolo_copertina {
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 15px;
-  }
   #info_copertina {
     font-size: 14px;
     font-weight: 400;
@@ -1088,11 +1073,6 @@ p {
     font-size: 54px;
     padding-top: 40px;
     margin-bottom: 30px;
-  }
-  #sottotitolo_copertina {
-    font-size: 25px;
-    line-height: 30px;
-    margin-bottom: 15px;
   }
   #info_copertina {
     font-size: 20px;
@@ -1130,11 +1110,6 @@ p {
     padding-top: 60px;
     margin-bottom: 30px;
   }
-  #sottotitolo_copertina {
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 15px;
-  }
   #info_copertina {
     font-size: 20px;
     font-weight: 400;
@@ -1169,12 +1144,6 @@ p {
     padding-top: 120px;
     line-height: 90px;
     margin-bottom: 30px;
-  }
-  #sottotitolo_copertina {
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 15px;
-    margin-top: 50px;
   }
   #info_copertina {
     font-size: 30px;
