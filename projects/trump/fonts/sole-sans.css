@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'Sole_sub_it';  /*sottotitolo*/
-  src: url(../fonts/Sole24SubheadRegularIt.otf);
+  font-family: 'Sole_sub';  /*sottotitolo*/
+  src: url(../fonts/Sole24SubheadRegular.otf);
 	font-weight: 400;
 }
 
