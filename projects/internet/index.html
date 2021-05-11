@@ -148,55 +148,87 @@
 
 
 
-			$(".dropup").hover(
-				function() {
-					console.log("hover");
-					$('.dropup-content').css("display", "block");
-				},
-				function() {
-					console.log("out");
-					$('.dropup-content').css("display", "none");
-				}
-			);
+						$(".dropup").hover(
+						function() {
+						console.log("hover");
+						$('.dropup-content').css("display", "block");
+						$('.treeMaps #TreemapMobile #cina2').css("touch-events", "none");
+						$('.treeMaps #TreemapMobile #usa2').css("touch-events", "none");
 
-			$(".elencoStati").hover(
-				function() {
+						},
+						function() {
+						console.log("out");
+						$('.dropup-content').css("display", "none");
+						$('.treeMaps #TreemapMobile #cina2').css("touch-events", "auto");
+						$('.treeMaps #TreemapMobile #usa2').css("touch-events", "auto");
 
-					idVal = $(this).attr("id");
 
-					$("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
-					$("#" + idVal + "2" + " path").css("fill", "#FFFFFF");
+						}
+						);
 
-					tmpCol = $(this).css("fill");
-					tmpVal = $("#" + idVal + "2").data("myval");
 
-					tmpPaese = $(this).text();
-					$("#stato").html(tmpPaese + ": " + tmpVal + " MtCO₂eq");
-				},
-				function() {
-					$(this).css("fill", tmpCol);
-					$("#" + idVal + "2" + " text").css("fill", "#FFFFFF");
-					$("#" + idVal + "2" + " path").css("fill", "#1e1e1e");
-					$("#stato").html("Mondo: 36441 MtCO₂eq");
-				}
-			);
 
+						$(".elencoStati").hover(
+						function() {
+
+						idVal = $(this).attr("id");
+
+						$("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
+						$("#" + idVal + "2" + " path").css("fill", "#FFFFFF");
+
+						tmpCol = $(this).css("fill");
+						tmpVal = $("#" + idVal + "2").data("myval");
+
+						tmpPaese = $(this).text();
+						$("#stato").html(tmpPaese + ": " + tmpVal + " MtCO₂eq");
+						},
+						function() {
+						$(this).css("fill", tmpCol);
+						$("#" + idVal + "2" + " text").css("fill", "#FFFFFF");
+						$("#" + idVal + "2" + " path").css("fill", "#1e1e1e");
+						$("#stato").html("Mondo: 36441 MtCO₂eq");
+						}
+						);
 
 			//
 			//Ho provato a mettere l'evento tap
-			$(".elencoStati").on('tap', function(e) {
+			$(".dropup").on('singletap', function(e) {
+
+				disp = $('.dropup-content').css("display");
+				if (disp == "block") {
+					$('.dropup-content').css("display", "none");
+				} else {
+					$('.dropup-content').css("display", "block");
+				}
+
+				$('.treeMaps #TreemapMobile #cina2').css("touch-events", "none");
+				$('.treeMaps #TreemapMobile #usa2').css("touch-events", "none");
+			});
+
+			$(".elencoStati").on('singletap', function(e) {
+
 				idVal = $(this).attr("id");
 				$("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
 				$("#" + idVal + "2" + " path").css("fill", "#FFFFFF");
-
 				tmpCol = $(this).css("fill");
 				tmpVal = $("#" + idVal + "2").data("myval");
-
 				tmpPaese = $(this).text();
 				$("#stato").html(tmpPaese + ": " + tmpVal + " MtCO₂eq");
-				$('.dropup-content').css("display", "none");
+
+				$('.dropup-content').css("display", "none!important");
 				console.log(idVal);
+
 			});
+						$(".elencoStati").on('tapend', function(e) {
+			
+			 $('.treeMaps #TreemapMobile #cina2').css("touch-events", "auto");
+			 $('.treeMaps #TreemapMobile #usa2').css("touch-events", "auto");
+			
+			 });
+
+
+
+
 
 			/////////////////////
 			//

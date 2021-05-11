@@ -1012,6 +1012,11 @@ p {
   max-width: 900px;
   margin: 0 auto;
 }
+.treeMaps #TreemapMobile #cina2,
+.treeMaps #TreemapMobile #statiUniti2 {
+  pointer-events: auto;
+  touch-events: auto;
+}
 .disab {
   pointer-events: none;
 }
@@ -1329,7 +1334,7 @@ a:hover {
     bottom: 100%;
     border: 0.8px solid #1e1e1e;
     left: -0.8px;
-    z-index: 1;
+    z-index: 100;
     overflow: auto;
     height: 600%;
     white-space: nowrap;
