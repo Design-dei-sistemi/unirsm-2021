@@ -20,732 +20,708 @@
 @h2-fontsize-desktop: 2em;
 @footer-fontsize-desktop: 1.3em;
 @link-fontsize-desktop: 1.1em;
-
 ///////////////////////////////////
 //DESKTOP////////////////////////
 ///////////////////////////////////
-body {
-	background-color: @background-color;
-	color: @fontcolor;
-	font-size: @body-fontsize-desktop;
-	font-family: 'Sole24Sans';
-	font-weight: 400;
-	font-style: normal;
-	margin: 0;
-	letter-spacing: 0;
-}
 
+body {
+  background-color: @background-color;
+  color: @fontcolor;
+  font-size: @body-fontsize-desktop;
+  font-family: 'Sole24Sans';
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: 0;
+}
 // Titoli degli articoli
 h2 {
-	font-size: @h2-fontsize-desktop;
-	font-weight: 500;
-	letter-spacing: 0;
+  font-size: @h2-fontsize-desktop;
+  font-weight: 500;
+  letter-spacing: 0;
 }
-
 // "Articolo di Biagio Simonetta"
 h3 {
-	font-size: @body-fontsize-desktop;
-	font-weight: 400;
-	text-align: center;
-	font-style: normal;
-	letter-spacing: 0;
-	color: @grigetto;
-	margin-top: -50px;
+  font-size: @body-fontsize-desktop;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0;
+  color: @grigetto;
+  margin-top: -50px;
 }
-
 // Ogni paragrafo dei testi
 p {
-	font-size: @body-fontsize-desktop;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 0;
-	margin-bottom: 0;
-	color: @grigetto;
+  font-size: @body-fontsize-desktop;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: @grigetto;
 }
-
 // Per animazione dirty cloud
 #myimg {
-	width: 570px;
-	text-align: center;
+  width: 100vw;
+  text-align: center;
 }
-
 //box per titolo in alto (contiene img e articolo di Biagio Simonetta)
 .boxTitolo {
-	height: 65vh;
-	text-align: center;
-	padding-top: 35vh;
+  text-align: center;
 }
 
 .articolo {
-	max-width: 600px;
-	margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .vertical {
-	border-left: 0.8px solid @azzurrinoInternet;
+  border-left: 0.8px solid @azzurrinoInternet;
 }
 
 .citazioni {
-	margin-left: 5%;
+  margin-left: 5%;
 }
 
 .titoloGrafici {
-	font-size: @h2-fontsize-desktop;
-	font-weight: 500;
-	line-height: 1.25em;
-	letter-spacing: 0;
-	margin-bottom: 4%;
-	padding-top: 40px;
+  font-size: @h2-fontsize-desktop;
+  font-weight: 500;
+  line-height: 1.25em;
+  letter-spacing: 0;
+  margin-bottom: 4%;
+  padding-top: 40px;
 }
 
 .grafico2 .titoloGrafici {
-	padding-top: 40px;
+  padding-top: 40px;
 }
 
 .articolo h2 {
-	padding-top: 40px;
+  padding-top: 40px;
 }
 
 #articolo3 h2 {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 .internetStato {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 #internet {
-	float: left;
-	color: @azzurrinoInternet;
-	font-size: @body-fontsize-desktop;
+  float: left;
+  color: @azzurrinoInternet;
+  font-size: @body-fontsize-desktop;
 }
 
 #stato {
-	float: right;
-	text-align: right;
-	width: 60%;
-	font-size: @body-fontsize-desktop;
+  float: right;
+  text-align: right;
+  width: 60%;
+  font-size: @body-fontsize-desktop;
 }
-
 ///////////////////////////////////
 //Vertical menu////////////////////////
 ///////////////////////////////////
 
 .dropup {
-	font-size: @body-fontsize-desktop;
-	font-weight: 400;
-	font-style: normal;
-	position: relative;
-	display: inline-block;
-	width: 99.5%;
-	margin-top: 2.3%;
-	border: 0.8px solid white;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	z-index: 9999;
+  font-size: @body-fontsize-desktop;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  width: 99.5%;
+  margin-top: 2.3%;
+  border: 0.8px solid white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  z-index: 9999;
 }
 
 .dropbtn {
-	background-color: #1e1e1e;
-	color: white;
-	float: left;
-	padding-left: 3%;
+  background-color: #1e1e1e;
+  color: white;
+  float: left;
+  padding-left: 3%;
 }
 
 .freccetta {
-	float: right;
-	padding-right: 3%;
+  float: right;
+  padding-right: 3%;
 }
 
 .dropup-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	width: 100%;
-	bottom: 100%;
-	border: 0.8px solid #1e1e1e;
-	left: -0.8px;
-	z-index: 1;
-	overflow: auto;
-	height: 600%;
-	white-space: nowrap;
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  bottom: 100%;
+  border: 0.8px solid #1e1e1e;
+  left: -0.8px;
+  z-index: 1;
+  overflow: auto;
+  height: 600%;
+  white-space: nowrap;
 }
 
 .elencoStati {
-	border-bottom: 0.8px solid #D2D2D2;
-	color: #1e1e1e;
-	padding: 12px;
-	text-decoration: none;
-	display: block;
+  border-bottom: 0.8px solid #D2D2D2;
+  color: #1e1e1e;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
 }
 
 .elencoStati:hover {
-	background-color: #616161;
+  background-color: #616161;
 }
 
 .dropup:hover .dropbtn {
-	background-color: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
 #internetGrafico {
-	pointer-events: none;
+  pointer-events: none;
 }
-
 ///////////////////////////////////
 //Nasconditi////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
 
 .nasconditi {
-	display: none;
+  display: none;
 }
-
 ///////////////////////////////////
 //Grafico 1////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
 
 .treeMaps svg {
-	margin-top: 2%;
+  margin-top: 2%;
 }
 
 .treeMaps {
-	max-width: 900px;
-	margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 
-	#TreemapMobile {
-
-		#cina2,
-		#statiUniti2 {
-			pointer-events: auto;
-			touch-events: auto;
-		}
-	}
+  #TreemapMobile {
+    #cina2,
+    #statiUniti2 {
+      pointer-events: auto;
+      touch-events: auto;
+    }
+  }
 }
 
 .disab {
-	pointer-events: none;
+  pointer-events: none;
 }
-
 ///////////////////////////////////
 //Grafico 2////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
 
 #energieRinnovabiliTitolo {
-	border-bottom: 0.8px solid #8FFF00;
+  border-bottom: 0.8px solid #8FFF00;
 }
 
 #gasNaturaleTitolo {
-	border-bottom: 0.8px solid #A67EFF;
+  border-bottom: 0.8px solid #A67EFF;
 }
 
 #carboneTitolo {
-	border-bottom: 0.8px solid #FF9900;
+  border-bottom: 0.8px solid #FF9900;
 }
 
 #nucleareTitolo {
-	border-bottom: 0.8px solid #FF1111;
+  border-bottom: 0.8px solid #FF1111;
 }
 
 #parole {
-	position: absolute;
-	z-index: 99;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(30, 30, 30, 0.7);
-	opacity: 0;
-	transition: opacity 0.5s;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 30, 30, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s;
 
-	p {
-		width: 60%;
-		font-size: @body-fontsize-desktop;
-		line-height: 1.2em;
-		background-color: #1e1e1e;
-		padding: 10px;
-		border-radius: 3px;
-		transform: translateY(123%);
-		border: 1px solid #1e1e1e;
-	}
+  p {
+    width: 60%;
+    font-size: @body-fontsize-desktop;
+    line-height: 1.2em;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 3px;
+    transform: translateY(123%);
+    border: 1px solid #1e1e1e;
+  }
 }
 
 .grafico2 {
-	max-width: 900px;
-	margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .grafico2 path {
-	transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .testo {
-	font-weight: 500;
-	opacity: 0;
+  font-weight: 500;
+  opacity: 0;
 }
-
 ///////////////////////////////////
 //Link////////////////////////
 ///////////////////////////////////
 
 #linkini {
-	font-weight: 400;
-	font-style: normal;
-	font-size: @link-fontsize-desktop;
-	color: white;
-	opacity: 0.3;
-	position: absolute;
-	z-index: 999;
-
+  font-weight: 400;
+  font-style: normal;
+  font-size: @link-fontsize-desktop;
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 999;
 }
 
 #controlla {
-	color: #d2d2d2;
+  color: #d2d2d2;
 }
 
 #controlla:hover {
-	text-decoration: underline;
-	color: @azzurrinoInternet;
+  text-decoration: underline;
+  color: @azzurrinoInternet;
 }
 
 a {
-	color: white;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: @azzurrinoInternet;
+  text-decoration: underline;
+  color: @azzurrinoInternet;
 }
 
 #articolo3 {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
 #avantgrade {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .praticaIntera {
-	display: inline-block;
-	width: 100%;
-	height: 47px;
-	border-bottom: 0.8px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  width: 100%;
+  height: 47px;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.3);
 }
 
 #ultima {
-	border: none;
+  border: none;
 }
 
 .icone {
-	float: left;
-	width: 20%;
-	height: 40px;
+  float: left;
+  width: 20%;
+  height: 40px;
 }
 
 .pratica {
-	width: 80%;
-	float: right;
-	height: 40px;
+  width: 80%;
+  float: right;
+  height: 40px;
 }
 
 .icone svg {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	line-height: 1.3em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1.3em;
 }
 
 .pratica p {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	line-height: 1.1em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1.1em;
 }
-
 ///////////////////////////////////
 //FOOTER///////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
 
 .footerInBasso {
-	max-width: 600px;
-	margin: 0 auto;
-	padding-top: 2%;
-	color: @grigetto;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2%;
+  color: @grigetto;
 }
 
 #footerLogo {
-	width: 10%;
-	float: left;
+  width: 10%;
+  float: left;
 }
 
 #testoFooter {
-	font-size: @footer-fontsize-desktop;
-	float: right;
-	width: 80%;
-	margin-bottom: 10%;
+  font-size: @footer-fontsize-desktop;
+  float: right;
+  width: 80%;
+  margin-bottom: 10%;
 }
-
 ///////////////////////////////////
 //Desktop Luci e Lucre///////////////////////////
 ///////////////////////////////////
 @media screen and (max-width: 1440px) {
-	.treeMaps {
-		max-width: 600px;
-	}
+  .treeMaps {
+    max-width: 600px;
+  }
 
-	.grafico2 {
-		max-width: 600px;
-	}
+  .grafico2 {
+    max-width: 600px;
+  }
 }
-
 ///////////////////////////////////
 //SMALLMOBILE///////////////////////////
 ///////////////////////////////////
 @media screen and (max-width: 375px) {
+  ///////////////////////////////////
+  //carosello////////////////////////
+  ///////////////////////////////////
+  .slider {
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+  }
 
-	///////////////////////////////////
-	//carosello////////////////////////
-	///////////////////////////////////
-	.slider {
-		box-sizing: border-box;
-		text-align: center;
-		overflow: hidden;
-	}
+  .slides {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
 
-	.slides {
-		display: flex;
-		overflow: auto;
-		scroll-snap-type: x mandatory;
-		scroll-behavior: smooth;
-	}
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 89vw;
+    margin-right: 20%;
+    outline: 0.8px solid #00FFC2;
+    outline-offset: -2.3px;
+    transform-origin: center center;
+    transition: transform 0.5s;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.slides > div {
-		scroll-snap-align: start;
-		flex-shrink: 0;
-		width: 89vw;
-		margin-right: 20%;
-		outline: 0.8px solid #00FFC2;
-		outline-offset: -2.3px;
-		transform-origin: center center;
-		transition: transform 0.5s;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
+  .centrarediv {
+    margin-top: 8.5%;
+    margin-bottom: 8.5%;
+  }
 
-	.centrarediv {
-		margin-top: 8.5%;
-		margin-bottom: 8.5%;
-	}
+  .iconeM {
+    width: 20%;
+    margin: 0 auto;
+  }
 
-	.iconeM {
-		width: 20%;
-		margin: 0 auto;
-	}
+  .praticaM {
+    width: 60%;
+    margin: 4% auto 0;
+  }
 
-	.praticaM {
-		width: 60%;
-		margin: 4% auto 0;
-	}
+  .aleft {
+    width: 3%;
+    position: absolute;
+    margin-left: -45%;
+    height: 8%;
+    padding-top: 55%;
+  }
 
-	.aleft {
-		width: 3%;
-		position: absolute;
-		margin-left: -45%;
-		height: 8%;
-		padding-top: 55%;
-	}
+  .aright {
+    width: 3%;
+    position: absolute;
+    margin-left: 40%;
+    height: 8%;
+    padding-top: 55%;
+  }
 
-	.aright {
-		width: 3%;
-		position: absolute;
-		margin-left: 40%;
-		height: 8%;
-		padding-top: 55%;
-	}
+  .pallini {
+    display: inline-flex;
+    width: 1rem;
+    height: 1rem;
+    background: #00FFC2;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem;
+    position: relative;
+    border: 0.8px solid #00FFC2;
+  }
 
-	.pallini {
-		display: inline-flex;
-		width: 1rem;
-		height: 1rem;
-		background: #00FFC2;
-		text-decoration: none;
-		align-items: center;
-		justify-content: center;
-		border-radius: 50%;
-		margin: 0 0 0.5rem;
-		position: relative;
-		border: 0.8px solid #00FFC2;
-	}
+  .selezione {
+    display: inline-flex;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 0 0 0.5rem;
+    border: 0.8px solid #00FFC2;
+    margin-top: 7%;
+  }
 
-	.selezione {
-		display: inline-flex;
-		width: 1rem;
-		height: 1rem;
-		border-radius: 50%;
-		margin: 0 0 0.5rem;
-		border: 0.8px solid #00FFC2;
-		margin-top: 7%;
-	}
+  a {
+    color: #00FFC2;
+  }
 
-	a {
-		color: #00FFC2;
-	}
+  #buonepraticheMobile {
+    //display: flex;
+    align-items: center;
+    justify-content: center;
+    //height: 100vh;
+    overflow: hidden;
 
-	#buonepraticheMobile {
-		//display: flex;
-		align-items: center;
-		justify-content: center;
-		//height: 100vh;
-		overflow: hidden;
-
-		h2 {
-			width: 100%;
-			display: block;
-		}
-	}
+    h2 {
+      width: 100%;
+      display: block;
+    }
+  }
 }
-
 ///////////////////////////////////
 //MOBILE///////////////////////////
 ///////////////////////////////////
 @media screen and (max-width: 740px) {
-	body {
-		font-size: @body-fontsize;
-	}
+  body {
+    font-size: @body-fontsize;
+  }
 
-	h3 {
-		font-size: @body-fontsize;
-		font-weight: 400;
-		text-align: center;
-		font-style: normal;
-		letter-spacing: 0;
-		margin-top: -40px;
-	}
+  h3 {
+    font-size: @body-fontsize;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0;
+    margin-top: -40px;
+  }
 
-	#myimg {
-		width: 70%;
-		text-align: center;
-	}
+  #myimg {
+    width: 100vw;
+    text-align: center;
+  }
 
-	.boxTitolo {
-		text-align: center;
-		padding-top: 36vh;
-	}
+  .boxTitolo {
+    text-align: center;
+  }
 
-	.articolo {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
+  .articolo {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-	h2 {
-		font-size: @h2-fontsize;
-		font-weight: 500;
-		letter-spacing: 0;
-	}
+  h2 {
+    font-size: @h2-fontsize;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
 
-	p {
-		font-size: @body-fontsize;
-		font-weight: 400;
-		font-style: normal;
-		letter-spacing: 0;
-	}
+  p {
+    font-size: @body-fontsize;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0;
+  }
 
-	.vertical {
-		border-left: 0.8px solid @azzurrinoInternet;
-	}
+  .vertical {
+    border-left: 0.8px solid @azzurrinoInternet;
+  }
 
-	.citazioni {
-		margin-left: 5%;
-	}
+  .citazioni {
+    margin-left: 5%;
+  }
 
-	.titoloGrafici {
-		font-size: @h2-fontsize;
-		font-weight: 500;
-		letter-spacing: 0;
-		margin-bottom: 4%;
-		padding-top: 16px;
-	}
+  .titoloGrafici {
+    font-size: @h2-fontsize;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 4%;
+    padding-top: 16px;
+  }
 
-	.internetStato {
-		font-weight: 500;
-	}
+  .internetStato {
+    font-weight: 500;
+  }
 
-	#internet {
-		float: left;
-		color: @azzurrinoInternet;
-		line-height: 1.2em;
-		font-size: @body-fontsize;
-		width: 40%;
-	}
+  #internet {
+    float: left;
+    color: @azzurrinoInternet;
+    line-height: 1.2em;
+    font-size: @body-fontsize;
+    width: 40%;
+  }
 
-	#stato {
-		float: right;
-		text-align: right;
-		width: 40%;
-		font-size: @body-fontsize;
-		line-height: 1.2em;
-	}
+  #stato {
+    float: right;
+    text-align: right;
+    width: 40%;
+    font-size: @body-fontsize;
+    line-height: 1.2em;
+  }
+  ///////////////////////////////////
+  //Vertical menu////////////////////
+  ///////////////////////////////////
+  .dropup {
+    font-size: @body-fontsize;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    width: 99.5%;
+    margin-top: 2.3%;
+    border: 0.8px solid white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 9999;
+  }
 
-	///////////////////////////////////
-	//Vertical menu////////////////////
-	///////////////////////////////////
-	.dropup {
-		font-size: @body-fontsize;
-		font-weight: 400;
-		font-style: normal;
-		position: relative;
-		display: inline-block;
-		width: 99.5%;
-		margin-top: 2.3%;
-		border: 0.8px solid white;
-		padding-top: 1%;
-		padding-bottom: 1%;
-		z-index: 9999;
-	}
+  .dropbtn {
+    background-color: #1e1e1e;
+    color: white;
+    float: left;
+    padding-left: 3%;
+  }
 
-	.dropbtn {
-		background-color: #1e1e1e;
-		color: white;
-		float: left;
-		padding-left: 3%;
-	}
+  .freccetta {
+    float: right;
+    padding-right: 3%;
+  }
 
-	.freccetta {
-		float: right;
-		padding-right: 3%;
-	}
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 100%;
+    border: 0.8px solid #1e1e1e;
+    left: -0.8px;
+    z-index: 100;
+    overflow: auto;
+    height: 600%;
+    white-space: nowrap;
+  }
 
-	.dropup-content {
-		display: none;
-		position: absolute;
-		background-color: white;
-		width: 100%;
-		bottom: 100%;
-		border: 0.8px solid #1e1e1e;
-		left: -0.8px;
-		z-index: 100;
-		overflow: auto;
-		height: 600%;
-		white-space: nowrap;
-	}
+  .elencoStati {
+    border-bottom: 0.8px solid #D2D2D2;
+    color: #1e1e1e;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
 
-	.elencoStati {
-		border-bottom: 0.8px solid #D2D2D2;
-		color: #1e1e1e;
-		padding: 12px;
-		text-decoration: none;
-		display: block;
-	}
+  .elencoStati:hover {
+    background-color: #616161;
+  }
 
-	.elencoStati:hover {
-		background-color: #616161;
-	}
+  .dropup:hover .dropbtn {
+    background-color: #1e1e1e;
+  }
 
-	.dropup:hover .dropbtn {
-		background-color: #1e1e1e;
-	}
+  #internetGrafico {
+    pointer-events: none;
+  }
+  ///////////////////////////////////
+  //Grafico 1////////////////////////
+  ///////////////////////////////////
+  ///////////////////////////////////
+  .treeMaps {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-	#internetGrafico {
-		pointer-events: none;
-	}
+  .treeMaps svg {
+    margin-top: 2%;
+  }
 
-	///////////////////////////////////
-	//Grafico 1////////////////////////
-	///////////////////////////////////
-	///////////////////////////////////
-	.treeMaps {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
+  .disab {
+    pointer-events: none;
+  }
 
-	.treeMaps svg {
-		margin-top: 2%;
-	}
+  .articolo h2 {
+    padding-top: 16px;
+  }
 
-	.disab {
-		pointer-events: none;
-	}
+  .grafico2 .titoloGrafici {
+    padding-top: 16px;
+  }
 
-	.articolo h2 {
-		padding-top: 16px;
-	}
+  #parole {
+    p {
+      transform: translateY(50%);
+    }
+  }
 
-	.grafico2 .titoloGrafici {
-		padding-top: 16px;
-	}
+  #grafic2 {
+    width: 100%;
+  }
 
-	#parole {
-		p {
-			transform: translateY(50%);
-		}
-	}
+  .grafico2 {
+    opacity: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-	#grafic2 {
-		width: 100%;
-	}
+  .grafico2 path {
+    transition: fill 0.5s ease;
+  }
 
-	.grafico2 {
-		opacity: 1;
-		margin-left: 20px;
-		margin-right: 20px;
-	}
+  .testo {
+    font-weight: 500;
+    opacity: 0;
+  }
+  ///////////////////////////////////
+  //Link/////////////////////////////
+  ///////////////////////////////////
+  #linkini {
+    font-weight: 400;
+    font-style: normal;
+    font-size: @link-fontsize;
+    color: white;
+    opacity: 0.3;
+    position: relative;
+  }
 
-	.grafico2 path {
-		transition: fill 0.5s ease;
-	}
+  a {
+    color: #D2D2D2;
+    text-decoration: underline;
+  }
 
-	.testo {
-		font-weight: 500;
-		opacity: 0;
-	}
+  a:hover {
+    text-decoration: underline;
+    color: @azzurrinoInternet;
+  }
 
-	///////////////////////////////////
-	//Link/////////////////////////////
-	///////////////////////////////////
-	#linkini {
-		font-weight: 400;
-		font-style: normal;
-		font-size: @link-fontsize;
-		color: white;
-		opacity: 0.3;
-		position: relative;
-	}
+  #articolo3 {
+    margin-top: 3.5%;
+  }
+  ///////////////////////////////////
+  //FOOTER///////////////////////////
+  ///////////////////////////////////
+  ///////////////////////////////////
+  .footerInBasso {
+    width: 90%;
+  }
 
-	a {
-		color: #D2D2D2;
-		text-decoration: underline;
-	}
+  #footerLogo {
+    width: 15%;
+  }
 
-	a:hover {
-		text-decoration: underline;
-		color: @azzurrinoInternet;
-	}
-
-	#articolo3 {
-		margin-top: 3.5%;
-	}
-
-	///////////////////////////////////
-	//FOOTER///////////////////////////
-	///////////////////////////////////
-	///////////////////////////////////
-	.footerInBasso {
-		width: 90%;
-	}
-
-	#footerLogo {
-		width: 15%;
-	}
-
-	#testoFooter {
-		font-size: @footer-fontsize;
-	}
+  #testoFooter {
+    font-size: @footer-fontsize;
+  }
 }
