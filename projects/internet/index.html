@@ -70,7 +70,6 @@
 				}
 				if ($(this).width() <= 740) {
 
-
 					// Scritta animata
 					var images = [
 						"img/mobile/example_imagesequence_01.png",
@@ -167,7 +166,6 @@
 					$('#barchartDesk').removeClass("nasconditi");
 				}
 
-
 				// TweenMax can tween any property of any object. We use this object to cycle through the array
 				var obj = {
 					curImg: 0
@@ -221,6 +219,10 @@
 				idVal = $(this).attr("id");
 				$("#Treemap text").css("fill", "#FFFFFF");
 				$("#Treemap path").css("fill", "#1e1e1e");
+
+				$("#internetGrafico" + " text").css("fill", "#1e1e1e");
+				$("#internetGrafico" + " path").css("fill", "#00FFC2");
+
 				$("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
 				$("#" + idVal + "2" + " path").css("fill", "#FFFFFF");
 
@@ -251,6 +253,9 @@
 
 					$("#Treemap text").css("fill", "#FFFFFF");
 					$("#Treemap path").css("fill", "#1e1e1e");
+
+					$("#internetGrafico" + " text").css("fill", "#1e1e1e");
+					$("#internetGrafico" + " path").css("fill", "#00FFC2");
 
 					$("#" + idVal2 + " text").css("fill", "#1e1e1e");
 					$("#" + idVal2 + " path").css("fill", "#FFFFFF");
