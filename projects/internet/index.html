@@ -47,90 +47,71 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js"></script>
 
-
-
-
-
 	<script>
-		// Scritta animata
-		var images = [
-			"img/example_imagesequence_01.png",
-			"img/example_imagesequence_02.png",
-			"img/example_imagesequence_03.png",
-			"img/example_imagesequence_04.png",
-			"img/example_imagesequence_05.png",
-			"img/example_imagesequence_06.png",
-			"img/example_imagesequence_07.png",
-			"img/example_imagesequence_08.png",
-			"img/example_imagesequence_09.png",
-			"img/example_imagesequence_10.png",
-			"img/example_imagesequence_11.png",
-			"img/example_imagesequence_12.png",
-			"img/example_imagesequence_13.png",
-			"img/example_imagesequence_14.png",
-			"img/example_imagesequence_15.png",
-			"img/example_imagesequence_16.png",
-			"img/example_imagesequence_17.png",
-			"img/example_imagesequence_18.png",
-			"img/example_imagesequence_19.png",
-			"img/example_imagesequence_20.png",
-			"img/example_imagesequence_21.png",
-			"img/example_imagesequence_22.png",
-			"img/example_imagesequence_23.png",
-			"img/example_imagesequence_24.png",
-			"img/example_imagesequence_25.png",
-			"img/example_imagesequence_26.png",
-			"img/example_imagesequence_27.png",
-			"img/example_imagesequence_28.png",
-			"img/example_imagesequence_29.png",
-			"img/example_imagesequence_30.png"
-		];
-
-		// TweenMax can tween any property of any object. We use this object to cycle through the array
-		var obj = {
-			curImg: 0
-		};
-
-		// create tween
-		var tween = TweenMax.to(obj, 0.5, {
-			curImg: images.length - 1, // animate propery curImg to number of images
-			roundProps: "curImg", // only integers so it can be used as an array index
-			repeat: 0, // repeat 3 times
-			immediateRender: true, // load first image automatically
-			ease: 8, // show every image the same ammount of time
-			onUpdate: function() {
-				$("#myimg").attr("src", images[obj.curImg]); // set the image source
-			}
-		});
-
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// build scene
-		var scene = new ScrollMagic.Scene({
-				duration: 800
-			})
-			.setTween(tween)
-			.addTo(controller);
-
-		// handle form change
-		$("form.move input[name=duration]:radio").change(function() {
-			scene.duration($(this).val());
-		});
-
-		// Animazione nasconditi
 		$(document).ready(function() {
+
+
+			// Animazione nasconditi per entrambi i grafici
 			$(window).on('load resize', function() {
 
 				if ($(this).width() <= 375) {
 					//carosello
 					$('#buonepraticheMobile').removeClass("nasconditi");
 					$('#avantgrade').addClass("nasconditi");
+
+					$('.dropup').removeClass("nasconditi");
+
 				} else {
 					$('#buonepraticheMobile').addClass("nasconditi");
 					$('#avantgrade').removeClass("nasconditi");
+
+					$('.dropup').addClass("nasconditi");
+
 				}
-				if ($(this).width() <= 750) {
+				if ($(this).width() <= 740) {
+
+
+					// Scritta animata
+					var images = [
+						"img/mobile/example_imagesequence_01.png",
+						"img/mobile/example_imagesequence_02.png",
+						"img/mobile/example_imagesequence_03.png",
+						"img/mobile/example_imagesequence_04.png",
+						"img/mobile/example_imagesequence_05.png",
+						"img/mobile/example_imagesequence_06.png",
+						"img/mobile/example_imagesequence_07.png",
+						"img/mobile/example_imagesequence_08.png",
+						"img/mobile/example_imagesequence_09.png",
+						"img/mobile/example_imagesequence_10.png",
+						"img/mobile/example_imagesequence_11.png",
+						"img/mobile/example_imagesequence_12.png",
+						"img/mobile/example_imagesequence_13.png",
+						"img/mobile/example_imagesequence_14.png",
+						"img/mobile/example_imagesequence_15.png",
+						"img/mobile/example_imagesequence_16.png",
+						"img/mobile/example_imagesequence_17.png",
+						"img/mobile/example_imagesequence_18.png",
+						"img/mobile/example_imagesequence_19.png",
+						"img/mobile/example_imagesequence_20.png",
+						"img/mobile/example_imagesequence_21.png",
+						"img/mobile/example_imagesequence_22.png",
+						"img/mobile/example_imagesequence_23.png",
+						"img/mobile/example_imagesequence_24.png",
+						"img/mobile/example_imagesequence_25.png",
+						"img/mobile/example_imagesequence_26.png",
+						"img/mobile/example_imagesequence_27.png",
+						"img/mobile/example_imagesequence_28.png",
+						"img/mobile/example_imagesequence_29.png",
+						"img/mobile/example_imagesequence_30.png",
+						"img/mobile/example_imagesequence_31.png",
+						"img/mobile/example_imagesequence_32.png",
+						"img/mobile/example_imagesequence_33.png",
+						"img/mobile/example_imagesequence_34.png",
+						"img/mobile/example_imagesequence_35.png",
+						"img/mobile/example_imagesequence_36.png",
+						"img/mobile/example_imagesequence_37.png",
+						"img/mobile/example_imagesequence_38.png"
+					];
 					$('#TreemapMobile').removeClass("nasconditi");
 					$('#TreemapDesk').addClass("nasconditi");
 
@@ -138,61 +119,91 @@
 					$('#barchartDesk').addClass("nasconditi");
 
 				} else {
+
+					var images = [
+						"img/desk/example_imagesequence_01.png",
+						"img/desk/example_imagesequence_02.png",
+						"img/desk/example_imagesequence_03.png",
+						"img/desk/example_imagesequence_04.png",
+						"img/desk/example_imagesequence_05.png",
+						"img/desk/example_imagesequence_06.png",
+						"img/desk/example_imagesequence_07.png",
+						"img/desk/example_imagesequence_08.png",
+						"img/desk/example_imagesequence_09.png",
+						"img/desk/example_imagesequence_10.png",
+						"img/desk/example_imagesequence_11.png",
+						"img/desk/example_imagesequence_12.png",
+						"img/desk/example_imagesequence_13.png",
+						"img/desk/example_imagesequence_14.png",
+						"img/desk/example_imagesequence_15.png",
+						"img/desk/example_imagesequence_16.png",
+						"img/desk/example_imagesequence_17.png",
+						"img/desk/example_imagesequence_18.png",
+						"img/desk/example_imagesequence_19.png",
+						"img/desk/example_imagesequence_20.png",
+						"img/desk/example_imagesequence_21.png",
+						"img/desk/example_imagesequence_22.png",
+						"img/desk/example_imagesequence_23.png",
+						"img/desk/example_imagesequence_24.png",
+						"img/desk/example_imagesequence_25.png",
+						"img/desk/example_imagesequence_26.png",
+						"img/desk/example_imagesequence_27.png",
+						"img/desk/example_imagesequence_28.png",
+						"img/desk/example_imagesequence_29.png",
+						"img/desk/example_imagesequence_30.png",
+						"img/desk/example_imagesequence_31.png",
+						"img/desk/example_imagesequence_32.png",
+						"img/desk/example_imagesequence_33.png",
+						"img/desk/example_imagesequence_34.png",
+						"img/desk/example_imagesequence_35.png",
+						"img/desk/example_imagesequence_36.png",
+						"img/desk/example_imagesequence_37.png",
+						"img/desk/example_imagesequence_38.png"
+					];
 					$('#TreemapMobile').addClass("nasconditi");
 					$('#TreemapDesk').removeClass("nasconditi");
 
 					$('#barchartMobile').addClass("nasconditi");
 					$('#barchartDesk').removeClass("nasconditi");
 				}
+
+
+				// TweenMax can tween any property of any object. We use this object to cycle through the array
+				var obj = {
+					curImg: 0
+				};
+
+				// create tween
+				var tween = TweenMax.to(obj, 0.5, {
+					curImg: images.length - 1, // animate propery curImg to number of images
+					roundProps: "curImg", // only integers so it can be used as an array index
+					repeat: 0, // repeat 3 times
+					immediateRender: true, // load first image automatically
+					ease: 8, // show every image the same ammount of time
+					onUpdate: function() {
+						$("#myimg").attr("src", images[obj.curImg]); // set the image source
+					}
+				});
+
+				// init controller
+				var controller = new ScrollMagic.Controller();
+
+				// build scene
+				var scene = new ScrollMagic.Scene({
+						duration: 800
+					})
+					.setTween(tween)
+					.addTo(controller);
+
+				// handle form change
+				$("form.move input[name=duration]:radio").change(function() {
+					scene.duration($(this).val());
+				});
+
 			});
 
-
-
-						$(".dropup").hover(
-						function() {
-						console.log("hover");
-						$('.dropup-content').css("display", "block");
-						$('.treeMaps #TreemapMobile #cina2').css("touch-events", "none");
-						$('.treeMaps #TreemapMobile #usa2').css("touch-events", "none");
-
-						},
-						function() {
-						console.log("out");
-						$('.dropup-content').css("display", "none");
-						$('.treeMaps #TreemapMobile #cina2').css("touch-events", "auto");
-						$('.treeMaps #TreemapMobile #usa2').css("touch-events", "auto");
-
-
-						}
-						);
-
-
-
-						$(".elencoStati").hover(
-						function() {
-
-						idVal = $(this).attr("id");
-
-						$("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
-						$("#" + idVal + "2" + " path").css("fill", "#FFFFFF");
-
-						tmpCol = $(this).css("fill");
-						tmpVal = $("#" + idVal + "2").data("myval");
-
-						tmpPaese = $(this).text();
-						$("#stato").html(tmpPaese + ": " + tmpVal + " MtCO₂eq");
-						},
-						function() {
-						$(this).css("fill", tmpCol);
-						$("#" + idVal + "2" + " text").css("fill", "#FFFFFF");
-						$("#" + idVal + "2" + " path").css("fill", "#1e1e1e");
-						$("#stato").html("Mondo: 36441 MtCO₂eq");
-						}
-						);
-
-			//
-			//Ho provato a mettere l'evento tap
-			$(".dropup").on('singletap', function(e) {
+			// Evento tap
+			$(".dropup").on('singletap', function(e) { //tendina
 
 				disp = $('.dropup-content').css("display");
 				if (disp == "block") {
@@ -205,37 +216,41 @@
 				$('.treeMaps #TreemapMobile #usa2').css("touch-events", "none");
 			});
 
-			$(".elencoStati").on('singletap', function(e) {
+			$(".elencoStati").on('singletap', function(e) { //tendina dell'elencostati
 
 				idVal = $(this).attr("id");
+				$("#Treemap text").css("fill", "#FFFFFF");
+				$("#Treemap path").css("fill", "#1e1e1e");
 				$("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
 				$("#" + idVal + "2" + " path").css("fill", "#FFFFFF");
+
+				// se clicco una seconda volta allora quello prima ritorna colore partenza
+
 				tmpCol = $(this).css("fill");
 				tmpVal = $("#" + idVal + "2").data("myval");
 				tmpPaese = $(this).text();
-				$("#stato").html(tmpPaese + ": " + tmpVal + " MtCO₂eq");
 
+				$("#stato").html(tmpPaese + ": " + tmpVal + " MtCO₂eq");
 				$('.dropup-content').css("display", "none!important");
+
 				console.log(idVal);
 
 			});
-						$(".elencoStati").on('tapend', function(e) {
-			
-			 $('.treeMaps #TreemapMobile #cina2').css("touch-events", "auto");
-			 $('.treeMaps #TreemapMobile #usa2').css("touch-events", "auto");
-			
-			 });
+			$(".elencoStati").on('tapend', function(e) {
 
+				$('.treeMaps #TreemapMobile #cina2').css("touch-events", "auto");
+				$('.treeMaps #TreemapMobile #usa2').css("touch-events", "auto");
 
+			});
 
-
-
-			/////////////////////
-			//
+			//////////////////// direttamente sui quadrati
 			$("#Treemap g").hover(
 				function() {
 
 					idVal2 = $(this).attr("id");
+
+					$("#Treemap text").css("fill", "#FFFFFF");
+					$("#Treemap path").css("fill", "#1e1e1e");
 
 					$("#" + idVal2 + " text").css("fill", "#1e1e1e");
 					$("#" + idVal2 + " path").css("fill", "#FFFFFF");
@@ -258,7 +273,7 @@
 				}
 			);
 
-			// wait for document ready
+			// wait for document ready grafico 2
 			var controller = new ScrollMagic.Controller();
 
 			new ScrollMagic.Scene({
@@ -394,7 +409,6 @@
 							$("#parole").css("opacity", "0");
 							$("#parole p").html("Twitter e Linkedin dipendono maggiormente dai gas naturali");
 						}
-
 					} else if ((prog > 0.4) && (prog <= 0.6)) {
 						// Carb
 						console.log("<.6");
@@ -482,7 +496,6 @@
 				.addTo(controller);
 
 		});
-
 	</script>
 
 </head>
@@ -499,10 +512,10 @@
 
 		<div class="row">
 			<div class="boxTitolo" class="columns twelve">
-				<img id="myimg" src="img/example_imagesequence_01.png">
-				<h3>
+				<img id="myimg">
+				<!-- <h3>
 					<i>articolo di Biagio Simonetta</i>
-				</h3>
+				</h3> -->
 			</div>
 		</div>
 
@@ -517,11 +530,14 @@
 
 			<div class="vertical">
 				<div class="citazioni">
-					<p><i>Ti dicono dell'impatto ambientale positivo dell'abbandono della carta, ma nessuno ti dice il vantaggio di spegnere la videocamera o ridurre la qualità dello streaming. Quindi, senza il tuo consenso, queste piattaforme stanno aumentando il tuo impatto ambientale. </i>- Kaveh Madani </p>
+					<p><i>Ti dicono dell'impatto ambientale positivo dell'abbandono della carta, ma nessuno ti dice il vantaggio di spegnere la videocamera o ridurre la qualità dello streaming. Quindi, senza il tuo consenso, queste piattaforme stanno
+							aumentando il tuo impatto ambientale. </i>- Kaveh Madani </p>
 				</div>
 			</div>
 
-			<p>Computer, dispositivi elettronici e infrastrutture digitali consumano quantità sempre maggiori di elettricità. L’energia elettrica, se non proviene da fonti rinnovabili, produce emissioni di gas serra. <br>Nel 2008 le tecnologie digitali utilizzate nelle trasmissione, ricezione ed elaborazione di dati e informazioni (ICT) hanno contribuito per il 2% alle emissioni globali di CO2. Nel 2020 sono arrivate al 3,7% e raggiungeranno l’8,5% nel 2025, l’equivalente delle emissioni di tutti i veicoli leggeri in circolazione. Lo studio «Assessing ICT global emissions footprint», addirittura ipotizza che nel 2040 l’impatto del digitale arriverà al 14%.
+			<p>Computer, dispositivi elettronici e infrastrutture digitali consumano quantità sempre maggiori di elettricità. L’energia elettrica, se non proviene da fonti rinnovabili, produce emissioni di gas serra. <br>Nel 2008 le tecnologie digitali
+				utilizzate nelle trasmissione, ricezione ed elaborazione di dati e informazioni (ICT) hanno contribuito per il 2% alle emissioni globali di CO2. Nel 2020 sono arrivate al 3,7% e raggiungeranno l’8,5% nel 2025, l’equivalente delle emissioni di
+				tutti i veicoli leggeri in circolazione. Lo studio «Assessing ICT global emissions footprint», addirittura ipotizza che nel 2040 l’impatto del digitale arriverà al 14%.
 			</p>
 		</div>
 
@@ -1269,7 +1285,11 @@
 		<div class="articolo" class="columns twelve">
 			<h2>Quanto inquinano i servizi che usiamo quotidianamente</h2>
 
-			<p>Per comprendere il peso effettivo dei consumi elettrici del digitale, partiamo dal nostro quotidiano domestico. Un forno elettrico convenzionale da 2000W usato alla massima potenza per 3 minuti consuma 0,1 kWh. Un frigorifero con freezer in classe C + in un anno consuma 150kWh -190kWh. <br>Ricaricare lo smartphone consuma 4kWh l’anno. Questi consumi, quantificati nelle bollette, sono sotto il nostro controllo diretto. Il problema è che i dispositivi digitali connessi su Internet producono dei consumi al di là del nostro contatore elettrico. <br>Quella che noi paghiamo è solo l’energia consumata dallo smartphone, il dispositivo cardine del business digitale, che è basato sulla creazione incessante di nuovi dati prodotti dagli utenti finali. I consumi elettrici di queste attività dipendono dal tempo e soprattutto dal tipo di utilizzo. Questo succede quando utilizziamo il nostro device per attività ludiche come il giocare online in streaming (2000 kwh ogni 10 minuti) o per la produzione di criptovalute (mining), dove l’energia consumata per ottenere un solo bitcoin è pari a quella usata in due anni da una famiglia americana media.</p>
+			<p>Per comprendere il peso effettivo dei consumi elettrici del digitale, partiamo dal nostro quotidiano domestico. Un forno elettrico convenzionale da 2000W usato alla massima potenza per 3 minuti consuma 0,1 kWh. Un frigorifero con freezer in
+				classe C + in un anno consuma 150kWh -190kWh. <br>Ricaricare lo smartphone consuma 4kWh l’anno. Questi consumi, quantificati nelle bollette, sono sotto il nostro controllo diretto. Il problema è che i dispositivi digitali connessi su Internet
+				producono dei consumi al di là del nostro contatore elettrico. <br>Quella che noi paghiamo è solo l’energia consumata dallo smartphone, il dispositivo cardine del business digitale, che è basato sulla creazione incessante di nuovi dati
+				prodotti dagli utenti finali. I consumi elettrici di queste attività dipendono dal tempo e soprattutto dal tipo di utilizzo. Questo succede quando utilizziamo il nostro device per attività ludiche come il giocare online in streaming (2000 kwh
+				ogni 10 minuti) o per la produzione di criptovalute (mining), dove l’energia consumata per ottenere un solo bitcoin è pari a quella usata in due anni da una famiglia americana media.</p>
 		</div>
 
 		<!--
@@ -1881,7 +1901,10 @@
 
 		<div class="articolo" class="columns twelve" id="articolo3">
 			<h2>Verso un <font color=#00FFC2>internet</font> più sostenibile</h2>
-			<p>Tutto il traffico immateriale che viaggia su <font color=#00FFC2>internet</font>, formato da dati che sono stati acquisiti, immagazzinati, elaborati in qualche Data Center che consuma enormi quantità di energia elettrica, è di gran lunga superiore a quella che siamo abituati a considerare. <br>La trasformazione digitale è sempre stata considerata un mezzo per ridurre il consumo di energia. Ma è arrivato il momento di chiedersi se sia effettivamente così. E per rispondere a questa domanda devono essere presi in considerazione una molteplicità di fattori. <br>Quanto siamo effettivamente complici dell’inquinamento prodotto da internet? Chi si sta muovendo nei confronti di questo tema? Qual è il futuro del settore ICT? Come si potrebbe ridurre effettivamente questo consumo immateriale per arrivare a delle tecnologie più green?
+			<p>Tutto il traffico immateriale che viaggia su <font color=#00FFC2>internet</font>, formato da dati che sono stati acquisiti, immagazzinati, elaborati in qualche Data Center che consuma enormi quantità di energia elettrica, è di gran lunga
+				superiore a quella che siamo abituati a considerare. <br>La trasformazione digitale è sempre stata considerata un mezzo per ridurre il consumo di energia. Ma è arrivato il momento di chiedersi se sia effettivamente così. E per rispondere a
+				questa domanda devono essere presi in considerazione una molteplicità di fattori. <br>Quanto siamo effettivamente complici dell’inquinamento prodotto da internet? Chi si sta muovendo nei confronti di questo tema? Qual è il futuro del settore
+				ICT? Come si potrebbe ridurre effettivamente questo consumo immateriale per arrivare a delle tecnologie più green?
 
 			</p>
 		</div>
@@ -1927,7 +1950,9 @@
 							<div class="iconeM">
 								<svg width="100%" height="100%" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle id="Ellipse 102" cx="13.5" cy="13.5" r="13.1" stroke="#00FFC2" stroke-width="0.5" />
-									<path d="M20.6927 14.3983C20.5598 14.365 20.4269 14.3983 20.3106 14.4817C19.8786 14.8485 19.3802 15.1485 18.832 15.3486C18.317 15.5487 17.7521 15.6487 17.154 15.6487C15.8083 15.6487 14.5789 15.0985 13.6984 14.2149C12.8179 13.3313 12.2697 12.0976 12.2697 10.7472C12.2697 10.1804 12.3693 9.63023 12.5355 9.13008C12.7182 8.59658 12.984 8.11311 13.3329 7.69632C13.4825 7.51293 13.4492 7.24618 13.2665 7.09614C13.1502 7.01278 13.0173 6.97943 12.8844 7.01278C11.4722 7.39623 10.2428 8.24648 9.36231 9.38015C8.51502 10.4972 8 11.8809 8 13.398C8 15.2152 8.73099 16.8657 9.92717 18.0661C11.1233 19.2664 12.7681 20 14.5789 20C16.1074 20 17.5195 19.4665 18.6493 18.5829C19.7956 17.6826 20.6263 16.3989 20.9751 14.9318C21.0582 14.6817 20.9253 14.4483 20.6927 14.3983Z" stroke="#00FFC2" stroke-width="0.5" mask="url(#path-2-inside-1)" />
+									<path
+										d="M20.6927 14.3983C20.5598 14.365 20.4269 14.3983 20.3106 14.4817C19.8786 14.8485 19.3802 15.1485 18.832 15.3486C18.317 15.5487 17.7521 15.6487 17.154 15.6487C15.8083 15.6487 14.5789 15.0985 13.6984 14.2149C12.8179 13.3313 12.2697 12.0976 12.2697 10.7472C12.2697 10.1804 12.3693 9.63023 12.5355 9.13008C12.7182 8.59658 12.984 8.11311 13.3329 7.69632C13.4825 7.51293 13.4492 7.24618 13.2665 7.09614C13.1502 7.01278 13.0173 6.97943 12.8844 7.01278C11.4722 7.39623 10.2428 8.24648 9.36231 9.38015C8.51502 10.4972 8 11.8809 8 13.398C8 15.2152 8.73099 16.8657 9.92717 18.0661C11.1233 19.2664 12.7681 20 14.5789 20C16.1074 20 17.5195 19.4665 18.6493 18.5829C19.7956 17.6826 20.6263 16.3989 20.9751 14.9318C21.0582 14.6817 20.9253 14.4483 20.6927 14.3983Z"
+										stroke="#00FFC2" stroke-width="0.5" mask="url(#path-2-inside-1)" />
 								</svg>
 							</div>
 							<div class="praticaM">
@@ -2070,7 +2095,9 @@
 				<div class="icone">
 					<svg width="40" height="40" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<circle id="Ellipse 102" cx="13.5" cy="13.5" r="13.1" stroke="#00FFC2" stroke-width="0.8" />
-						<path d="M20.6927 14.3983C20.5598 14.365 20.4269 14.3983 20.3106 14.4817C19.8786 14.8485 19.3802 15.1485 18.832 15.3486C18.317 15.5487 17.7521 15.6487 17.154 15.6487C15.8083 15.6487 14.5789 15.0985 13.6984 14.2149C12.8179 13.3313 12.2697 12.0976 12.2697 10.7472C12.2697 10.1804 12.3693 9.63023 12.5355 9.13008C12.7182 8.59658 12.984 8.11311 13.3329 7.69632C13.4825 7.51293 13.4492 7.24618 13.2665 7.09614C13.1502 7.01278 13.0173 6.97943 12.8844 7.01278C11.4722 7.39623 10.2428 8.24648 9.36231 9.38015C8.51502 10.4972 8 11.8809 8 13.398C8 15.2152 8.73099 16.8657 9.92717 18.0661C11.1233 19.2664 12.7681 20 14.5789 20C16.1074 20 17.5195 19.4665 18.6493 18.5829C19.7956 17.6826 20.6263 16.3989 20.9751 14.9318C21.0582 14.6817 20.9253 14.4483 20.6927 14.3983Z" stroke="#00FFC2" stroke-width="0.8" mask="url(#path-2-inside-1)" />
+						<path
+							d="M20.6927 14.3983C20.5598 14.365 20.4269 14.3983 20.3106 14.4817C19.8786 14.8485 19.3802 15.1485 18.832 15.3486C18.317 15.5487 17.7521 15.6487 17.154 15.6487C15.8083 15.6487 14.5789 15.0985 13.6984 14.2149C12.8179 13.3313 12.2697 12.0976 12.2697 10.7472C12.2697 10.1804 12.3693 9.63023 12.5355 9.13008C12.7182 8.59658 12.984 8.11311 13.3329 7.69632C13.4825 7.51293 13.4492 7.24618 13.2665 7.09614C13.1502 7.01278 13.0173 6.97943 12.8844 7.01278C11.4722 7.39623 10.2428 8.24648 9.36231 9.38015C8.51502 10.4972 8 11.8809 8 13.398C8 15.2152 8.73099 16.8657 9.92717 18.0661C11.1233 19.2664 12.7681 20 14.5789 20C16.1074 20 17.5195 19.4665 18.6493 18.5829C19.7956 17.6826 20.6263 16.3989 20.9751 14.9318C21.0582 14.6817 20.9253 14.4483 20.6927 14.3983Z"
+							stroke="#00FFC2" stroke-width="0.8" mask="url(#path-2-inside-1)" />
 					</svg>
 				</div>
 				<div class="pratica">
@@ -2149,7 +2176,6 @@
 					#footerLogo .st1 {
 						fill: #FFFFFF;
 					}
-
 				</style>
 				<path class="st0" d="M0,85.9c0,47.2,38.1,85.3,85.3,85.3s85.3-38.1,85.3-85.3V0.6H0V85.9z" />
 				<path class="st0" d="M274.2,168.3c46.6,0,84.2-37.6,84.2-84.2c0-46.6-37.6-84.2-84.2-84.2H190v168.3H274.2z" />
@@ -2202,9 +2228,7 @@
 				<b>Design e sviluppo:</b> Roberto Alesi, Lucilla Cesaroni e Lucrezia Faraci.</br>
 				<b>Docenti:</b> Matteo Moretti e Paolo Rigamonti.</br>
 			</div>
-
 		</div>
-
 </body>
 
 </html>
