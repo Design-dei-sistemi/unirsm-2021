@@ -69,7 +69,7 @@
 
 				}
 				if ($(this).width() <= 740) {
-						$('#myimg').attr("src","img/mobile.gif");
+						$('#myimg').attr("src","video/mobile.mp4");
 					// Scritta animata
 					// var images = [
 					// 	"img/mobile/example_imagesequence_01.png",
@@ -118,7 +118,7 @@
 					$('#barchartDesk').addClass("nasconditi");
 
 				} else {
-					$('#myimg').attr("src","img/desktop.gif");
+					$('#myimg').attr("src","video/desktop.mp4");
 
 					// var images = [
 					// 	"img/desk/example_imagesequence_01.png",
@@ -518,7 +518,8 @@
 
 		<div class="row">
 			<div class="boxTitolo" class="columns twelve">
-				<img id="myimg" alt="gif">
+				<video autoplay muted loop id="myimg" type="video/mp4">
+				</video>
 				<!-- <img id="myimg"> -->
 				<!-- <h3>
 					<i>articolo di Biagio Simonetta</i>
