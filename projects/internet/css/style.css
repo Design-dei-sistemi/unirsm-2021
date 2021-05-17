@@ -868,7 +868,7 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 body {
-  background-color: #1b1c1c;
+  background-color: #1e1e1e;
   color: #ffffff;
   font-size: 1.5em;
   font-family: 'Sole24Sans';
@@ -961,7 +961,7 @@ p {
   z-index: 9999;
 }
 .dropbtn {
-  background-color: #1b1c1c;
+  background-color: #1e1e1e;
   color: white;
   float: left;
   padding-left: 3%;
@@ -976,7 +976,7 @@ p {
   background-color: white;
   width: 100%;
   bottom: 100%;
-  border: 0.8px solid #1b1c1c;
+  border: 0.8px solid #1e1e1e;
   left: -0.8px;
   z-index: 1;
   overflow: auto;
@@ -985,7 +985,7 @@ p {
 }
 .elencoStati {
   border-bottom: 0.8px solid #D2D2D2;
-  color: #1b1c1c;
+  color: #1e1e1e;
   padding: 12px;
   text-decoration: none;
   display: block;
@@ -994,7 +994,7 @@ p {
   background-color: #616161;
 }
 .dropup:hover .dropbtn {
-  background-color: #1b1c1c;
+  background-color: #1e1e1e;
 }
 #internetGrafico {
   pointer-events: none;
@@ -1046,11 +1046,11 @@ p {
   width: 60%;
   font-size: 1.5em;
   line-height: 1.2em;
-  background-color: #1b1c1c;
+  background-color: #1e1e1e;
   padding: 10px;
   border-radius: 3px;
   transform: translateY(123%);
-  border: 1px solid #1b1c1c;
+  border: 1px solid #1e1e1e;
 }
 .grafico2 {
   max-width: 900px;
@@ -1313,7 +1313,7 @@ a:hover {
     z-index: 9999;
   }
   .dropbtn {
-    background-color: #1b1c1c;
+    background-color: #1e1e1e;
     color: white;
     float: left;
     padding-left: 3%;
@@ -1328,7 +1328,7 @@ a:hover {
     background-color: white;
     width: 100%;
     bottom: 100%;
-    border: 0.8px solid #1b1c1c;
+    border: 0.8px solid #1e1e1e;
     left: -0.8px;
     z-index: 100;
     overflow: auto;
@@ -1337,7 +1337,7 @@ a:hover {
   }
   .elencoStati {
     border-bottom: 0.8px solid #D2D2D2;
-    color: #1b1c1c;
+    color: #1e1e1e;
     padding: 12px;
     text-decoration: none;
     display: block;
@@ -1346,7 +1346,7 @@ a:hover {
     background-color: #616161;
   }
   .dropup:hover .dropbtn {
-    background-color: #1b1c1c;
+    background-color: #1e1e1e;
   }
   #internetGrafico {
     pointer-events: none;
