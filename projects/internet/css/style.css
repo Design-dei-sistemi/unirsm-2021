@@ -1253,6 +1253,12 @@ a:hover {
   }
 }
 @media screen and (max-width: 740px) {
+  #Biagio {
+    font-size: 1.25em;
+  }
+  #Dirty {
+    font-size: 4em;
+  }
   body {
     font-size: 1.25em;
   }
