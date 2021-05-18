@@ -868,7 +868,7 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 body {
-  background-color: #212121;
+  background-color: #212122;
   color: #ffffff;
   font-size: 1.5em;
   font-family: 'Sole24Sans';
@@ -876,6 +876,22 @@ body {
   font-style: normal;
   margin: 0;
   letter-spacing: 0;
+}
+#Biagio {
+  position: absolute;
+  width: 100%;
+  font-size: 1.5em;
+  color: #D2D2D2;
+  top: 50%;
+  transform: translateY(160%);
+}
+#Dirty {
+  position: absolute;
+  width: 100%;
+  font-weight: 500;
+  font-size: 6em;
+  top: 50%;
+  transform: translateY(-50%);
 }
 h2 {
   font-size: 2em;
@@ -902,9 +918,11 @@ p {
 #myimg {
   width: 100vw;
   text-align: center;
+  height: 100vh;
 }
 .boxTitolo {
   text-align: center;
+  height: 100%;
 }
 .articolo {
   max-width: 600px;
@@ -961,7 +979,7 @@ p {
   z-index: 9999;
 }
 .dropbtn {
-  background-color: #212121;
+  background-color: #212122;
   color: white;
   float: left;
   padding-left: 3%;
@@ -976,7 +994,7 @@ p {
   background-color: white;
   width: 100%;
   bottom: 100%;
-  border: 0.8px solid #212121;
+  border: 0.8px solid #212122;
   left: -0.8px;
   z-index: 1;
   overflow: auto;
@@ -985,7 +1003,7 @@ p {
 }
 .elencoStati {
   border-bottom: 0.8px solid #D2D2D2;
-  color: #212121;
+  color: #212122;
   padding: 12px;
   text-decoration: none;
   display: block;
@@ -994,7 +1012,7 @@ p {
   background-color: #616161;
 }
 .dropup:hover .dropbtn {
-  background-color: #212121;
+  background-color: #212122;
 }
 #internetGrafico {
   pointer-events: none;
@@ -1046,11 +1064,11 @@ p {
   width: 60%;
   font-size: 1.5em;
   line-height: 1.2em;
-  background-color: #212121;
+  background-color: #212122;
   padding: 10px;
   border-radius: 3px;
   transform: translateY(123%);
-  border: 1px solid #212121;
+  border: 1px solid #212122;
 }
 .grafico2 {
   max-width: 900px;
@@ -1313,7 +1331,7 @@ a:hover {
     z-index: 9999;
   }
   .dropbtn {
-    background-color: #212121;
+    background-color: #212122;
     color: white;
     float: left;
     padding-left: 3%;
@@ -1328,7 +1346,7 @@ a:hover {
     background-color: white;
     width: 100%;
     bottom: 100%;
-    border: 0.8px solid #212121;
+    border: 0.8px solid #212122;
     left: -0.8px;
     z-index: 100;
     overflow: auto;
@@ -1337,7 +1355,7 @@ a:hover {
   }
   .elencoStati {
     border-bottom: 0.8px solid #D2D2D2;
-    color: #212121;
+    color: #212122;
     padding: 12px;
     text-decoration: none;
     display: block;
@@ -1346,7 +1364,7 @@ a:hover {
     background-color: #616161;
   }
   .dropup:hover .dropbtn {
-    background-color: #212121;
+    background-color: #212122;
   }
   #internetGrafico {
     pointer-events: none;
