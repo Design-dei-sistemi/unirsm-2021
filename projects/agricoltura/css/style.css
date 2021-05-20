@@ -937,14 +937,14 @@ there.
   }
   #didascalia {
     margin-top: 72px;
-    font-size: 12px;
-    color: #5F3200;
+    font-size: 15px;
+    color: #00FFB2;
     font-family: 'Sole24Sans';
   }
   #didascalia_trattore {
     margin-top: 42px;
-    font-size: 12px;
-    color: #5F3200;
+    font-size: 15px;
+    color: #00FFB2;
     font-family: 'Sole24Sans';
   }
   #titoletto {
@@ -977,7 +977,7 @@ there.
     width: 13rem;
   }
   #contenitore_grafico {
-    padding-top: 30px;
+    padding-top: 150px;
   }
   #griglia_grafico {
     margin-top: 95px;
@@ -986,11 +986,11 @@ there.
     margin: 0 auto;
   }
   #quattro {
-    font-size: 2rem;
+    font-size: 4rem;
     position: absolute;
     z-index: -1;
-    margin-top: 60px;
-    margin-left: 50px;
+    margin-top: -60px;
+    margin-left: 200px;
     color: #351900;
     font-family: 'Sole24Sans';
   }
@@ -1013,7 +1013,7 @@ there.
     box-sizing: border-box;
     position: absolute;
     margin-left: 57px;
-    margin-top: 215px;
+    margin-top: -100vh;
     z-index: 1;
   }
   #panel_3 {
@@ -1029,7 +1029,7 @@ there.
     box-sizing: border-box;
     position: absolute;
     margin-left: 143px;
-    margin-top: 150px;
+    margin-top: -100vh;
     z-index: 2;
   }
   #panel_4 {
@@ -1045,7 +1045,7 @@ there.
     box-sizing: border-box;
     position: absolute;
     margin-left: 230px;
-    margin-top: 80px;
+    margin-top: -100vh;
     z-index: 1;
   }
   .front {
@@ -1060,6 +1060,7 @@ there.
   #contenitore_cards {
     position: absolute;
     visibility: hidden;
+    display: none;
   }
   .card_dk_1 {
     margin-top: 10px;
@@ -1069,10 +1070,10 @@ there.
   }
   .card_dk_2 {
     margin-top: 10px;
+    margin-left: 255px;
     float: left;
     width: 55%;
     position: absolute;
-    margin-left: 255px;
   }
   .card_dk_3 {
     margin-top: 20px;
@@ -1123,6 +1124,9 @@ there.
     display: block;
     margin: 0 15%;
   }
+}
+#footer {
+  height: 50px;
 }
 @media screen and (max-width: 750px) {
   @font-face {
@@ -1185,14 +1189,14 @@ there.
   }
   #didascalia {
     margin-top: 72px;
-    font-size: 12px;
-    color: #5F3200;
+    font-size: 15px;
+    color: #00FFB2;
     font-family: 'Sole24Sans';
   }
   #didascalia_trattore {
     margin-top: 42px;
-    font-size: 12px;
-    color: #5F3200;
+    font-size: 15px;
+    color: #00FFB2;
     font-family: 'Sole24Sans';
   }
   #titoletto {
@@ -1221,7 +1225,7 @@ there.
     z-index: 1;
   }
   #contenitore_grafico {
-    padding-top: 30px;
+    padding-top: 25px;
   }
   #griglia_grafico {
     margin-top: 95px;
@@ -1252,8 +1256,8 @@ there.
     box-sizing: border-box;
     position: absolute;
     margin-left: 57px;
-    margin-top: 215px;
-    z-index: 1;
+    /*margin-top: 215px;
+    z-index: 1;*/
   }
   #panel_3 {
     font-family: 'Sole24Sans';
@@ -1269,8 +1273,8 @@ there.
     box-sizing: border-box;
     position: absolute;
     margin-left: 143px;
-    margin-top: 150px;
-    z-index: 2;
+    /*margin-top: 150px;
+    z-index: 2;*/
   }
   #panel_4 {
     font-family: 'Sole24Sans';
@@ -1286,8 +1290,8 @@ there.
     box-sizing: border-box;
     position: absolute;
     margin-left: 230px;
-    margin-top: 80px;
-    z-index: 1;
+    /*margin-top: 80px;
+    z-index: 1;*/
   }
   .front {
     width: auto;
@@ -1301,6 +1305,7 @@ there.
   #contenitore_cards_dk {
     visibility: hidden;
     position: absolute;
+    display: none;
   }
   .scrolling-wrapper {
     padding-bottom: 20px;
