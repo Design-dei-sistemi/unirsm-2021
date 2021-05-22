@@ -926,7 +926,7 @@ p {
   color: #D2D2D2;
 }
 #myimg {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   height: 100vh;
 }
