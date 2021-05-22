@@ -34,6 +34,14 @@ body {
   letter-spacing: 0;
 }
 
+#gradiente {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, @background-color,@background-color 10%, rgba(0,0,0,0) 40%,@background-color 85%,);
+  z-index: 99;
+}
+
 #Biagio {
   position: absolute;
   width: 100%;
@@ -41,6 +49,7 @@ body {
   color: @grigetto;
   top: 50%;
   transform: translateY(160%);
+  z-index: 100;
 }
 
 #Dirty {
@@ -49,9 +58,11 @@ body {
   font-weight: 500;
   font-size: 6em;
   top: 50%;
+  z-index: 100;
   transform: translateY(-50%);
 }
 // Titoli degli articoli
+
 h2 {
   font-size: @h2-fontsize-desktop;
   font-weight: 500;
@@ -521,7 +532,7 @@ a:hover {
 @media screen and (max-width: 740px) {
   #Biagio {
     font-size: @body-fontsize;
-    }
+  }
 
   #Dirty {
     font-size: 4em;
