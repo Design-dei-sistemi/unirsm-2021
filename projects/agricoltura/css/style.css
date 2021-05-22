@@ -1225,6 +1225,11 @@ there.
 		display: none;
 	}
 
+	.front img,
+	.back img {
+		width: 100%;
+	}
+
 	.card_dk_1 {
 		margin-top: 10px;
 		margin-left: 90px;
@@ -1526,6 +1531,8 @@ there.
 		position: absolute;
 		display: none;
 	}
+
+
 
 	.scrolling-wrapper {
 		padding-bottom: 20px;
