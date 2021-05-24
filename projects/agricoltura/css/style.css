@@ -1139,6 +1139,48 @@ there.
 		color: #351900;
 		font-family: 'Sole24Sans';
 	}
+    
+    #prima_card {
+        width: 35rem;
+    }
+    
+    .offset-by-one.columns {
+        margin-left: 12.2rem;
+    }
+    
+    #seconda_card {
+        width: 35rem;
+    }
+    
+    #terza_card {
+        margin-top: 30px;
+        width: 35rem;
+    }
+    
+    #quarta_card {
+        margin-top: 30px;
+        width: 35rem;
+    }
+    
+     #quinta_card {
+        margin-top: 30px;
+         width: 35rem;
+    }
+    
+     #sesta_card {
+        margin-top: 30px;
+         width: 35rem;
+    }
+    
+     #settima_card {
+        margin-top: 30px;
+         width: 35rem;
+    }
+    
+     #ottava_card {
+        margin-top: 30px;
+         width: 35rem;
+    }
 
 	#grafico_mercato {
 		margin-top: 100px;
@@ -1437,6 +1479,54 @@ there.
 		color: #351900;
 		font-family: 'Sole24Sans';
 	}
+    
+     #prima_card {
+         visibility: hidden;
+         position: absolute;
+         z-index: -1;
+    }
+    
+    #seconda_card {
+ visibility: hidden;
+        position: absolute;
+         z-index: -1;
+    }
+    
+    #terza_card {
+ visibility: hidden;
+        position: absolute;
+         z-index: -1;
+    }
+    
+    #quarta_card {
+ visibility: hidden;
+        position: absolute;
+         z-index: -1;
+    }
+    
+     #quinta_card {
+ visibility: hidden;
+         position: absolute;
+         z-index: -1;
+    }
+    
+     #sesta_card {
+ visibility: hidden;
+         position: absolute;
+         z-index: -1;
+    }
+    
+     #settima_card {
+ visibility: hidden;
+         position: absolute;
+         z-index: -1;
+    }
+    
+     #ottava_card {
+ visibility: hidden;
+         position: absolute;
+         z-index: -1;
+    }
 
 
 	#grafico_mercato {
@@ -1478,7 +1568,6 @@ there.
 		margin-top: 215px;
     z-index: 1;
 	}
-
 	#panel_3 {
 		font-family: 'Sole24Sans';
 		display: none;
@@ -1496,7 +1585,6 @@ there.
 		margin-top: 150px;
     z-index: 2;
 	}
-
 	#panel_4 {
 		font-family: 'Sole24Sans';
 	display: none;
