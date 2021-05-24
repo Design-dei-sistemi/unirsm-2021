@@ -1140,6 +1140,12 @@ there.
 		font-family: 'Sole24Sans';
 	}
     
+    #contenitore_cards {
+        visibility:hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    
     #prima_card {
         width: 35rem;
     }
@@ -1261,76 +1267,12 @@ there.
 		font-family: 'Sole24Sans';
 	}
 
-	#contenitore_cards {
-		position: absolute;
-		visibility: hidden;
-		display: none;
-	}
 
 	.front img,
 	.back img {
 		width: 100%;
 	}
 
-	.card_dk_1 {
-		margin-top: 10px;
-		margin-left: 90px;
-		float: left;
-		width: 55%;
-	}
-
-	.card_dk_2 {
-		margin-top: 10px;
-		margin-left: 255px;
-		float: left;
-		width: 55%;
-		position: absolute;
-	}
-
-	.card_dk_3 {
-		margin-top: 20px;
-		margin-left: 90px;
-		float: left;
-		width: 55%;
-	}
-
-	.card_dk_4 {
-		margin-top: 20px;
-		float: left;
-		width: 55%;
-		position: absolute;
-		margin-left: 255px;
-	}
-
-	.card_dk_5 {
-		margin-top: 20px;
-		margin-left: 90px;
-		float: left;
-		width: 55%;
-	}
-
-	.card_dk_6 {
-		margin-top: 20px;
-		float: left;
-		width: 55%;
-		position: absolute;
-		margin-left: 255px;
-	}
-
-	.card_dk_7 {
-		margin-top: 20px;
-		margin-left: 90px;
-		float: left;
-		width: 55%;
-	}
-
-	.card_dk_8 {
-		margin-top: 20px;
-		float: left;
-		width: 55%;
-		position: absolute;
-		margin-left: 255px;
-	}
 
 	#grafico_mercato {
 		position: absolute;
