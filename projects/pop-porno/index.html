@@ -3,329 +3,322 @@
 
 <head>
 
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta charset="utf-8">
-	<title>Pop-Porno</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8">
+    <title>Pop-Porno</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-	<!--Link per SCrollMagic-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+    <!--Link per SCrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
 
 
 
-	<!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- CSS x SWIPER -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- CSS x SWIPER -->
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-	<!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-	<!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
-	<!--	Jquery-->
+    <!--	Jquery-->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.waypoints.js"></script>
-
-
-	<script>
-		$(document).ready(function() {
-
-			$("#Super8 circle").hover(
-				function() {
-					$(this).css("fill", "white");
-					$(this).css("r", "80");
-					$(this).css("stroke", "#e6e6e6");
-					$("#titolo").css("fill", "black");
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.js"></script>
 
 
+    <script>
+        $(document).ready(function() {
 
-					$("#anno").css("opacity", 1);
-					$("#anno").css("fill", "#ec00d5");
-
-
-				},
-				function() {
-					$(this).css("fill", "black");
-					$(this).css("r", 10.5);
-					$("#titolo").css("fill", "#e6e6e6");
-					$("#anno").css("opacity", 0);
-					$(this).css("stroke", "#EC00D5");
-				}
-			)
-
-		});
-
-	</script>
-	<!------------------------------------------------- CITAZIONE -->
-	<script>
-		$(document).ready(function() {
-			$(window).scroll(function() {
-				$('#citazione').css("opacity", 1 - $(window).scrollTop() / 400)
-			})
-		})
-
-	</script>
-
-	<!-- ANIMAZIONE TIMELINE -->
-	<script>
-		$(document).ready(function() {
-
-			$('.eventi').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "0");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '-20%'
-				});
-			});
-		});
-		$(document).ready(function() {
-
-			$('.eventi').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "1");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '-12%'
-				});
-			});
-		});
-		$(document).ready(function() {
-
-			$('.eventi').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "1");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '0%'
-				});
-			});
-		});
-		$(document).ready(function() {
-
-			$('.eventi').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "1");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '30%'
-				});
-			});
-		});
-		$(document).ready(function() {
-
-			$('.eventi').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "1");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '70%'
-				});
-			});
-		});
-		$(document).ready(function() {
-
-			$('.eventi').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "0");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '90%'
-				});
-			});
-		});
-
-	</script>
-
-	<!--    GRAFICO CREATORS E ABBONATI-->
-
-	<script>
-		$(document).ready(function() {
+            $("#Super8 circle").hover(
+                function() {
+                    $(this).css("fill", "white");
+                    $(this).css("r", "80");
+                    $(this).css("stroke", "#e6e6e6");
+                    $("#titolo").css("fill", "black");
 
 
-			// wait for document ready grafico abbonati e creators
-			var controller = new ScrollMagic.Controller();
 
-			new ScrollMagic.Scene({
-					triggerElement: "#temp-stick",
-					triggerHook: 'onLeave',
-					duration: "300%"
-				})
-				.setPin("#temp-stick", {
-					pushFollowers: true
-				})
-				.on("progress", function(e) {
-
-					prog = JSON.stringify(e.progress);
-
-					if ((prog > 0) && (prog <= 0.25)) {
-
-						$("#cerchio1 circle").css("r", "9.87");
-						$("#data1").css("opacity", "1");
-						$("#punto1 circle").css("r", "2.5");
+                    $("#anno").css("opacity", 1);
+                    $("#anno").css("fill", "#ec00d5");
 
 
-					} else if ((prog > 0.25) && (prog <= 0.5)) {
+                },
+                function() {
+                    $(this).css("fill", "black");
+                    $(this).css("r", 10.5);
+                    $("#titolo").css("fill", "#e6e6e6");
+                    $("#anno").css("opacity", 0);
+                    $(this).css("stroke", "#EC00D5");
+                }
+            )
 
-						$("#cerchio2 circle").css("r", "19.02");
-						$("#data2").css("opacity", "1");
-						$("#linea1").css("opacity", "1");
+        });
+    </script>
+    <!------------------------------------------------- CITAZIONE -->
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('#citazione').css("opacity", 1 - $(window).scrollTop() / 400)
+            })
+        })
+    </script>
+
+    <!-- ANIMAZIONE TIMELINE -->
+    <script>
+        $(document).ready(function() {
+
+            $('.eventi').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "0");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '-20%'
+                });
+            });
+        });
+        $(document).ready(function() {
+
+            $('.eventi').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "1");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '-12%'
+                });
+            });
+        });
+        $(document).ready(function() {
+
+            $('.eventi').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "1");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '0%'
+                });
+            });
+        });
+        $(document).ready(function() {
+
+            $('.eventi').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "1");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '30%'
+                });
+            });
+        });
+        $(document).ready(function() {
+
+            $('.eventi').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "1");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '70%'
+                });
+            });
+        });
+        $(document).ready(function() {
+
+            $('.eventi').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "0");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '90%'
+                });
+            });
+        });
+    </script>
+
+    <!--    GRAFICO CREATORS E ABBONATI-->
+
+    <script>
+        $(document).ready(function() {
 
 
-					} else if ((prog > 0.5) && (prog <= 0.75)) {
+            // wait for document ready grafico abbonati e creators
+            var controller = new ScrollMagic.Controller();
 
-						$("#cerchio3 circle").css("r", "26.37");
-						$("#data3").css("opacity", "1");
-						$("#linea2").css("opacity", "1");
+            new ScrollMagic.Scene({
+                    triggerElement: "#temp-stick",
+                    triggerHook: 'onLeave',
+                    duration: "300%"
+                })
+                .setPin("#temp-stick", {
+                    pushFollowers: true
+                })
+                .on("progress", function(e) {
 
-					} else if ((prog > 0.75) && (prog < 1)) {
+                    prog = JSON.stringify(e.progress);
 
-						$("#cerchio4 circle").css("r", "34.39");
-						$("#data4").css("opacity", "1");
-						$("#linea3").css("opacity", "1");
+                    if ((prog > 0) && (prog <= 0.25)) {
 
-					} else if ((prog <= 0) || (prog => 1)) {
+                        $("#cerchio1 circle").css("r", "9.87");
+                        $("#data1").css("opacity", "1");
+                        $("#punto1 circle").css("r", "2.5");
 
-						$("#cerchio1 circle").css("r", "0");
-						$("#data1").css("opacity", "0");
-						$("#cerchio2 circle").css("r", "0");
-						$("#data2").css("opacity", "0");
-						$("#cerchio3 circle").css("r", "0");
-						$("#data3").css("opacity", "0");
-						$("#cerchio4 circle").css("r", "0");
-						$("#data4").css("opacity", "0");
-						$("#punto1 circle").css("r", "0");
-						$("#linea1").css("opacity", "0");
-						$("#linea2").css("opacity", "0");
-						$("#linea3").css("opacity", "0");
 
-					}
-				})
-				//.addIndicators()
-				.addTo(controller);
+                    } else if ((prog > 0.25) && (prog <= 0.5)) {
 
-		});
+                        $("#cerchio2 circle").css("r", "19.02");
+                        $("#data2").css("opacity", "1");
+                        $("#linea1").css("opacity", "1");
 
-	</script>
 
-	</script>
+                    } else if ((prog > 0.5) && (prog <= 0.75)) {
 
-	<!-- ANIMAZIONE PATREON -->
-	<script>
-		$(document).ready(function() {
-			$('.patre1').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("r", "20.16");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '85%'
-				});
-			});
-		});
-		$(document).ready(function() {
-			$('.patre2').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("r", "93.84");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '85%'
-				});
-			});
-		});
+                        $("#cerchio3 circle").css("r", "26.37");
+                        $("#data3").css("opacity", "1");
+                        $("#linea2").css("opacity", "1");
 
-	</script>
+                    } else if ((prog > 0.75) && (prog < 1)) {
 
-	<!-- ---------------------- INIZIO XXX -->
+                        $("#cerchio4 circle").css("r", "34.39");
+                        $("#data4").css("opacity", "1");
+                        $("#linea3").css("opacity", "1");
 
-	<script>
-		$(document).ready(function() {
-			$('.riga').each(function() {
-				var $this = $(this);
-				$this.waypoint(function() {
-					$this.css("opacity", "1");
-					//$this.css("filter", "blur(0px)");
-				}, {
-					offset: '70%'
-				});
-			});
-		});
+                    } else if ((prog <= 0) || (prog => 1)) {
 
-	</script>
+                        $("#cerchio1 circle").css("r", "0");
+                        $("#data1").css("opacity", "0");
+                        $("#cerchio2 circle").css("r", "0");
+                        $("#data2").css("opacity", "0");
+                        $("#cerchio3 circle").css("r", "0");
+                        $("#data3").css("opacity", "0");
+                        $("#cerchio4 circle").css("r", "0");
+                        $("#data4").css("opacity", "0");
+                        $("#punto1 circle").css("r", "0");
+                        $("#linea1").css("opacity", "0");
+                        $("#linea2").css("opacity", "0");
+                        $("#linea3").css("opacity", "0");
 
-	<!-- ---------------------- FINE XXX -->
+                    }
+                })
+                //.addIndicators()
+                .addTo(controller);
+
+        });
+    </script>
+
+    </script>
+
+    <!-- ANIMAZIONE PATREON -->
+    <script>
+        $(document).ready(function() {
+            $('.patre1').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("r", "20.16");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '85%'
+                });
+            });
+        });
+        $(document).ready(function() {
+            $('.patre2').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("r", "93.84");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '85%'
+                });
+            });
+        });
+    </script>
+
+    <!-- ---------------------- INIZIO XXX -->
+
+    <script>
+        $(document).ready(function() {
+            $('.riga').each(function() {
+                var $this = $(this);
+                $this.waypoint(function() {
+                    $this.css("opacity", "1");
+                    //$this.css("filter", "blur(0px)");
+                }, {
+                    offset: '70%'
+                });
+            });
+        });
+    </script>
+
+    <!-- ---------------------- FINE XXX -->
 </head>
 
 
 
 <body>
 
-	<!-- ----------------------CITAZIONE -->
+    <!-- ----------------------CITAZIONE -->
 
-	<div class="parallax">
-		<div class="u-max-fullwidth" id="citazione">
-			<div class="row">
-				<div class="columns twelve">
-					<h3>“ Sono sicuro che se da Internet
-						togliessero tutta la pornografia resterebbe
-						un solo sito chiamato: Ridateci i porno.”</h3>
-					<h4>Dr. Cox, Scrubs</h4>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="parallax">
+        <div class="u-max-fullwidth" id="citazione">
+            <div class="row">
+                <div class="columns twelve">
+                    <h3>“ Sono sicuro che se da Internet togliessero tutta la pornografia resterebbe un solo sito chiamato: Ridateci i porno.”</h3>
+                    <h4>Dr. Cox, Scrubs</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="u-max-fullwidth" id="fullpage">
-		<div class="container" id="main">
-			<div class="row">
-				<div class="columns twelve">
-					<h1 id="popporno">Pop Porno</h1>
-					<h2 class="h2">Le conquiste del <br> mondo a luci rosse</h2>
-				</div>
+    <div class="u-max-fullwidth" id="fullpage">
+        <div class="container" id="main">
+            <div class="row">
+                <div class="columns twelve">
+                    <h1 id="popporno">Pop Porno</h1>
+                    <h2 class="h2">Le conquiste del <br> mondo a luci rosse</h2>
+                </div>
 
 
 
-				<div class="columns twelve">
-					<p>
-						OnlyFans nasce nel 2016 come piattaforma per artisti emergenti, ma diventa famoso solo pochi anni dopo quando la pornografia se ne appropria. Si tratta però di uno dei molteplici casi avvenuti nel corso della storia di interazioni tra tecnologia e pornografia. Da decenni infatti, i contenuti hard favoriscono lo sviluppo di ambiti tecnologici totalmente nuovi.
-					</p>
-				</div>
+                <div class="columns twelve">
+                    <p>
+                        OnlyFans nasce nel 2016 come piattaforma per artisti emergenti, ma diventa famoso solo pochi anni dopo quando la pornografia se ne appropria. Si tratta però di uno dei molteplici casi avvenuti nel corso della storia di interazioni tra tecnologia e pornografia.
+                        Da decenni infatti, i contenuti hard favoriscono lo sviluppo di ambiti tecnologici totalmente nuovi.
+                    </p>
+                </div>
 
-				<div class="row">
-					<div class="columns twelve">
+                <div class="row">
+                    <div class="columns twelve">
 
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 212.64 105.76">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 212.64 105.76">
 							<g id="cuve">
 								<path d="M250.17,486.72c-1.62,0-3.27-.08-4.89-.23a44.47,44.47,0,0,1-25.42-11.38c-6.21-5.56-10.92-12.81-12.59-19.39-2.92-11.51-.71-22.77,1.55-31.29,2.87-10.82,5.89-22.55,9.53-36.89.39-1.52.79-1.52,1-1.52l.31,0a1.23,1.23,0,0,1,.76.36,2,2,0,0,1,0,1.42c-.81,3.25-1.62,6.55-2.39,9.75-1.81,7.45-3.69,15.15-5.78,22.64-2.23,8-4.41,16.57-4.33,25.65.16,19.94,17.82,35.78,34.2,38.07a63,63,0,0,0,8.68.63c13.57,0,24.85-5,33.53-14.89,6.22-7.08,10-15.93,12.14-28.71.42-2.45.64-4.9.83-7.2.18-2.14.4-2.14,1-2.14h.07c.73,0,.94,0,1.1,2.26a71.56,71.56,0,0,0,6.32,25.38C312.86,474.5,325.37,483,343,484.44c1.45.12,2.9.18,4.31.18,14.88,0,26.91-6.68,35.77-19.85,5.9-8.78,7.4-19.23,4.58-31.95-1.24-5.6-2.86-11.18-4.42-16.57-1.05-3.62-2.14-7.36-3.09-11.06-1.13-4.38-2.06-8.93-3-13.32q-.45-2.21-.91-4.41c-.25-1.21.32-1.33.77-1.42a1.83,1.83,0,0,1,.37,0c.19,0,.6,0,.89,1.15,1.16,4.53,2.35,9.13,3.51,13.58,2.54,9.78,5.17,19.9,7.53,29.89,2.69,11.38,2.17,21.13-1.58,29.81a42.89,42.89,0,0,1-16.44,19.05A45,45,0,0,1,347,486.7a42.26,42.26,0,0,1-4.35-.22c-10.54-1.09-19.36-4.44-26.22-10s-12-13.39-15.36-23.43c-.14-.41-.29-.82-.47-1.33l-.35-1a1.94,1.94,0,0,0-1.78-1.28h0a1.94,1.94,0,0,0-1.8,1.21c-.47,1.15-.9,2.24-1.31,3.3-.84,2.13-1.63,4.15-2.52,6.06a45.69,45.69,0,0,1-17.38,19.61,48,48,0,0,1-25.24,7Z" transform="translate(-192 -386)" style="fill:#fff8e8" />
 							</g>
@@ -343,178 +336,180 @@
 
 
 
-					</div>
+                    </div>
 
-					<div class="columns twelve">
-						<p> Se la tecnologia permea l’intero terreno delle relazioni umane, perché il sesso e la sessualità dovrebbero essere un’eccezione? Dai tentativi di trasmettere tatto e sentimenti a distanza, passando per la realtà virtuale pronta a conquistare l’industria del porno, c’è una chiara tendenza che punta verso una nuova convivenza tra sessualità e tecnologia. All’alba di una nuova rivoluzione sessuale serve capire come la tecnologia possa occupare l’area più intima della nostra vita.
-						</p>
-					</div>
-				</div>
+                    <div class="columns twelve">
+                        <p> Se la tecnologia permea l’intero terreno delle relazioni umane, perché il sesso e la sessualità dovrebbero essere un’eccezione? Dai tentativi di trasmettere tatto e sentimenti a distanza, passando per la realtà virtuale pronta
+                            a conquistare l’industria del porno, c’è una chiara tendenza che punta verso una nuova convivenza tra sessualità e tecnologia. All’alba di una nuova rivoluzione sessuale serve capire come la tecnologia possa occupare l’area
+                            più intima della nostra vita.
+                        </p>
+                    </div>
+                </div>
 
-			</div>
-		</div>
-	</div>
-	<!-- INIZIO TIMELINE -->
+            </div>
+        </div>
+    </div>
+    <!-- INIZIO TIMELINE -->
 
-	<div id="timeline" class="u-max-fullwidth">
-		<div class="container">
-			<div class="row">
-				<div class="linea_timeline"></div>
-				<div class="u-max-fullwidth">
-					<h1>Le tecnologie del porno</h1>
-					<div class='carousel'>
-						<div class="eventi">
-							<p class='anno'>1960</p>
-							<div class='carousel__item-head'>
+    <div id="timeline" class="u-max-fullwidth">
+        <div class="container">
+            <div class="row">
+                <div class="linea_timeline"></div>
+                <div class="u-max-fullwidth">
+                    <h1>Le tecnologie del porno</h1>
+                    <div class='carousel'>
+                        <div class="eventi">
+                            <p class='anno'>1960</p>
+                            <div class='carousel__item-head'>
 
-								<img src="img/super8.png">
-							</div>
-							<div class='carousel__item-body'>
+                                <img src="img/super8.png">
+                            </div>
+                            <div class='carousel__item-body'>
 
-								<p class='title'>Super8</p>
-								<p id="piccolo">L'industria della pornografia giocò un ruolo di primaria importanza nello "scegliere" il formato della pellicola che, poi, si sarebbe affermato come standard del mercato: il Super8.</p>
-							</div>
-						</div>
-						<div class="eventi">
-							<p class='anno'>1980</p>
-							<div class='carousel__item-head'>
-								<img src="img/vhs.png">
-							</div>
-							<div class='carousel__item-body'>
+                                <p class='title'>Super8</p>
+                                <p id="piccolo">L'industria della pornografia giocò un ruolo di primaria importanza nello "scegliere" il formato della pellicola che, poi, si sarebbe affermato come standard del mercato: il Super8.</p>
+                            </div>
+                        </div>
+                        <div class="eventi">
+                            <p class='anno'>1980</p>
+                            <div class='carousel__item-head'>
+                                <img src="img/vhs.png">
+                            </div>
+                            <div class='carousel__item-body'>
 
-								<p class='title'>VHS</p>
-								<p id="piccolo">Nella "guerra dei formati" multimediali alla fine ebbe la meglio quello scelto dall'industria a luci rosse: le VHS resero inutilizzate le "rivali" Betamax di Sony.</p>
-							</div>
-						</div>
-						<div class="eventi">
-							<p class='anno'>1994</p>
-							<div class='carousel__item-head'>
-								<img src="img/tettine.png">
-							</div>
-							<div class='carousel__item-body'>
+                                <p class='title'>VHS</p>
+                                <p id="piccolo">Nella "guerra dei formati" multimediali alla fine ebbe la meglio quello scelto dall'industria a luci rosse: le VHS resero inutilizzate le "rivali" Betamax di Sony.</p>
+                            </div>
+                        </div>
+                        <div class="eventi">
+                            <p class='anno'>1994</p>
+                            <div class='carousel__item-head'>
+                                <img src="img/tettine.png">
+                            </div>
+                            <div class='carousel__item-body'>
 
-								<p class='title'>E-Commerce</p>
-								<p id="piccolo">Negli anni ‘90 la pin-up Danni Ashe lanciò un sito web
-									commerciale, dove faceva pagare gli utenti per i suoi porno softcore. Nei successivi due anni è stato il sito più trafficato di internet.
-								</p>
-							</div>
-						</div>
-						<div class="eventi">
-							<p class='anno'>1995</p>
-							<div class='carousel__item-head'>
-								<img src="img/xxx.png">
-							</div>
-							<div class='carousel__item-body'>
+                                <p class='title'>E-Commerce</p>
+                                <p id="piccolo">Negli anni ‘90 la pin-up Danni Ashe lanciò un sito web commerciale, dove faceva pagare gli utenti per i suoi porno softcore. Nei successivi due anni è stato il sito più trafficato di internet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="eventi">
+                            <p class='anno'>1995</p>
+                            <div class='carousel__item-head'>
+                                <img src="img/xxx.png">
+                            </div>
+                            <div class='carousel__item-body'>
 
-								<p class='title'>Streaming</p>
-								<p id="piccolo">Nel 1994, l'olandese Red District Lights (casa di produzione a luci rosse) lancia sul web il primo portale dedicato alla riproduzione di filmati e altri contenuti multimediali.</p>
-							</div>
-						</div>
-						<div class="eventi">
-							<p class='anno'>2002</p>
-							<div class='carousel__item-head'>
-								<img src="img/webcam.png">
-							</div>
-							<div class='carousel__item-body'>
+                                <p class='title'>Streaming</p>
+                                <p id="piccolo">Nel 1994, l'olandese Red District Lights (casa di produzione a luci rosse) lancia sul web il primo portale dedicato alla riproduzione di filmati e altri contenuti multimediali.</p>
+                            </div>
+                        </div>
+                        <div class="eventi">
+                            <p class='anno'>2002</p>
+                            <div class='carousel__item-head'>
+                                <img src="img/webcam.png">
+                            </div>
+                            <div class='carousel__item-body'>
 
-								<p class='title'>Webcam</p>
-								<p id="piccolo">Molto prima che diventassero un indispensabile accessorio,
-									le webcam (e le video chat) erano usate soprattutto per live show erotici. Nella seconda metà degli anni ‘90 non era difficile trovare community di spogliarelli e simili online.
-								</p>
-							</div>
-						</div>
-						<div class="eventi">
-							<p class='anno'>2016</p>
-							<div class='carousel__item-head'>
-								<img src="img/only.png">
-							</div>
-							<div class='carousel__item-body'>
+                                <p class='title'>Webcam</p>
+                                <p id="piccolo">Molto prima che diventassero un indispensabile accessorio, le webcam (e le video chat) erano usate soprattutto per live show erotici. Nella seconda metà degli anni ‘90 non era difficile trovare community di spogliarelli
+                                    e simili online.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="eventi">
+                            <p class='anno'>2016</p>
+                            <div class='carousel__item-head'>
+                                <img src="img/only.png">
+                            </div>
+                            <div class='carousel__item-body'>
 
-								<p class='title'>OnlyFans</p>
-								<p id="piccolo">OnlyFans nasce nel 2016 come sito web che offre un servizio di intrattenimento tramite abbonamento. La piattaforma ospita contenuti di vario genere, ma si distingue nel settore soft-porn perché non presenta nessuna politica di restrizione sul nudo.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                <p class='title'>OnlyFans</p>
+                                <p id="piccolo">OnlyFans nasce nel 2016 come sito web che offre un servizio di intrattenimento tramite abbonamento. La piattaforma ospita contenuti di vario genere, ma si distingue nel settore soft-porn perché non presenta nessuna politica
+                                    di restrizione sul nudo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-	<!-- ----------------------TESTO ONLYFANS -->
+    <!-- ----------------------TESTO ONLYFANS -->
 
-	<div class="u-max-fullwidth" id="fullpage">
-		<!-- <div  id= "onlyfans_tot"> -->
-		<div class="container" id="main">
-			<div id="testo_onlyfans" class="row">
-				<div class="columns twelve">
-					<video id="virus" width="100%" autoplay loop muted>
+    <div class="u-max-fullwidth" id="fullpage">
+        <!-- <div  id= "onlyfans_tot"> -->
+        <div class="container" id="main">
+            <div id="testo_onlyfans" class="row">
+                <div class="columns twelve">
+                    <video id="virus" width="100%" autoplay loop muted>
 						<source src="video/virus.mp4" type="video/mp4">
 					</video>
 
-				</div>
-			</div>
-			<!-- <br clear="all" /> -->
+                </div>
+            </div>
+            <!-- <br clear="all" /> -->
 
 
 
-			<div class="row">
-				<div class="columns twelve">
-					<p> OnlyFans è il social che permette di guadagnare soldi dal supporto dei propri ammiratori. Nella piattaforma è infatti possibile pubblicare post, video e foto mentre i fan, tramite l’acquisto del singolo post o di un abbonamento, sostengono i creatori di contenuti che ammirano. Oltre a celebrità, cantanti e chef ci sono anche lavoratori e lavoratrici del porno e della prostituzione digitale, visto che la piattaforma permette la condivisione di contenuti vietati ai minori. Non sorprende quindi che il social abbia preso piede proprio in questo periodo di restrizioni e lockdown.</p>
-				</div>
-			</div>
+            <div class="row">
+                <div class="columns twelve">
+                    <p> OnlyFans è il social che permette di guadagnare soldi dal supporto dei propri ammiratori. Nella piattaforma è infatti possibile pubblicare post, video e foto mentre i fan, tramite l’acquisto del singolo post o di un abbonamento, sostengono
+                        i creatori di contenuti che ammirano. Oltre a celebrità, cantanti e chef ci sono anche lavoratori e lavoratrici del porno e della prostituzione digitale, visto che la piattaforma permette la condivisione di contenuti vietati ai
+                        minori. Non sorprende quindi che il social abbia preso piede proprio in questo periodo di restrizioni e lockdown.</p>
+                </div>
+            </div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
 
-	<!-- ----------------------     CARTE -->
-	<div id="cards" class="container">
-		<div class="row">
-			<div class="columns twelve">
-				<div class="container_cards">
-					<div class="card-carousel">
-						<div class="card" id="1">
-							<h5 class="titolo_cards">Business</h5>
-							<div class="image-container"><img src="img/dollari.png"></div>
+    <!-- ----------------------     CARTE -->
+    <div id="cards" class="container">
+        <div class="row">
+            <div class="columns twelve">
+                <div class="container_cards">
+                    <div class="card-carousel">
+                        <div class="card" id="1">
+                            <h5 class="titolo_cards">Business</h5>
+                            <div class="image-container"><img src="img/dollari.png"></div>
 
-							<p class="testo_cards">Onlyfans trattiene il 20% delle
-								commissioni raccolte dai Creators</p>
-						</div>
-						<div class="card" id="2">
-							<h5 class="titolo_cards">2020</h5>
-							<div class="image-container"><img src="img/cuore.png"></div>
+                            <p class="testo_cards">Onlyfans trattiene il 20% delle commissioni raccolte dai Creators</p>
+                        </div>
+                        <div class="card" id="2">
+                            <h5 class="titolo_cards">2020</h5>
+                            <div class="image-container"><img src="img/cuore.png"></div>
 
-							<p class="testo_cards">30M di Abbonati <br>
-								450K di Creators</p>
-						</div>
-						<div class="card" id="3">
-							<h5 class="titolo_cards">Contenuti</h5>
-							<div class="image-container"><img src="img/stelle.png"></div>
+                            <p class="testo_cards">30M di Abbonati <br> 450K di Creators</p>
+                        </div>
+                        <div class="card" id="3">
+                            <h5 class="titolo_cards">Contenuti</h5>
+                            <div class="image-container"><img src="img/stelle.png"></div>
 
-							<p class="testo_cards">Foto <br> Video <br> Testo <br></p>
-						</div>
-						<script src="js/script.js"></script>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            <p class="testo_cards">Foto <br> Video <br> Testo <br></p>
+                        </div>
+                        <script src="js/script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- ----------------------GRAFICO CREATORS E ABBONATI -->
-	<div id="chart" class="container">
-		<div class="row">
-			<div class="columns twelve" id="temp-stick">
-				<h1 id="c">Creators</h1>
-				<h1>&#160; e</h1>
-				<h1 id="a">abbonati</h1>
-				<p id="grafi"> Ma come funziona OnlyFans? Chiunque può iscriversi e pubblicare dei contenuti, che sono visibili solo ai propri abbonati. L'utente fissa un prezzo per l'abbonamento, che si può accettare di pagare e a cui si possono aggiungere delle mance.</p>
+    <!-- ----------------------GRAFICO CREATORS E ABBONATI -->
+    <div id="chart" class="container">
+        <div class="row">
+            <div class="columns twelve" id="temp-stick">
+                <h1 id="c">Creators</h1>
+                <h1>&#160; e</h1>
+                <h1 id="a">abbonati</h1>
+                <p id="grafi"> Ma come funziona OnlyFans? Chiunque può iscriversi e pubblicare dei contenuti, che sono visibili solo ai propri abbonati. L'utente fissa un prezzo per l'abbonamento, che si può accettare di pagare e a cui si possono aggiungere delle mance.</p>
 
-				<!-- //QUI GRAFICO 1 -->
+                <!-- //QUI GRAFICO 1 -->
 
-				<div class="panel" id="linea">
-					<svg id="grafico_creators_abbonati" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 310 290">
+                <div class="panel" id="linea">
+                    <svg id="grafico_creators_abbonati" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 310 290">
 						<title>grafico1</title>
 						<g id="punto1">
 							<circle cx="17.4" cy="165.73" r="0" style="fill:#995a9c" />
@@ -601,27 +596,28 @@
 							<path d="M315.78,386.56v-.34a3.51,3.51,0,0,0,2.91-3.2,2,2,0,0,1-1.14.47c-1.93.15-3.05-.9-3-2.63a2.91,2.91,0,0,1,3.11-2.8,3.14,3.14,0,0,1,3.2,2.89A4.93,4.93,0,0,1,315.78,386.56Zm3-6.09c-.24-1.44-.95-2.1-1.53-2s-.88.93-.64,2.38.86,2.07,1.49,2S319,381.91,318.75,380.47Z" transform="translate(-287.18 -123.22)" style="fill:#fff9e7" />
 						</g>
 					</svg>
-				</div>
+                </div>
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
-	<!-- ------------------------ONLYFANS VS PATREON -->
+    <!-- ------------------------ONLYFANS VS PATREON -->
 
-	<div class="container">
-		<div class="row">
-			<div id="PATREON_div" class="columns twelve">
-				<div id="patreon_only">
-					<!-- <h1 id="h1_patreon">Patreon vs OnlyFans</h1> -->
-					<h1 id="m">Patreon</h1>
-					<h1>&#160; vs</h1>
-					<h1 id="i">OnlyFans</h1>
-					<p id="grafi"> Ma come funziona OnlyFans? Chiunque può iscriversi e pubblicare dei contenuti, che sono visibili solo ai propri abbonati. L'utente fissa un prezzo per l'abbonamento, che si può accettare di pagare e a cui si possono aggiungere delle mance.</p>
-					<!-- <
+    <div class="container">
+        <div class="row">
+            <div id="PATREON_div" class="columns twelve">
+                <div id="patreon_only">
+                    <!-- <h1 id="h1_patreon">Patreon vs OnlyFans</h1> -->
+                    <h1 id="m">Patreon</h1>
+                    <h1>&#160; vs</h1>
+                    <h1 id="i">OnlyFans</h1>
+                    <p id="grafi"> Ma come funziona OnlyFans? Chiunque può iscriversi e pubblicare dei contenuti, che sono visibili solo ai propri abbonati. L'utente fissa un prezzo per l'abbonamento, che si può accettare di pagare e a cui si possono aggiungere delle
+                        mance.</p>
+                    <!-- <
                   p>Risulta interessante notare come Patreon, una piattaforma online che esattamente come OnlyFans permette ai creatori di contenuti di finanziare i loro lavori, rappresenti una quota di mercato molto più piccola. La principale differenza con OnlyFans? Patreon vieta esplicitamente i contenuti pornografici.</P> -->
-					<div id="contenitore_svg_patreon">
-						<svg id="grafico_patreon" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 210 210">
+                    <div id="contenitore_svg_patreon">
+                        <svg id="grafico_patreon" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 210 210">
 							<title>patreon</title>
 							<g id="onlyfanscerchio">
 								<circle class="patre2" cx="93.84" cy="93.84" r="0" style="fill:none;stroke:#F7E2BF;stroke-miterlimit:10;stroke-width:8px" />
@@ -631,26 +627,27 @@
 								<circle class="patre1" cx="93.84" cy="93.84" r="0" style="fill:none;stroke:#EF374E;stroke-miterlimit:10;stroke-width:8px" />
 							</g>
 						</svg>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- ----------------------GRAFICO XXX -->
+    <!-- ----------------------GRAFICO XXX -->
 
-	<div class="offset-by-three columns six">
-		<div id="xxx">
-			<div class="row">
-				<div class="columns twelve">
-					<h1>Impatto del porno su Onlyfans</h1>
-					<p> Il sito è nato come piattaforma neutrale e ospita al suo interno artisti di ogni genere che pensano di poter trarre guadagno dalla pubblicazione di materiale originale che li riguarda. Ad oggi però è prevalentemente popolato dai professionisti del mondo dell'hard.</p>
-				</div>
-			</div>
-		</div>
+    <div class="offset-by-three columns six">
+        <div id="xxx">
+            <div class="row">
+                <div class="columns twelve">
+                    <h1>Impatto del porno su Onlyfans</h1>
+                    <p> Il sito è nato come piattaforma neutrale e ospita al suo interno artisti di ogni genere che pensano di poter trarre guadagno dalla pubblicazione di materiale originale che li riguarda. Ad oggi però è prevalentemente popolato dai professionisti
+                        del mondo dell'hard.</p>
+                </div>
+            </div>
+        </div>
 
-		<div class="u-max-fullwidth" id="contenitore_x">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 985.57 3983.89">
+        <div class="u-max-fullwidth" id="contenitore_x">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 985.57 3983.89">
 				<title>xxx</title>
 				<g id="Riga_20" data-name="Riga 20">
 					<polygon class="riga" points="154.56 3800 92.78 3860.93 31.01 3800 0 3831.44 61.34 3891.94 0 3952.45 31.01 3983.89 92.78 3922.96 154.56 3983.89 185.57 3952.45 124.22 3891.94 185.57 3831.44 154.56 3800" style="fill:#ee384f; opacity:0" />
@@ -793,8 +790,8 @@
 					<polygon class="riga" points="985.57 31.44 954.55 0 892.78 60.93 831.01 0 800 31.44 861.34 91.94 800 152.45 831.01 183.89 892.78 122.96 954.55 183.89 985.57 152.45 924.23 91.94 985.57 31.44" style="fill:#ee384f; opacity:0" />
 				</g>
 			</svg>
-			<div id="leggenda_xxx">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.71 69.1">
+            <div id="leggenda_xxx">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.71 69.1">
 					<title>leggenda</title>
 					<g id="riga_2" data-name="riga 2">
 						<text transform="translate(47.24 54.63)" style="font-size:23.137584686279297px;fill:#fff;font-family:Sole24SerifText-Regular, Sole24Serif Text">Altri contenuti 2% <tspan x="50.67" y="0" style="letter-spacing:-0.0059933600192172655em">c</tspan>
@@ -809,228 +806,227 @@
 						<rect x="110.09" y="398.41" width="30.92" height="6.29" transform="translate(-358.17 -184.6) rotate(-44.61)" style="fill:#ef3b50" />
 					</g>
 				</svg>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-	<!-- ----------------------INTERVISTA-->
+    <!-- ----------------------INTERVISTA-->
 
 
 
-	<div class="container">
-		<div class="row">
-			<div id="intervista_div" class="columns twelve">
-				<div id="donna">
-					<img id="donna_img" src="img/donna.png">
-				</div>
+    <div class="container">
+        <div class="row">
+            <div id="intervista_div" class="columns twelve">
+                <div id="donna">
+                    <img id="donna_img" src="img/donna.png">
+                </div>
 
-				<div id="intervista">
-					<h1 id="h1_intervista">Intervista</h1>
-					<h2 id="h2_intervista"> Jane, 22 <br>
-						Modella</h2>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- //QUI CARDS INTERVISTA -->
-	<div id="intervista_swipe" class="container">
-		<div class="row">
-			<div class="columns twelve">
-				<!-- Swiper -->
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
+                <div id="intervista">
+                    <h1 id="h1_intervista">Intervista</h1>
+                    <h2 id="h2_intervista"> Jane, 22 <br> Modella
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/1.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Perchè ti sei iscritta ad una piattaforma come OnlyFans?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Ho deciso di iscrivermi ad Onlyfans perchè con il lockdown nazionale ho perso il lavoro e ho deciso di reinventarmi.</p>
-							</div>
-						</div>
+    <!-- //QUI CARDS INTERVISTA -->
+    <div id="intervista_swipe" class="container">
+        <div class="row">
+            <div class="columns twelve">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/2.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Hai molte amiche o amici che lavorano su OnlyFans?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Non molti, anche loro erano stufi della situazione economica instabile e hanno deciso come me di reinventarsi.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/1.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Perchè ti sei iscritta ad una piattaforma come OnlyFans?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Ho deciso di iscrivermi ad Onlyfans perchè con il lockdown nazionale ho perso il lavoro e ho deciso di reinventarmi.</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/3.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Perchè OnlyFans non è considerato un “lavoro vero”?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Per l’Italia è troppo presto, qui ha fatto il boom solo nel 2020 ed è stato subito etichettato come sito per sex work, quando è una piattaforma per tutti i creatori.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/2.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Hai molte amiche o amici che lavorano su OnlyFans?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Non molti, anche loro erano stufi della situazione economica instabile e hanno deciso come me di reinventarsi.</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/4.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Hai esitato prima di iscriverti? Perché?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>A dire mi sono iscritta nel 2018 non sapendo bene cosa fosse, per poi appunto iniziare seriamente a lavorarci sopra due anni dopo!</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/3.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Perchè OnlyFans non è considerato un “lavoro vero”?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Per l’Italia è troppo presto, qui ha fatto il boom solo nel 2020 ed è stato subito etichettato come sito per sex work, quando è una piattaforma per tutti i creatori.</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/5.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Perché c’è stato un boom di iscrizioni durante il lockdown?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Per la mancanza di lavoro, cassa integrazione e i fondi quali il reddito di cittadinanza che molti hanno dovuto aspettare per mesi.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/4.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Hai esitato prima di iscriverti? Perché?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>A dire mi sono iscritta nel 2018 non sapendo bene cosa fosse, per poi appunto iniziare seriamente a lavorarci sopra due anni dopo!</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/6.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Hai mai ricevuto delle critiche o dei commenti negativi?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Si diversi, ma non mi importa molto del giudizio delle altre persone. I commenti provenivano da gente ignorante perché disinformata a riguardo.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/5.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Perché c’è stato un boom di iscrizioni durante il lockdown?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Per la mancanza di lavoro, cassa integrazione e i fondi quali il reddito di cittadinanza che molti hanno dovuto aspettare per mesi.</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/12.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Gli abbonati possono richiedere foto o video particolari?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Si possono benissimo fare richieste di foto video per messaggio privato e si possono effettuare live chat sulla propria bacheca!</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/6.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Hai mai ricevuto delle critiche o dei commenti negativi?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Si diversi, ma non mi importa molto del giudizio delle altre persone. I commenti provenivano da gente ignorante perché disinformata a riguardo.</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/8.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">È possibile avere autonomia economica e riuscire a vivere di OnlyFans?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Se un creator ha le idee, scadenze, relazioni giuste con i fans, la stabilità può essere raggiunta facilmente.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/12.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Gli abbonati possono richiedere foto o video particolari?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Si possono benissimo fare richieste di foto video per messaggio privato e si possono effettuare live chat sulla propria bacheca!</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/9.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Quali sono i contenuti più richiesti dai tuoi fans?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Video o foto personalizzati, perché così si crea un rapporto con loro.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/8.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">È possibile avere autonomia economica e riuscire a vivere di OnlyFans?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Se un creator ha le idee, scadenze, relazioni giuste con i fans, la stabilità può essere raggiunta facilmente.</p>
+                            </div>
+                        </div>
 
 
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/10.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Quanto guadagni in media ogni mese con i tuoi contenuti?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Il guadagno oscilla tra gli 800 e 1000, ma possono esserci mesi in cui aumenta o diminuisce.</p>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="img_box_intervista">
-								<img class="img_solo" src="img/11.png">
-							</div>
-							<div>
-								<h1 class="titolo_intervista">Quali contenuti porti su OnlyFans e con quale frequenza?</h1>
-							</div>
-							<div class="testo_intervista">
-								<p>Porto set fotografici e/o contenuti amatoriali fatti col telefono, cerco di postare una volta al giorno/due giorni.</p>
-							</div>
-						</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/9.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Quali sono i contenuti più richiesti dai tuoi fans?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Video o foto personalizzati, perché così si crea un rapporto con loro.</p>
+                            </div>
+                        </div>
 
 
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-				</div>
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/10.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Quanto guadagni in media ogni mese con i tuoi contenuti?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Il guadagno oscilla tra gli 800 e 1000, ma possono esserci mesi in cui aumenta o diminuisce.</p>
+                            </div>
+                        </div>
 
-				<!-- Swiper JS -->
+                        <div class="swiper-slide">
+                            <div class="img_box_intervista">
+                                <img class="img_solo" src="img/11.png">
+                            </div>
+                            <div>
+                                <h1 class="titolo_intervista">Quali contenuti porti su OnlyFans e con quale frequenza?</h1>
+                            </div>
+                            <div class="testo_intervista">
+                                <p>Porto set fotografici e/o contenuti amatoriali fatti col telefono, cerco di postare una volta al giorno/due giorni.</p>
+                            </div>
+                        </div>
 
 
-				<!-- Initialize Swiper -->
-				<script>
-					var swiper = new Swiper('.swiper-container', {
-						pagination: {
-							el: '.swiper-pagination',
-						},
-					});
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
 
-				</script>
+                <!-- Swiper JS -->
 
-			</div>
-		</div>
-	</div>
-	<!-- ----------------------FOOTER -->
-	<div id="XXXcrediti" class="container">
-		<div class="row">
-			<div class="columns twelve">
-				<svg id="xxxCHIUSURA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1065.47 166.5">
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------FOOTER -->
+    <div id="XXXcrediti" class="container">
+        <div class="row">
+            <div class="columns twelve">
+                <svg id="xxxCHIUSURA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1065.47 166.5">
 					<title>XXXchiusura</title>
 					<polygon id="tette" points="167.52 28.88 139.51 0.5 83.75 55.5 27.99 0.5 0 28.88 55.37 83.5 0 138.12 27.99 166.5 83.75 111.5 139.51 166.5 167.52 138.12 112.14 83.5 167.52 28.88" style="fill:#ee384f" />
 					<polygon id="tette" points="616.54 28.38 588.54 0 532.78 55 477.02 0 449.03 28.38 504.4 83 449.03 137.62 477.02 166 532.78 111 588.54 166 616.54 137.62 561.17 83 616.54 28.38" style="fill:#ee384f" />
 					<polygon id="tette" points="1065.47 28.88 1037.47 0.5 981.71 55.5 925.95 0.5 897.96 28.88 953.33 83.5 897.96 138.12 925.95 166.5 981.71 111.5 1037.47 166.5 1065.47 138.12 1010.1 83.5 1065.47 28.88" style="fill:#ee384f" />
 				</svg>
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
-	<div id="crediti" class="container">
-		<div class="row">
+    <div id="crediti" class="container">
+        <div class="row">
 
-			<div class="columns twelve">
+            <div class="columns twelve">
 
 
-				<svg class="svg_footer" id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 554.52 167.85">
+                <svg class="svg_footer" id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 554.52 167.85">
 					<title>footer</title>
 					<path d="M243.25,1122l1.1-.18c.13-.12.2-.34.2-2.21v-5.42c0-1.89-.07-2.09-.2-2.23l-1.1-.17v-.72h4.32c2.81,0,5.05.74,5.05,3.34s-1.89,3.79-4.63,3.79c-.63,0-1.21,0-1.73,0v1.46c0,1.91.07,2.11.23,2.21l1.79.18v.72h-5Zm4.69-4.59a2.52,2.52,0,0,0,2.8-2.86c0-1.82-1.2-2.68-3.22-2.68-.47,0-.94,0-1.26,0v5.4A10.68,10.68,0,0,0,247.94,1117.43Z" transform="translate(-113.05 -1109.53)" style="fill:#fff" />
 					<path d="M259.81,1115.65a12.89,12.89,0,0,1-1.83-.31,4.59,4.59,0,0,0-1.26.72v4.74c0,.85,0,1,.18,1.12l1.37.18v.64h-4.49v-.66l1.07-.16c.16-.13.19-.26.19-1.12v-3.73c0-1.62,0-1.87-.16-2l-1.06-.18v-.54a15.87,15.87,0,0,1,2.39-.69l.6.06-.11,1.65a5,5,0,0,1,2.75-1.76.79.79,0,0,1,.78.74A1.94,1.94,0,0,1,259.81,1115.65Z" transform="translate(-113.05 -1109.53)" style="fill:#fff" />
@@ -1342,9 +1338,10 @@
 
 
 
-			</div> <!-- chiusura container-->
-		</div>
-	</div>
+            </div>
+            <!-- chiusura container-->
+        </div>
+    </div>
 </body>
 
 </html>
