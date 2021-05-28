@@ -1022,6 +1022,10 @@ there.
 
 
 
+/*div {
+    border: 0.5px solid yellow;
+}*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -1306,6 +1310,7 @@ circle {
     margin-left: 20px;
     height: 3530px;
     position: absolute;
+    border-radius: 10px;
 }
 
 #timeline .row {
@@ -1801,7 +1806,6 @@ p {
     }
 
     #leggenda_xxx {
-        width: 45%;
         margin-top: 2rem;
         margin-bottom: 10rem;
     }
@@ -1832,6 +1836,7 @@ p {
 
     #intervista {
         float: left;
+        width: 50rem;
     }
 
 #contenitore_svg_patreon{
@@ -1839,20 +1844,20 @@ text-align: center;
 }
 
 
-    #h1_intervista {
-        font-size: 4.5rem;
-        padding-top: 7%;
-        padding-left: 5%;
-        line-height: 1rem;
-        padding-bottom: 0;
-    }
+#h1_intervista {
+    font-size: 4.5rem;
+    padding-top: 7%;
+    padding-left: 5%;
+    line-height: 1rem;
+    padding-bottom: 0;
+}
 
-    #h2_intervista {
-        padding-left: 5%;
-        font-size: 3rem;
-        line-height: 3.5rem;
-        padding-top: 0;
-    }
+#h2_intervista {
+    padding-left: 5%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding-top: 0;
+}
 
     #intervista_swipe {
         margin-top: 2rem;
@@ -2012,11 +2017,12 @@ text-align:left;
 
     #intervista {
         float: left;
+        width: 50rem;
     }
 
     #h1_intervista {
         font-size: 4.5rem;
-        padding-top: 7%;
+        padding-top: 10%;
         padding-left: 5%;
         line-height: 1rem;
         padding-bottom: 0;
@@ -2128,6 +2134,26 @@ text-align:left;
       text-align: center;
     }
 
+    #intervista {
+        float: left;
+        width: 40rem;
+    }
+
+    #h1_intervista {
+        font-size: 2.5rem;
+        margin-top: 4%;
+        padding-left: 5%;
+        line-height: 1rem;
+        padding-bottom: 0;
+    }
+
+    #h2_intervista {
+        padding-left: 5%;
+        font-size: 2rem;
+        line-height: 3.5rem;
+        padding-top: 0;
+    }
+
     #grafico_creators_abbonati{
       width: 100%;
 
@@ -2199,25 +2225,6 @@ text-align:left;
     #intervista_div{
       margin-top: 16rem;
       margin-left: 3rem;
-    }
-
-    #intervista {
-        float: left;
-    }
-
-    #h1_intervista {
-        font-size: 4.5rem;
-        padding-top: 7%;
-        padding-left: 5%;
-        line-height: 1rem;
-        padding-bottom: 0;
-    }
-
-    #h2_intervista {
-        padding-left: 5%;
-        font-size: 3rem;
-        line-height: 3.5rem;
-        padding-top: 0;
     }
 
     #intervista_swipe {
@@ -2330,6 +2337,14 @@ text-align:left;
         transition: opacity 0.8s;
     }
 
+    #riga_2{
+      font-size:20px;
+    }
+
+    #riga_1{
+      font-size:20px;
+    }
+
     #contenitore_x {
         padding-bottom: 6rem;
     }
@@ -2337,8 +2352,10 @@ text-align:left;
     #leggenda_xxx {
         padding-top: 2rem;
         padding-left: 1rem;
-        width: 70%;
+        width: 90%;
     }
+
+
 
     /*----- fine css XXX mobile*/
 
@@ -2353,11 +2370,12 @@ text-align:left;
 
     #intervista {
         float: left;
+        width: 20rem;
     }
 
     #h1_intervista {
-        font-size: 4.5rem;
-        padding-top: 7%;
+        font-size: 2.5rem;
+        margin-top: 1%;
         padding-left: 5%;
         line-height: 1rem;
         padding-bottom: 0;
@@ -2365,8 +2383,8 @@ text-align:left;
 
     #h2_intervista {
         padding-left: 5%;
-        font-size: 3rem;
-        line-height: 3.5rem;
+        font-size: 2rem;
+        line-height: 1.5rem;
         padding-top: 0;
     }
 
@@ -2382,12 +2400,14 @@ text-align:left;
     }
 
     .swiper-pagination .swiper-pagination-bullet {
-        border: #E52B44 solid 3px;
-        background-color: (0, 0, 0, 10);
+        border: black solid 3px;
+        background-color: (0, 0, 0);
+        opacity: 1;
     }
 
     .swiper-pagination .swiper-pagination-bullet-active {
         background-color: transparent;
+        border: #E52B44 solid 3px;
     }
 
     .swiper-pagination-fraction,
