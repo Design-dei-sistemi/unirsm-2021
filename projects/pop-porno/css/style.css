@@ -679,6 +679,8 @@ h6 {
     letter-spacing: 0;
 }
 
+
+
 /* Larger than phablet */
 @media (min-width: 550px) {
     h1 {
@@ -1563,8 +1565,7 @@ p {
 
 #m {
     text-decoration: underline;
-    text-decoration-color: #EF374E
-    ;
+    text-decoration-color: #EF374E;
     /* border: 5px solid #9C5C9C;
   border-radius: 50px; */
     float: left;
@@ -1585,24 +1586,24 @@ p {
 }
 
 #punto1 {
-    fill:#995A9C;
+    fill: #995A9C;
     transition: all 1s ease-out;
 }
 
 #linea1 {
-    stroke:#995A9C;
+    stroke: #995A9C;
     opacity: 0;
     transition: all 1s ease-out;
 }
 
 #linea2 {
-    stroke:#995A9C;
+    stroke: #995A9C;
     opacity: 0;
     transition: all 1s ease-out;
 }
 
 #linea3 {
-    stroke:#995A9C;
+    stroke: #995A9C;
     opacity: 0;
     transition: all 1s ease-out;
 }
@@ -1633,32 +1634,32 @@ p {
 
 #covid {
     opacity: 0;
-    fill:#995A9C;
+    fill: #995A9C;
     transition: opacity 1.5s;
 }
 
 #data1 {
-  opacity: 0;
-  transition: all 1s ease-out;
-  transition: opacity 1.5s;
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition: opacity 1.5s;
 }
 
 #data2 {
-  opacity: 0;
-  transition: all 1s ease-out;
-  transition: opacity 1.5s;
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition: opacity 1.5s;
 }
 
 #data3 {
-  opacity: 0;
-  transition: all 1s ease-out;
-  transition: opacity 1.5s;
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition: opacity 1.5s;
 }
 
 #data4 {
-  opacity: 0;
-  transition: all 1s ease-out;
-  transition: opacity 1.5s;
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition: opacity 1.5s;
 }
 
 /*
@@ -1676,9 +1677,9 @@ p {
     transition: all 1s ease-out;
 }
 
-#grafico_patreon{
-  width: 70%;
-  margin:auto;
+#grafico_patreon {
+    width: 70%;
+    margin: auto;
 
 }
 
@@ -1726,15 +1727,15 @@ p {
 
 @media (min-width: 1280px) {
 
-  .linea_timeline {
-      stroke-width: 2;
-      border-left: 3px solid #FFF9E7;
-      margin-top: 150px;
-      margin-left: 20px;
-      height: 3530px;
-      position: absolute;
-      color: #F7E2BF;
-  }
+    .linea_timeline {
+        stroke-width: 2;
+        border-left: 3px solid #FFF9E7;
+        margin-top: 150px;
+        margin-left: 20px;
+        height: 3530px;
+        position: absolute;
+        color: #F7E2BF;
+    }
 
     .container {
         position: relative;
@@ -1790,13 +1791,42 @@ p {
         transition: filter .3s ease;
     }
 
-    #linea{
-      text-align: center;
+    #linea {
+        text-align: center;
     }
 
-    #grafico_creators_abbonati{
-      width: 60%;
+    #grafico_creators_abbonati {
+        width: 60%;
 
+    }
+
+    p8 {
+        float: left;
+        font-size: 1rem;
+        fill: #fff9e8;
+        opacity: 0.5;
+        font-family: 'sole24serif_textregular'
+    }
+
+    a:link {
+        color: #fff9e8;
+        opacity: 0.5;
+
+    }
+
+    /* visited link */
+    a:visited {
+        color: #fff9e8;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #EF374E;
+    }
+
+    /* selected link */
+    a:active {
+        color: #fff9e8;
     }
 
     #xxx {
@@ -1806,7 +1836,7 @@ p {
     }
 
     #leggenda_xxx {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: 10rem;
     }
 
@@ -1829,9 +1859,9 @@ p {
         padding-top: 2%;
     }
 
-    #intervista_div{
-      margin-top: 10rem;
-      margin-left: 4rem;
+    #intervista_div {
+        margin-top: 10rem;
+        margin-left: 4rem;
     }
 
     #intervista {
@@ -1839,61 +1869,72 @@ p {
         width: 50rem;
     }
 
-#contenitore_svg_patreon{
-text-align: center;
-}
+    #contenitore_svg_patreon {
+        text-align: center;
+    }
 
 
-#h1_intervista {
-    font-size: 4.5rem;
-    padding-top: 7%;
-    padding-left: 5%;
-    line-height: 1rem;
-    padding-bottom: 0;
-}
+    #h1_intervista {
+        font-size: 4.5rem;
+        padding-top: 7%;
+        padding-left: 5%;
+        line-height: 1rem;
+        padding-bottom: 0;
+    }
 
-#h2_intervista {
-    padding-left: 5%;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    padding-top: 0;
-}
+    #h2_intervista {
+        padding-left: 5%;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding-top: 0;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        border: black solid 3px;
+        background-color: (0, 0, 0);
+        opacity: 1;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: transparent;
+        border: #E52B44 solid 3px;
+    }
 
     #intervista_swipe {
         margin-top: 2rem;
     }
 
-      .img_solo {
+    .img_solo {
         width: 50%;
         margin-top: 3rem;
     }
 
-    .svg_footer{
-      width: 80%;
+    .svg_footer {
+        width: 80%;
         margin: 5rem 0;
         padding: 0 5rem;
     }
 
-    #XXXcrediti{
-      text-align: center;
+    #XXXcrediti {
+        text-align: center;
     }
 
-    #xxxCHIUSURA{
-width: 10rem;
-margin-top:10rem;
-margin-bottom: 5rem;
-text-align:left;
+    #xxxCHIUSURA {
+        width: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        text-align: left;
     }
 
-    #Livello_2{
-      position: relative;
-      top: 50%;
-      transform: translateX(12%);
+    #Livello_2 {
+        position: relative;
+        top: 50%;
+        transform: translateX(12%);
     }
 
-#grafico_patreon{
-  width: 60%;
-}
+    #grafico_patreon {
+        width: 60%;
+    }
 }
 
 
@@ -1904,15 +1945,15 @@ text-align:left;
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-  .linea_timeline {
-      stroke-width: 2;
-      border-left: 3px solid #FFF9E7;
-      margin-top: 150px;
-      margin-left: 20px;
-      height: 3630px;
-      position: absolute;
-      color: #F7E2BF;
-  }
+    .linea_timeline {
+        stroke-width: 2;
+        border-left: 3px solid #FFF9E7;
+        margin-top: 150px;
+        margin-left: 20px;
+        height: 3630px;
+        position: absolute;
+        color: #F7E2BF;
+    }
 
     #citazione h3 {
         font-size: 5rem;
@@ -1959,11 +2000,11 @@ text-align:left;
     }
 
     .swiper-container {
-    width: 90%;
-    height: 700px;
-}
+        width: 90%;
+        height: 700px;
+    }
 
-     .titolo_intervista {
+    .titolo_intervista {
         padding: 0 18rem;
         font-family: 'made_sunflowerregular';
         font-size: 3rem;
@@ -1976,32 +2017,60 @@ text-align:left;
         font-size: 22px;
     }
 
-      .img_solo {
+    .img_solo {
         width: 40%;
         margin-top: 3rem;
     }
 
-    #PATREON_div{
-      margin-top: 7rem;
-      margin-bottom: 12rem;
+    #PATREON_div {
+        margin-top: 7rem;
+        margin-bottom: 12rem;
     }
 
-      #grafico_patreon{
+    p8 {
+        float: left;
+        font-size: 1.5rem;
+        fill: #fff9e8;
+        opacity: 0.5;
+        font-family: 'sole24serif_textregular'
+    }
+
+    a:link {
+        color: #fff9e8;
+        opacity: 0.5;
+
+    }
+
+    /* visited link */
+    a:visited {
+        color: #fff9e8;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #EF374E;
+    }
+
+    /* selected link */
+    a:active {
+        color: #fff9e8;
+    }
+
+    #grafico_patreon {
         width: 50%;
         margin-top: 2rem;
-      }
-
-      #contenitore_svg_patreon{
-        text-align: center;
-      }
-
-    #linea{
-      text-align: center;
     }
 
-    #grafico_creators_abbonati{
-      width: 55%;
+    #contenitore_svg_patreon {
+        text-align: center;
+    }
 
+    #linea {
+        text-align: center;
+    }
+
+    #grafico_creators_abbonati {
+        width: 55%;
     }
 
     #donna {
@@ -2010,9 +2079,9 @@ text-align:left;
         padding-top: 2%;
     }
 
-    #intervista_div{
-      margin-top: 16rem;
-      margin-left: 5rem;
+    #intervista_div {
+        margin-top: 16rem;
+        margin-left: 5rem;
     }
 
     #intervista {
@@ -2028,6 +2097,17 @@ text-align:left;
         padding-bottom: 0;
     }
 
+    .swiper-pagination .swiper-pagination-bullet {
+        border: black solid 3px;
+        background-color: (0, 0, 0);
+        opacity: 1;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: transparent;
+        border: #E52B44 solid 3px;
+    }
+
     #h2_intervista {
         padding-left: 5%;
         font-size: 3rem;
@@ -2039,24 +2119,24 @@ text-align:left;
         margin-top: 2rem;
     }
 
-    #XXXcrediti{
-      text-align: center;
+    #XXXcrediti {
+        text-align: center;
     }
 
-    #xxxCHIUSURA{
-width: 10rem;
-margin-top:15rem;
-text-align:left;
+    #xxxCHIUSURA {
+        width: 10rem;
+        margin-top: 15rem;
+        text-align: left;
 
     }
 
-    #Livello_2{
-      width: 90%;
-      position: relative;
-      top: 50%;
-      transform: translateX(6%);
-      margin-top: 15rem;
-      margin-bottom: 5rem;
+    #Livello_2 {
+        width: 90%;
+        position: relative;
+        top: 50%;
+        transform: translateX(6%);
+        margin-top: 15rem;
+        margin-bottom: 5rem;
     }
 
 }
@@ -2130,8 +2210,37 @@ text-align:left;
         margin-top: 15rem;
     }
 
-    #linea{
-      text-align: center;
+    p8 {
+        float: left;
+        font-size: 1rem;
+        fill: #fff9e8;
+        opacity: 0.5;
+        font-family: 'sole24serif_textregular'
+    }
+
+    a:link {
+        color: #fff9e8;
+        opacity: 0.5;
+
+    }
+
+    /* visited link */
+    a:visited {
+        color: #fff9e8;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #EF374E;
+    }
+
+    /* selected link */
+    a:active {
+        color: #fff9e8;
+    }
+
+    #linea {
+        text-align: center;
     }
 
     #intervista {
@@ -2154,8 +2263,19 @@ text-align:left;
         padding-top: 0;
     }
 
-    #grafico_creators_abbonati{
-      width: 100%;
+    .swiper-pagination .swiper-pagination-bullet {
+        border: black solid 3px;
+        background-color: (0, 0, 0);
+        opacity: 1;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: transparent;
+        border: #E52B44 solid 3px;
+    }
+
+    #grafico_creators_abbonati {
+        width: 100%;
 
     }
 
@@ -2166,7 +2286,7 @@ text-align:left;
         margin-bottom: 1rem;
     }
 
-     .titolo_intervista {
+    .titolo_intervista {
         padding: 0 10rem;
         font-family: 'made_sunflowerregular';
         font-size: 3rem;
@@ -2179,41 +2299,41 @@ text-align:left;
         font-size: 22px;
     }
 
-      .img_solo {
+    .img_solo {
         width: 50%;
         margin-top: 3rem;
     }
 
-    #PATREON_div{
-      margin-top: 4rem;
+    #PATREON_div {
+        margin-top: 4rem;
     }
 
-      #grafico_patreon{
+    #grafico_patreon {
         width: 70%;
         margin-top: 2rem;
-      }
+    }
 
-      #contenitore_svg_patreon{
+    #contenitore_svg_patreon {
         text-align: center;
-      }
-
-    #XXXcrediti{
-      text-align: center;
     }
 
-    #xxxCHIUSURA{
-width: 10rem;
-margin-top:10rem;
-text-align:left;
+    #XXXcrediti {
+        text-align: center;
     }
 
-    #Livello_2{
-      width: 90%;
-      position: relative;
-      top: 50%;
-      transform: translateX(6%);
-      margin-top: 9rem;
-      margin-bottom: 3rem;
+    #xxxCHIUSURA {
+        width: 10rem;
+        margin-top: 10rem;
+        text-align: left;
+    }
+
+    #Livello_2 {
+        width: 90%;
+        position: relative;
+        top: 50%;
+        transform: translateX(6%);
+        margin-top: 9rem;
+        margin-bottom: 3rem;
     }
 
     #donna {
@@ -2222,9 +2342,9 @@ text-align:left;
         padding-top: 2%;
     }
 
-    #intervista_div{
-      margin-top: 16rem;
-      margin-left: 3rem;
+    #intervista_div {
+        margin-top: 16rem;
+        margin-left: 3rem;
     }
 
     #intervista_swipe {
@@ -2277,27 +2397,67 @@ text-align:left;
 
     /*----- CREATORS E ABBONATI*/
 
-    #linea{
-      text-align: center;
+    #linea {
+        text-align: center;
     }
 
-    #grafico_creators_abbonati{
-      width: 100%;
+    #grafico_creators_abbonati {
+        width: 100%;
     }
 
-  #PATREON_div{
-    margin-top: 4rem;
-  }
-
-    #grafico_patreon{
-      width: 70%;
-      margin-top: 2rem;
+    #PATREON_div {
+        margin-top: 4rem;
     }
 
-    #contenitore_svg_patreon{
-      text-align: center;
+    #grafico_patreon {
+        width: 70%;
+        margin-top: 2rem;
     }
 
+    #contenitore_svg_patreon {
+        text-align: center;
+    }
+
+    /*----- PATREON*/
+    p7 {
+        float: left;
+        font-size: 1.5rem;
+        fill: #fff9e8;
+        font-family: MADESunflower, MADE Sunflower
+    }
+
+    p8 {
+        float: left;
+        font-size: 1rem;
+        fill: #fff9e8;
+        opacity: 0.5;
+        font-family: 'sole24serif_textregular'
+    }
+
+    a:link {
+        color: #fff9e8;
+        opacity: 0.5;
+
+    }
+
+    /* visited link */
+    a:visited {
+        color: #fff9e8;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #EF374E;
+    }
+
+    /* selected link */
+    a:active {
+        color: #fff9e8;
+    }
+
+    .datipatreon {
+        transition: opacity 0.8s;
+    }
 
     /*----- CARTE ONLY FANS MOBILE*/
     .card-carousel {
@@ -2337,20 +2497,21 @@ text-align:left;
         transition: opacity 0.8s;
     }
 
-    #riga_2{
-      font-size:20px;
+    #riga_2 {
+        font-size: 20px;
     }
 
-    #riga_1{
-      font-size:20px;
+    #riga_1 {
+        font-size: 20px;
     }
 
     #contenitore_x {
-        padding-bottom: 6rem;
+        padding-bottom: 2rem;
     }
 
     #leggenda_xxx {
-        padding-top: 2rem;
+        margin-top: 5px;
+        padding-top: 1rem;
         padding-left: 1rem;
         width: 90%;
     }
@@ -2463,32 +2624,32 @@ text-align:left;
         padding-top: 1rem;
     }
 
-    .svg_footer{
-      width: 80%;
+    .svg_footer {
+        width: 80%;
         margin: 2rem 0;
     }
 
 
-/*///////////////////////////////////////////////////
+    /*///////////////////////////////////////////////////
 //////////////FOOTER////////////////////////////////
 /////////////////////////////////////////////////*/
-#XXXcrediti{
-  text-align: center;
-}
+    #XXXcrediti {
+        text-align: center;
+    }
 
-#xxxCHIUSURA{
-width: 10rem;
-margin-top:5rem;
-margin-bottom: 1rem;
-text-align:left;
-}
+    #xxxCHIUSURA {
+        width: 10rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
 
-#Livello_2{
-  width: 90%;
-  position: relative;
-  top: 50%;
-  transform: translateX(6%);
-  margin: 3rem 0;
-}
+    #Livello_2 {
+        width: 90%;
+        position: relative;
+        top: 50%;
+        transform: translateX(6%);
+        margin: 3rem 0;
+    }
 
 }
