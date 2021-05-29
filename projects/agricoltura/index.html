@@ -785,7 +785,7 @@
 			new ScrollMagic.Scene({
 					triggerElement: "#contenitore_grafico_mercato",
 					triggerHook: 'onLeave',
-					duration: "400%"
+					duration: "300%"
 				})
 				.setPin("#contenitore_grafico_mercato", {
 					pushFollowers: false
@@ -810,8 +810,7 @@
         --------------------- 
         ---------------------         
         -->
-
-
+<div class="row" id="contenitore_grafico_mercato_dk">
 		<div class="row" id="grafico_mercato_dk">
 			<div class="columns twelve">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.23 397.28">
@@ -920,6 +919,41 @@
 				</svg>
 			</div>
 		</div>
+    </div>
+        
+        <div class="row panel-desktop" id="panel_2_dk">
+			<p>Rispetto al 2017 il valore di mercato è aumentato del <b>270%</b></p>
+		</div>
+
+		<div class="row panel-desktop" id="panel_3_dk">
+			<p>Rispetto al 2018 il valore di mercato è aumentato del <b>22%</b></p>
+		</div>
+
+		<div class="row panel-desktop" id="panel_4_dk">
+			<p>Rispetto al 2019 il valore di mercato è aumentato del <b>20%</b></p>
+		</div>
+
+		<script>
+			var controller = new ScrollMagic.Controller();
+			new ScrollMagic.Scene({
+					triggerElement: "#contenitore_grafico_mercato_dk",
+					triggerHook: 'onLeave',
+					duration: "300%"
+				})
+				.setPin("#contenitore_grafico_mercato_dk", {
+					pushFollowers: false
+				})
+				.on("progress", function(e) {
+					console.log("enter > " + JSON.stringify(e.progress));
+					var prog = JSON.stringify(e.progress);
+				})
+				.addIndicators()
+				.addTo(controller);
+
+		</script>
+        
+        <footer>
+        </footer>
 
 	</div>
 
