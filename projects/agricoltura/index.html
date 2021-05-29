@@ -512,7 +512,7 @@
 				</div>
 
 			</div>
-            
+
 			<div class="columns six" id="seconda_card">
 				<div class="flip">
 					<div class="front">
@@ -525,8 +525,8 @@
 
 			</div>
 		</div>
-        
-        <div class="row">
+
+		<div class="row">
 			<div class="columns offset-by-one five" id="terza_card">
 
 				<div class="flip">
@@ -552,8 +552,8 @@
 
 			</div>
 		</div>
-        
-        <div class="row">
+
+		<div class="row">
 			<div class="columns offset-by-one five" id="quinta_card">
 
 				<div class="flip">
@@ -580,7 +580,7 @@
 			</div>
 		</div>
 
-        <div class="row">
+		<div class="row">
 			<div class="columns offset-by-one five" id="settima_card">
 
 				<div class="flip">
@@ -777,21 +777,25 @@
 		</div>
 
 		<script>
-			var controller = new ScrollMagic.Controller();
-			new ScrollMagic.Scene({
-					triggerElement: "#contenitore_grafico_mercato",
-					triggerHook: 'onLeave',
-					duration: "300%"
-				})
-				.setPin("#contenitore_grafico_mercato", {
-					pushFollowers: false
-				})
-				.on("progress", function(e) {
-					console.log("enter > " + JSON.stringify(e.progress));
-					var prog = JSON.stringify(e.progress);
-				})
-				.addIndicators()
-				.addTo(controller);
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == true) {
+				// true for mobile device
+				console.log("is mobile");
+				var controller = new ScrollMagic.Controller();
+				new ScrollMagic.Scene({
+						triggerElement: "#contenitore_grafico_mercato",
+						triggerHook: 'onLeave',
+						duration: "300%"
+					})
+					.setPin("#contenitore_grafico_mercato", {
+						pushFollowers: false
+					})
+					.on("progress", function(e) {
+						console.log("enter > " + JSON.stringify(e.progress));
+						var prog = JSON.stringify(e.progress);
+					})
+					.addIndicators()
+					.addTo(controller);
+			}
 
 		</script>
 
@@ -806,118 +810,118 @@
         --------------------- 
         ---------------------         
         -->
-<div class="row" id="contenitore_grafico_mercato_dk">
-		<div class="row" id="grafico_mercato_dk">
-			<div class="columns twelve">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.23 397.28">
-					<defs>
-						<style>
-							.cls-1,
-							.cls-2,
-							.linea_2 {
-								fill: none;
-								stroke-miterlimit: 10;
-							}
+		<div class="row" id="contenitore_grafico_mercato_dk">
+			<div class="row" id="grafico_mercato_dk">
+				<div class="columns twelve">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.23 397.28">
+						<defs>
+							<style>
+								.cls-1,
+								.cls-2,
+								.linea_2 {
+									fill: none;
+									stroke-miterlimit: 10;
+								}
 
-							.cls-1,
-							.cls-2 {
-								stroke: #532c00;
-							}
+								.cls-1,
+								.cls-2 {
+									stroke: #532c00;
+								}
 
-							.cls-1 {
-								stroke-width: 0.86px;
-							}
+								.cls-1 {
+									stroke-width: 0.86px;
+								}
 
-							.cls-2 {
-								stroke-width: 1.18px;
-							}
+								.cls-2 {
+									stroke-width: 1.18px;
+								}
 
-							.contenitore_valori_2,
-							.valori_2 {
-								isolation: isolate;
-							}
+								.contenitore_valori_2,
+								.valori_2 {
+									isolation: isolate;
+								}
 
-							.valori_2 {
-								font-size: 12px;
-								fill: #d4d4d4;
-								font-family: Sole24Sans-Regular, Sole24Sans;
-							}
+								.valori_2 {
+									font-size: 12px;
+									fill: #d4d4d4;
+									font-family: Sole24Sans-Regular, Sole24Sans;
+								}
 
-							.quadrati_2 {
-								fill: #00ffc5;
-							}
+								.quadrati_2 {
+									fill: #00ffc5;
+								}
 
-							.linea_2 {
-								stroke: #00ffc5;
-								stroke-width: 2px;
-							}
+								.linea_2 {
+									stroke: #00ffc5;
+									stroke-width: 2px;
+								}
 
-						</style>
-					</defs>
-					<title>gr_mercato_desktop</title>
-					<g id="Livello_2" data-name="Livello 2">
-						<g id="Livello_1-2" data-name="Livello 1">
-							<g id="Group_6" data-name="Group 6">
-								<line id="Line_7" data-name="Line 7" class="cls-1" x1="51.51" x2="51.51" y2="377.73" />
-								<line id="Line_8" data-name="Line 8" class="cls-1" x1="165.19" x2="165.19" y2="377.73" />
-								<line id="Line_9" data-name="Line 9" class="cls-1" x1="278.87" x2="278.87" y2="377.73" />
-								<line id="Line_10" data-name="Line 10" class="cls-1" x1="392.55" x2="392.55" y2="377.73" />
-								<line id="Line_11" data-name="Line 11" class="cls-2" x1="411.23" y1="300.24" x2="31.17" y2="300.24" />
-								<line id="Line_12" data-name="Line 12" class="cls-2" x1="411.23" y1="243.41" x2="31.17" y2="243.41" />
-								<line id="Line_13" data-name="Line 13" class="cls-2" x1="411.23" y1="360.22" x2="31.17" y2="360.22" />
-								<line id="Line_14" data-name="Line 14" class="cls-2" x1="411.23" y1="131.95" x2="31.17" y2="131.95" />
-								<line id="Line_15" data-name="Line 15" class="cls-2" x1="411.23" y1="76.26" x2="31.17" y2="76.26" />
-								<line id="Line_16" data-name="Line 16" class="cls-2" x1="411.23" y1="20.58" x2="31.17" y2="20.58" />
-								<line id="Line_17" data-name="Line 17" class="cls-2" x1="411.23" y1="187.73" x2="31.17" y2="187.73" />
-								<g id="_600" data-name=" 600" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(0 23.87)">600</text>
+							</style>
+						</defs>
+						<title>gr_mercato_desktop</title>
+						<g id="Livello_2" data-name="Livello 2">
+							<g id="Livello_1-2" data-name="Livello 1">
+								<g id="Group_6" data-name="Group 6">
+									<line id="Line_7" data-name="Line 7" class="cls-1" x1="51.51" x2="51.51" y2="377.73" />
+									<line id="Line_8" data-name="Line 8" class="cls-1" x1="165.19" x2="165.19" y2="377.73" />
+									<line id="Line_9" data-name="Line 9" class="cls-1" x1="278.87" x2="278.87" y2="377.73" />
+									<line id="Line_10" data-name="Line 10" class="cls-1" x1="392.55" x2="392.55" y2="377.73" />
+									<line id="Line_11" data-name="Line 11" class="cls-2" x1="411.23" y1="300.24" x2="31.17" y2="300.24" />
+									<line id="Line_12" data-name="Line 12" class="cls-2" x1="411.23" y1="243.41" x2="31.17" y2="243.41" />
+									<line id="Line_13" data-name="Line 13" class="cls-2" x1="411.23" y1="360.22" x2="31.17" y2="360.22" />
+									<line id="Line_14" data-name="Line 14" class="cls-2" x1="411.23" y1="131.95" x2="31.17" y2="131.95" />
+									<line id="Line_15" data-name="Line 15" class="cls-2" x1="411.23" y1="76.26" x2="31.17" y2="76.26" />
+									<line id="Line_16" data-name="Line 16" class="cls-2" x1="411.23" y1="20.58" x2="31.17" y2="20.58" />
+									<line id="Line_17" data-name="Line 17" class="cls-2" x1="411.23" y1="187.73" x2="31.17" y2="187.73" />
+									<g id="_600" data-name=" 600" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(0 23.87)">600</text>
+									</g>
+									<g id="_500" data-name=" 500" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(0.29 78.55)">500</text>
+									</g>
+									<g id="_400" data-name=" 400" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(0.32 134.24)">400</text>
+									</g>
+									<g id="_300" data-name=" 300" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(0.28 190.02)">300</text>
+									</g>
+									<g id="_200" data-name=" 200" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(0.4 245.7)">200</text>
+									</g>
+									<g id="_100" data-name=" 100" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(1.46 304.53)">100</text>
+									</g>
+									<g id="_0" data-name=" 0" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(13.86 364.51)">0</text>
+									</g>
+									<g id="_2017" data-name=" 2017" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(39.15 393.53)">2017</text>
+									</g>
+									<g id="_2018" data-name=" 2018" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(151.78 393.53)">2018</text>
+									</g>
+									<g id="_2019" data-name=" 2019" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(267.45 393.53)">2019</text>
+									</g>
+									<g id="_2020" data-name=" 2020" class="contenitore_valori_2">
+										<text class="valori_2" transform="translate(380.13 393.53)">2020</text>
+									</g>
+									<rect id="Rectangle_1123" data-name="Rectangle 1123" class="quadrati_2" x="44.43" y="293.16" width="14.16" height="14.16" />
+									<rect id="Rectangle_1124" data-name="Rectangle 1124" class="quadrati_2" x="158.11" y="139.78" width="14.16" height="14.16" />
+									<rect id="Rectangle_1125" data-name="Rectangle 1125" class="quadrati_2" x="271.79" y="97.29" width="14.16" height="14.16" />
+									<rect id="Rectangle_1126" data-name="Rectangle 1126" class="quadrati_2" x="385.47" y="46.31" width="14.16" height="14.16" />
+									<line class="linea_2" x1="51.51" y1="300.24" x2="165.19" y2="146.86" />
+									<line class="linea_2" x1="165.19" y1="146.86" x2="278.87" y2="104.37" />
+									<line class="linea_2" x1="392.55" y1="53.39" x2="278.87" y2="104.37" />
 								</g>
-								<g id="_500" data-name=" 500" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(0.29 78.55)">500</text>
-								</g>
-								<g id="_400" data-name=" 400" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(0.32 134.24)">400</text>
-								</g>
-								<g id="_300" data-name=" 300" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(0.28 190.02)">300</text>
-								</g>
-								<g id="_200" data-name=" 200" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(0.4 245.7)">200</text>
-								</g>
-								<g id="_100" data-name=" 100" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(1.46 304.53)">100</text>
-								</g>
-								<g id="_0" data-name=" 0" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(13.86 364.51)">0</text>
-								</g>
-								<g id="_2017" data-name=" 2017" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(39.15 393.53)">2017</text>
-								</g>
-								<g id="_2018" data-name=" 2018" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(151.78 393.53)">2018</text>
-								</g>
-								<g id="_2019" data-name=" 2019" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(267.45 393.53)">2019</text>
-								</g>
-								<g id="_2020" data-name=" 2020" class="contenitore_valori_2">
-									<text class="valori_2" transform="translate(380.13 393.53)">2020</text>
-								</g>
-								<rect id="Rectangle_1123" data-name="Rectangle 1123" class="quadrati_2" x="44.43" y="293.16" width="14.16" height="14.16" />
-								<rect id="Rectangle_1124" data-name="Rectangle 1124" class="quadrati_2" x="158.11" y="139.78" width="14.16" height="14.16" />
-								<rect id="Rectangle_1125" data-name="Rectangle 1125" class="quadrati_2" x="271.79" y="97.29" width="14.16" height="14.16" />
-								<rect id="Rectangle_1126" data-name="Rectangle 1126" class="quadrati_2" x="385.47" y="46.31" width="14.16" height="14.16" />
-								<line class="linea_2" x1="51.51" y1="300.24" x2="165.19" y2="146.86" />
-								<line class="linea_2" x1="165.19" y1="146.86" x2="278.87" y2="104.37" />
-								<line class="linea_2" x1="392.55" y1="53.39" x2="278.87" y2="104.37" />
 							</g>
 						</g>
-					</g>
-				</svg>
+					</svg>
+				</div>
 			</div>
 		</div>
-    </div>
-        
-        <div class="row panel-desktop" id="panel_2_dk">
+
+		<div class="row panel-desktop" id="panel_2_dk">
 			<p>Rispetto al 2017 il valore di mercato è aumentato del <b>270%</b></p>
 		</div>
 
@@ -930,26 +934,29 @@
 		</div>
 
 		<script>
-			var controller = new ScrollMagic.Controller();
-			new ScrollMagic.Scene({
-					triggerElement: "#contenitore_grafico_mercato_dk",
-					triggerHook: 'onLeave',
-					duration: "300%"
-				})
-				.setPin("#contenitore_grafico_mercato_dk", {
-					pushFollowers: false
-				})
-				.on("progress", function(e) {
-					console.log("enter > " + JSON.stringify(e.progress));
-					var prog = JSON.stringify(e.progress);
-				})
-				.addIndicators()
-				.addTo(controller);
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false) {
+				console.log("is NOT mobile");
+				var controller = new ScrollMagic.Controller();
+				new ScrollMagic.Scene({
+						triggerElement: "#contenitore_grafico_mercato_dk",
+						triggerHook: 'onLeave',
+						duration: "300%"
+					})
+					.setPin("#contenitore_grafico_mercato_dk", {
+						pushFollowers: false
+					})
+					.on("progress", function(e) {
+						console.log("enter > " + JSON.stringify(e.progress));
+						var prog = JSON.stringify(e.progress);
+					})
+					.addIndicators()
+					.addTo(controller);
+			}
 
 		</script>
-        
-        <footer>
-        </footer>
+
+		<footer>
+		</footer>
 
 	</div>
 
