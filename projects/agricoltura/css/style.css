@@ -1234,20 +1234,22 @@ there.
 	}
     
     #contenitore_grafico_mercato {
-        visibility: hidden;
+        display: none;
     }
     
+/*
     #grafico_mercato {
-        visibility: hidden;
+        display: none;
     }
     
     .panel-mobile {
-        visibility: hidden;
+        display: none;
     }
+*/
     
 
 #footer {
-	height: 5%px;
+	height: 5%;
 }
 }
     
@@ -1457,20 +1459,21 @@ there.
 		padding: 3%;
 	}
     
-    #grafico_mercato_dk {
-		visibility: hidden;
-	}
     
-     #contenitore_grafico_mercato_dk{
-        visibility: hidden;
+    #contenitore_grafico_mercato_dk{
+        display: none;
     }
+    
+    #grafico_mercato_dk {
+		display: none;
+	}
 
    .panel-desktop {
-		visibility: hidden;
+		display: none;
 	}
 
 	.panel-desktop p {
-		visibility: hidden;
+		display: none;
 	}
     
 	.front {
@@ -1485,7 +1488,6 @@ there.
 	}
 
 	#contenitore_cards_dk {
-		visibility: hidden;
 		position: absolute;
 		display: none;
 	}
