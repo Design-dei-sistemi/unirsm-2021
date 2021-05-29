@@ -1800,6 +1800,13 @@ p {
 
     }
 
+    p7 {
+        float: left;
+        font-size: 2rem;
+        fill: #fff9e8;
+        font-family: MADESunflower, MADE Sunflower
+    }
+
     p8 {
         float: left;
         font-size: 1rem;
@@ -2027,6 +2034,13 @@ p {
         margin-bottom: 12rem;
     }
 
+    p7 {
+        float: left;
+        font-size: 2.5rem;
+        fill: #fff9e8;
+        font-family: MADESunflower, MADE Sunflower
+    }
+
     p8 {
         float: left;
         font-size: 1.5rem;
@@ -2034,6 +2048,7 @@ p {
         opacity: 0.5;
         font-family: 'sole24serif_textregular'
     }
+    
 
     a:link {
         color: #fff9e8;
@@ -2063,6 +2078,7 @@ p {
 
     #contenitore_svg_patreon {
         text-align: center;
+        
     }
 
     #linea {
@@ -2208,6 +2224,13 @@ p {
 
     #creators {
         margin-top: 15rem;
+    }
+
+    p7 {
+        float: left;
+        font-size: 2rem;
+        fill: #fff9e8;
+        font-family: MADESunflower, MADE Sunflower
     }
 
     p8 {
