@@ -1189,74 +1189,6 @@ there.
          width: 35rem;
     }
 
-	#grafico_mercato {
-		margin-top: 100px;
-		width: 40rem;
-		display: block;
-		margin: 0 auto;
-	}
-
-	.panel {
-		background-color: #532c00;
-		width: 100%;
-		font-size: 18px;
-		color: #d4d4d4;
-		padding: 8px;
-		padding-top: 10px;
-		z-index: 100;
-	}
-
-	#panel_2 {
-		display: none;
-		background-color: #532c00;
-		width: 100%;
-		height: 73px;
-		font-size: 10px;
-		color: #d4d4d4;
-		line-height: 10px;
-		padding: 8px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		position: absolute;
-		margin-left: 57px;
-		margin-top: -100vh;
-		z-index: 1;
-	}
-
-	#panel_3 {
-		display: none;
-		background-color: #532c00;
-		width: 100%;
-		height: 73px;
-		font-size: 10px;
-		color: #d4d4d4;
-		line-height: 10px;
-		padding: 7px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		position: absolute;
-		margin-left: 143px;
-		margin-top: -100vh;
-		z-index: 2;
-	}
-
-	#panel_4 {
-		display: none;
-		background-color: #532c00;
-		width: 100%;
-		height: 73px;
-		font-size: 10px;
-		color: #d4d4d4;
-		line-height: 10px;
-		padding: 7px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		position: absolute;
-		margin-left: 230px;
-		margin-top: -100vh;
-		z-index: 1;
-	}
-
 	.front {
 		width: auto;
 		height: auto;
@@ -1274,23 +1206,51 @@ there.
 		width: 100%;
 	}
 
-
-	#grafico_mercato {
-		position: absolute;
-		visibility: hidden;
-	}
-
+    #contenitore_grafico_mercato_dk{
+        margin-top: 50px;
+    }
+    
 	#grafico_mercato_dk {
 		position: absolute;
 		width: 70rem;
 		display: block;
-		margin: 0 15%;
+		margin: 3% 14%;
 	}
-}
+
+   .panel-desktop {
+		width: 100%;
+		font-size: 18px;
+		color: #d4d4d4;
+		z-index: 100;
+		height: 100vh;
+	}
+
+	.panel-desktop p {
+		background-color: #532c00;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 3%;
+	}
+    
+    #contenitore_grafico_mercato {
+        visibility: hidden;
+    }
+    
+    #grafico_mercato {
+        visibility: hidden;
+    }
+    
+    .panel-mobile {
+        visibility: hidden;
+    }
+    
 
 #footer {
-	height: 50px;
+	height: 5%px;
 }
+}
+    
 
 @media screen and (max-width: 750px) {
 	@font-face {
@@ -1475,11 +1435,11 @@ there.
          z-index: -1;
     }
 
-
 	#grafico_mercato {
+        position: absolute;
 		margin-top: 5%;
+        display: block;
 	}
-
 
 	.panel-mobile {
 		width: 100%;
@@ -1496,60 +1456,23 @@ there.
 		transform: translateY(-50%);
 		padding: 3%;
 	}
+    
+    #grafico_mercato_dk {
+		visibility: hidden;
+	}
+    
+     #contenitore_grafico_mercato_dk{
+        visibility: hidden;
+    }
 
-	/*	
-	#panel_2 {
-		font-family: 'Sole24Sans';
-	display: none;
-		background-color: #532c00;
-		width: 73px;
-		height: 73px;
-		font-size: 10px;
-		color: #d4d4d4;
-		line-height: 10px;
-		padding: 8px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		position: absolute;
-		margin-left: 57px;
-		margin-top: 215px;
-    z-index: 1;
+   .panel-desktop {
+		visibility: hidden;
 	}
-	#panel_3 {
-		font-family: 'Sole24Sans';
-		display: none;
-		background-color: #532c00;
-		width: 73px;
-		height: 73px;
-		font-size: 10px;
-		color: #d4d4d4;
-		line-height: 10px;
-		padding: 7px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		position: absolute;
-		margin-left: 143px;
-		margin-top: 150px;
-    z-index: 2;
+
+	.panel-desktop p {
+		visibility: hidden;
 	}
-	#panel_4 {
-		font-family: 'Sole24Sans';
-	display: none;
-		background-color: #532c00;
-		width: 73px;
-		height: 73px;
-		font-size: 10px;
-		color: #d4d4d4;
-		line-height: 10px;
-		padding: 7px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		position: absolute;
-		margin-left: 230px;
-		margin-top: 80px;
-    z-index: 1;
-	}
-*/
+    
 	.front {
 		width: auto;
 		height: auto;
@@ -1567,8 +1490,6 @@ there.
 		display: none;
 	}
 
-
-
 	.scrolling-wrapper {
 		padding-bottom: 20px;
 		padding-top: 30px;
@@ -1583,8 +1504,5 @@ there.
 		width: 85%;
 		display: inline-block;
 	}
-
-	#grafico_mercato_dk {
-		visibility: hidden;
-	}
 }
+	
