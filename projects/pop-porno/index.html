@@ -173,69 +173,70 @@
 		$(document).ready(function() {
 
 
-					// wait for document ready grafico abbonati e creators
-					var controller = new ScrollMagic.Controller();
+			// wait for document ready grafico abbonati e creators
+			var controller = new ScrollMagic.Controller();
 
-					new ScrollMagic.Scene({
-							triggerElement: "#temp-stick",
-							triggerHook: 'onLeave',
-							duration: "300%",
-							reverse: true
-						})
-						.setPin("#temp-stick", {
-							pushFollowers: true
-								.on("progress", function(e) {
+			new ScrollMagic.Scene({
+					triggerElement: "#temp-stick",
+					triggerHook: 'onLeave',
+					duration: "300%",
+					reverse: true
+				})
+				.setPin("#temp-stick", {
+					pushFollowers: true
+				})
+				.on("progress", function(e) {
 
-									prog = JSON.stringify(e.progress);
+					prog = JSON.stringify(e.progress);
 
-									if ((prog > 0) && (prog <= 0.25)) {
+					if ((prog > 0) && (prog <= 0.25)) {
 
-										$("#cerchio1 circle").attr("r", "9.87");
-										$("#data1").css("opacity", "1");
-										$("#punto1 circle").attr("r", "2.5");
-
-
-									} else if ((prog > 0.25) && (prog <= 0.5)) {
-
-										$("#cerchio2 circle").attr("r", "19.02");
-										$("#data2").css("opacity", "1");
-										$("#linea1").css("opacity", "1");
+						$("#cerchio1 circle").attr("r", "9.87");
+						$("#data1").css("opacity", "1");
+						$("#punto1 circle").attr("r", "2.5");
 
 
-									} else if ((prog > 0.5) && (prog <= 0.75)) {
+					} else if ((prog > 0.25) && (prog <= 0.5)) {
 
-										$("#cerchio3 circle").attr("r", "26.37");
-										$("#data3").css("opacity", "1");
-										$("#linea2").css("opacity", "1");
+						$("#cerchio2 circle").attr("r", "19.02");
+						$("#data2").css("opacity", "1");
+						$("#linea1").css("opacity", "1");
 
-									} else if ((prog > 0.75) && (prog < 1)) {
 
-										$("#cerchio4 circle").attr("r", "34.39");
-										$("#data4").css("opacity", "1");
-										$("#linea3").css("opacity", "1");
+					} else if ((prog > 0.5) && (prog <= 0.75)) {
 
-									}
-									//				else if ((prog <= 0) || (prog=> 1)) {
-									//
-									// $("#cerchio1 circle").css("r", "0");
-									// $("#data1").css("opacity", "0");
-									// $("#cerchio2 circle").css("r", "0");
-									// $("#data2").css("opacity", "0");
-									// $("#cerchio3 circle").css("r", "0");
-									// $("#data3").css("opacity", "0");
-									// $("#cerchio4 circle").css("r", "0");
-									// $("#data4").css("opacity", "0");
-									// $("#punto1 circle").css("r", "0");
-									// $("#linea1").css("opacity", "0");
-									// $("#linea2").css("opacity", "0");
-									// $("#linea3").css("opacity", "0");
-									//
-									// }
-								})
-								//.addIndicators()
-								.addTo(controller);
+						$("#cerchio3 circle").attr("r", "26.37");
+						$("#data3").css("opacity", "1");
+						$("#linea2").css("opacity", "1");
 
-						});
+					} else if ((prog > 0.75) && (prog < 1)) {
+
+						$("#cerchio4 circle").attr("r", "34.39");
+						$("#data4").css("opacity", "1");
+						$("#linea3").css("opacity", "1");
+
+					}
+					//				else if ((prog <= 0) || (prog=> 1)) {
+					//
+					// $("#cerchio1 circle").css("r", "0");
+					// $("#data1").css("opacity", "0");
+					// $("#cerchio2 circle").css("r", "0");
+					// $("#data2").css("opacity", "0");
+					// $("#cerchio3 circle").css("r", "0");
+					// $("#data3").css("opacity", "0");
+					// $("#cerchio4 circle").css("r", "0");
+					// $("#data4").css("opacity", "0");
+					// $("#punto1 circle").css("r", "0");
+					// $("#linea1").css("opacity", "0");
+					// $("#linea2").css("opacity", "0");
+					// $("#linea3").css("opacity", "0");
+					//
+					// }
+				})
+				//.addIndicators()
+				.addTo(controller);
+
+		});
 
 	</script>
 
