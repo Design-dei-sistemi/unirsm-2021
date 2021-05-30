@@ -1880,7 +1880,6 @@ p {
 
     #contenitore_svg_patreon {
         position: relative;
-        float: left;
         text-align: center;
         margin:auto;
 
@@ -2085,7 +2084,7 @@ p {
     }
 
     #grafico_patreon {
-        width: 100%;
+        width: 50%;
         margin: auto;
     }
 #div_padre{
@@ -2093,7 +2092,6 @@ p {
     }
     #contenitore_svg_patreon {
         position: relative;
-        float: left;
         text-align: center;
         margin:auto;
 
@@ -2350,7 +2348,7 @@ p {
     }
 
     #grafico_patreon {
-        width: 70%;
+        width: 50%;
         margin: auto;
     }
 
@@ -2405,10 +2403,11 @@ p {
 ////////////////////////////////*/
 
 @media (max-width: 400px) {
-	#citazione h3{
-	font-size: 2.985rem;
-	}
-	
+
+#citazione h3{
+	font-size: 2.85rem;
+}
+
     #popporno {
         font-size: 9rem;
         color: #EF374E;
