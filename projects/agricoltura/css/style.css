@@ -1163,10 +1163,8 @@ there.
 		font-family: 'Sole24Sans';
 	}
 
-	#contenitore_cards {
-		visibility: hidden;
-		position: absolute;
-		z-index: -1;
+	#contenitore_cards_mobile {
+		display: none;
 	}
 
 	#prima_card {
@@ -1272,12 +1270,14 @@ there.
 }
 
 .footer {
-	margin-top: 20vh;
+	margin-top: 30vh;
 	margin-bottom: 20vh;
 }
 
 .footer p {
 	margin: 0;
+    font-size: 15px;
+    width: 80%;
 }
 
 .footer .four {
@@ -1295,21 +1295,33 @@ there.
 
 @media screen and (max-width: 400px) {
 
-
-	.footer {
-		margin-top: 30vh;
-	}
-
-	.footer .four {
-		text-align: left;
-
-	}
-
-	.footer p {
-		font-size: 75%;
-	}
+.footer {
+	margin-top: 0;
+	margin-bottom: 10vh;
+    margin-left: 0.8vh;
 }
 
+.footer p {
+    float: center;
+    margin: 0;
+    font-size: 10px;
+    width: 100%;
+}
+
+.footer .four {
+	text-align: left;
+}
+
+.footer svg {
+	max-width: 80px;
+    margin-bottom: 2vh;
+
+}
+
+.footer svg * {
+	fill: #532c00;
+}
+}
 @media screen and (max-width: 750px) {
 	@font-face {
 		font-family: 'Sole24Serif Big Display';
@@ -1460,6 +1472,10 @@ there.
 	#trattore {
 		width: 9rem;
 	}
+    
+    #contenitore_cards_dk {
+		display: none;
+	}
 
 	#prima_card {
 		visibility: hidden;
@@ -1558,10 +1574,6 @@ there.
 		font-family: 'Sole24Sans';
 	}
 
-	#contenitore_cards_dk {
-		position: absolute;
-		display: none;
-	}
 
 	.scrolling-wrapper {
 		padding-bottom: 20px;
