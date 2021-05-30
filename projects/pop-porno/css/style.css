@@ -1023,8 +1023,8 @@ there.
 }
 
 
-/*
-div {
+
+/* div {
     border: 0.5px solid yellow;
 } */
 
@@ -1310,7 +1310,7 @@ circle {
     border-left: 3px solid #FFF9E7;
     margin-top: 150px;
     margin-left: 20px;
-    height: 3530px;
+    height: 3835px;
     position: absolute;
     border-radius: 10px;
 }
@@ -1877,7 +1877,10 @@ p {
     }
 
     #contenitore_svg_patreon {
+        float: left;
         text-align: center;
+        margin:auto;
+
     }
 
 
@@ -1941,6 +1944,7 @@ p {
 
     #grafico_patreon {
         width: 60%;
+        margin: auto;
     }
 }
 
@@ -2073,11 +2077,13 @@ p {
 
     #grafico_patreon {
         width: 50%;
-        margin-top: 2rem;
+        margin: auto;
     }
 
     #contenitore_svg_patreon {
+        float: left;
         text-align: center;
+        margin:auto;
 
     }
 
@@ -2333,11 +2339,14 @@ p {
 
     #grafico_patreon {
         width: 70%;
-        margin-top: 2rem;
+        margin: auto;
     }
 
     #contenitore_svg_patreon {
+        float: left;
         text-align: center;
+        margin: auto;
+
     }
 
     #XXXcrediti {
@@ -2424,6 +2433,10 @@ p {
         text-align: center;
     }
 
+    #div_padre{
+      text-align: center;
+    }
+
     #grafico_creators_abbonati {
         width: 100%;
     }
@@ -2434,11 +2447,14 @@ p {
 
     #grafico_patreon {
         width: 70%;
-        margin-top: 2rem;
+        margin: auto;
     }
 
     #contenitore_svg_patreon {
+        float: left;
         text-align: center;
+        margin:auto;
+
     }
 
     /*----- PATREON*/
