@@ -1271,6 +1271,44 @@ there.
 
 }
 
+.footer {
+	margin-top: 20vh;
+	margin-bottom: 20vh;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.footer .four {
+	text-align: right;
+}
+
+.footer svg {
+	max-width: 100px;
+
+}
+
+.footer svg * {
+	fill: #532c00;
+}
+
+@media screen and (max-width: 400px) {
+
+
+	.footer {
+		margin-top: 30vh;
+	}
+
+	.footer .four {
+		text-align: left;
+
+	}
+
+	.footer p {
+		font-size: 75%;
+	}
+}
 
 @media screen and (max-width: 750px) {
 	@font-face {
