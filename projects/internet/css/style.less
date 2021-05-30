@@ -38,8 +38,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(0deg, #212121 0%, rgba(33, 33, 33, 0) 10%, rgba(33, 33, 33, 0) 90%, #212121 100%);
-  z-index: 99;
+  background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 30%, rgba(33,33,33,0) 70%, rgba(33,33,33,1) 100%);
+  z-index: 999;
 }
 
 #Biagio {
@@ -62,14 +62,12 @@ body {
   transform: translateY(-50%);
 }
 // Titoli degli articoli
-
 h2 {
   font-size: @h2-fontsize-desktop;
   font-weight: 500;
   letter-spacing: 0;
 }
 // "Articolo di Biagio Simonetta"
-
 h3 {
   font-size: @body-fontsize-desktop;
   font-weight: 400;
@@ -80,7 +78,6 @@ h3 {
   margin-top: -50px;
 }
 // Ogni paragrafo dei testi
-
 p {
   font-size: @body-fontsize-desktop;
   font-weight: 400;
@@ -90,14 +87,12 @@ p {
   color: @grigetto;
 }
 // Per animazione dirty cloud
-
 #myimg {
   width: 100vw;
   text-align: center;
   height: 100vh;
 }
 //box per titolo in alto (contiene img e articolo di Biagio Simonetta)
-
 .boxTitolo {
   text-align: center;
   height: 100%;
@@ -398,7 +393,7 @@ a:hover {
 }
 
 #footerLogo {
-  width: 10%;
+  width: 15%;
   float: left;
 }
 
@@ -407,6 +402,7 @@ a:hover {
   float: right;
   width: 80%;
   margin-bottom: 10%;
+  margin-top: -1.4%;
 }
 ///////////////////////////////////
 //Desktop Luci e Lucre///////////////////////////

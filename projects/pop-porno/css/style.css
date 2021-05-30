@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'sole_text_sc';
-    src: url('//c2.res.24o.it/fonts/w-fonts/SoleSerifTextSC_W_Lt.eot');
-    src: url('//c2.res.24o.it/fonts/w-fonts/SoleSerifTextSC_W_Lt.eot?#iefix') format('embedded-opentype'), url('//c2.res.24o.it/fonts/w-fonts/SoleSerifTextSC_W_Lt.woff2') format('woff2'), url('//c2.res.24o.it/fonts/w-fonts/SoleSerifTextSC_W_Lt.woff') format('woff'), url('//c2.res.24o.it/fonts/w-fonts/SoleSerifTextSC_W_Lt.ttf') format('truetype'), url('//c2.res.24o.it/fonts/w-fonts/SoleSerifTextSC_W_Lt.svg#SoleSerifTextSC_W_Lt') format('svg');
-    font-weight: 300;
+	font-family: 'sole_text';
+	src: url(../fonts/Sole24TextRegular.otf);
+	font-weight: 300;
+	font-style: normal
 }
 
 /* * {
@@ -1023,10 +1023,10 @@ there.
 }
 
 
-
-/*div {
+/*
+div {
     border: 0.5px solid yellow;
-}*/
+} */
 
 * {
     box-sizing: border-box;
@@ -1411,7 +1411,7 @@ svg {
 p {
     font-size: 2.3rem;
     color: #FFF9E7;
-    font-family: 'sole24serif_textregular';
+    font-family: 'sole_text';
     font-style: normal;
     line-height: 26px;
 }
@@ -1804,7 +1804,7 @@ p {
         float: left;
         font-size: 2rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular';
     }
 
     p8 {
@@ -1812,7 +1812,7 @@ p {
         font-size: 1rem;
         fill: #fff9e8;
         opacity: 0.5;
-        font-family: 'sole24serif_textregular'
+        font-family: 'sole_text'
     }
 
     a:link {
@@ -2038,7 +2038,7 @@ p {
         float: left;
         font-size: 2.5rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular'
     }
 
     p8 {
@@ -2046,9 +2046,9 @@ p {
         font-size: 1.5rem;
         fill: #fff9e8;
         opacity: 0.5;
-        font-family: 'sole24serif_textregular'
+        font-family: 'sole_text'
     }
-    
+
 
     a:link {
         color: #fff9e8;
@@ -2078,7 +2078,7 @@ p {
 
     #contenitore_svg_patreon {
         text-align: center;
-        
+
     }
 
     #linea {
@@ -2230,7 +2230,7 @@ p {
         float: left;
         font-size: 2rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular'
     }
 
     p8 {
@@ -2238,7 +2238,7 @@ p {
         font-size: 1rem;
         fill: #fff9e8;
         opacity: 0.5;
-        font-family: 'sole24serif_textregular'
+        font-family: 'sole_text'
     }
 
     a:link {
@@ -2446,7 +2446,7 @@ p {
         float: left;
         font-size: 1.5rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular'
     }
 
     p8 {
@@ -2454,7 +2454,7 @@ p {
         font-size: 1rem;
         fill: #fff9e8;
         opacity: 0.5;
-        font-family: 'sole24serif_textregular'
+        font-family: 'sole_text'
     }
 
     a:link {
