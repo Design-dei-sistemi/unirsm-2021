@@ -1023,10 +1023,10 @@ there.
 }
 
 
-
-/*div {
+/*
+div {
     border: 0.5px solid yellow;
-}*/
+} */
 
 * {
     box-sizing: border-box;
@@ -1804,7 +1804,7 @@ p {
         float: left;
         font-size: 2rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular';
     }
 
     p8 {
@@ -2038,7 +2038,7 @@ p {
         float: left;
         font-size: 2.5rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular'
     }
 
     p8 {
@@ -2048,7 +2048,7 @@ p {
         opacity: 0.5;
         font-family: 'sole24serif_textregular'
     }
-    
+
 
     a:link {
         color: #fff9e8;
@@ -2078,7 +2078,7 @@ p {
 
     #contenitore_svg_patreon {
         text-align: center;
-        
+
     }
 
     #linea {
@@ -2230,7 +2230,7 @@ p {
         float: left;
         font-size: 2rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular'
     }
 
     p8 {
@@ -2446,7 +2446,7 @@ p {
         float: left;
         font-size: 1.5rem;
         fill: #fff9e8;
-        font-family: MADESunflower, MADE Sunflower
+        font-family: 'made_sunflowerregular'
     }
 
     p8 {
