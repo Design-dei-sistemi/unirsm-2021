@@ -1683,7 +1683,9 @@ p {
 
 }
 
-
+#div_padre{
+      text-align: center;
+    }
 
 /*///////////////////////////////////////////////////
 //////////////FOOTER//////////////////////////////
@@ -1877,6 +1879,7 @@ p {
     }
 
     #contenitore_svg_patreon {
+        position: relative;
         float: left;
         text-align: center;
         margin:auto;
@@ -1941,10 +1944,13 @@ p {
         top: 50%;
         transform: translateX(12%);
     }
-
+#div_padre{
+      text-align: center;
+    }
     #grafico_patreon {
-        width: 60%;
+        width: 100%;
         margin: auto;
+
     }
      .datipatreon {
         transition: opacity 1s;
@@ -2079,11 +2085,14 @@ p {
     }
 
     #grafico_patreon {
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
-
+#div_padre{
+      text-align: center;
+    }
     #contenitore_svg_patreon {
+        position: relative;
         float: left;
         text-align: center;
         margin:auto;
@@ -2346,6 +2355,7 @@ p {
     }
 
     #contenitore_svg_patreon {
+        position: relative;
         float: left;
         text-align: center;
         margin: auto;
@@ -2454,8 +2464,11 @@ p {
         width: 70%;
         margin: auto;
     }
-
+#div_padre{
+      text-align: center;
+    }
     #contenitore_svg_patreon {
+        position: relative;
         float: left;
         text-align: center;
         margin:auto;
