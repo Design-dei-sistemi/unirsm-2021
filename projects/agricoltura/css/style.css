@@ -1070,15 +1070,15 @@ there.
 		font-family: 'Sole24Sans';
 	}
 
-    
+
 	#didascalia {
-        width: 100%;
-        margin-top: 72px;
+		width: 100%;
+		margin-top: 72px;
 		font-size: 17px;
 		color: #00FFB2;
 		font-family: 'Sole24Sans';
 	}
-    
+
 
 	/*#didascalia_trattore {
 		margin-top: 42px;
@@ -1093,12 +1093,14 @@ there.
 		font-size: 3rem;
 		font-family: 'Sole24Serif Big Display';
 	}
-    #titoletto_iniziale {
+
+	#titoletto_iniziale {
 		margin-top: 700px;
 		color: #00FFB2;
 		font-size: 3rem;
 		font-family: 'Sole24Serif Big Display';
 	}
+
 	#paragrafo {
 		color: #D4D4D4;
 		font-size: 2rem;
@@ -1147,63 +1149,67 @@ there.
 		color: #351900;
 		font-family: 'Sole24Sans';
 	}
-    
-    #didascalia_cards {
-        width: 100%;
-        margin-top: 72px;
-        margin-bottom: 50px;
+
+	.flip:hover {
+		cursor: pointer;
+	}
+
+	#didascalia_cards {
+		width: 100%;
+		margin-top: 72px;
+		margin-bottom: 50px;
 		font-size: 17px;
 		color: #00FFB2;
 		font-family: 'Sole24Sans';
-    }
-    
-    #contenitore_cards {
-        visibility:hidden;
-        position: absolute;
-        z-index: -1;
-    }
-    
-    #prima_card {
-        width: 35rem;
-    }
-    
-    .offset-by-one.columns {
-        margin-left: 12.2rem;
-    }
-    
-    #seconda_card {
-        width: 35rem;
-    }
-    
-    #terza_card {
-        margin-top: 30px;
-        width: 35rem;
-    }
-    
-    #quarta_card {
-        margin-top: 30px;
-        width: 35rem;
-    }
-    
-     #quinta_card {
-        margin-top: 30px;
-         width: 35rem;
-    }
-    
-     #sesta_card {
-        margin-top: 30px;
-         width: 35rem;
-    }
-    
-     #settima_card {
-        margin-top: 30px;
-         width: 35rem;
-    }
-    
-     #ottava_card {
-        margin-top: 30px;
-         width: 35rem;
-    }
+	}
+
+	#contenitore_cards {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#prima_card {
+		width: 35rem;
+	}
+
+	.offset-by-one.columns {
+		margin-left: 12.2rem;
+	}
+
+	#seconda_card {
+		width: 35rem;
+	}
+
+	#terza_card {
+		margin-top: 30px;
+		width: 35rem;
+	}
+
+	#quarta_card {
+		margin-top: 30px;
+		width: 35rem;
+	}
+
+	#quinta_card {
+		margin-top: 30px;
+		width: 35rem;
+	}
+
+	#sesta_card {
+		margin-top: 30px;
+		width: 35rem;
+	}
+
+	#settima_card {
+		margin-top: 30px;
+		width: 35rem;
+	}
+
+	#ottava_card {
+		margin-top: 30px;
+		width: 35rem;
+	}
 
 	.front {
 		width: auto;
@@ -1222,10 +1228,10 @@ there.
 		width: 100%;
 	}
 
-    #contenitore_grafico_mercato_dk{
-        margin-top: 50px;
-    }
-    
+	#contenitore_grafico_mercato_dk {
+		margin-top: 50px;
+	}
+
 	#grafico_mercato_dk {
 		position: absolute;
 		width: 70rem;
@@ -1233,9 +1239,9 @@ there.
 		margin: 3% 14%;
 	}
 
-   .panel-desktop {
+	.panel-desktop {
 		width: 75%;
-       text-align: center;
+		text-align: center;
 		font-size: 25px;
 		color: #d4d4d4;
 		z-index: 100;
@@ -1244,27 +1250,27 @@ there.
 
 	.panel-desktop p {
 		background-color: #532c00;
-        left: 17%;
+		left: 17%;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 		padding: 3%;
 	}
-    
-    #contenitore_grafico_mercato {
-        display: none;
-    }
-    
-    #grafico_mercato {
-        display: none;
-    }
-    
-    .panel-mobile {
-        display: none;
-    }
+
+	#contenitore_grafico_mercato {
+		display: none;
+	}
+
+	#grafico_mercato {
+		display: none;
+	}
+
+	.panel-mobile {
+		display: none;
+	}
 
 }
-    
+
 
 @media screen and (max-width: 750px) {
 	@font-face {
@@ -1309,7 +1315,7 @@ there.
 
 	body {
 		background-color: #351900;
-        font-size: 2rem;
+		font-size: 2rem;
 	}
 
 	h1 {
@@ -1343,12 +1349,13 @@ there.
 		font-family: 'Sole24Sans';
 	}
 
-    #didascalia_cards {
+	#didascalia_cards {
 		margin-top: 72px;
 		font-size: 15px;
 		color: #00FFB2;
 		font-family: 'Sole24Sans';
 	}
+
 	#didascalia_trattore {
 		margin-top: 42px;
 		font-size: 15px;
@@ -1362,8 +1369,8 @@ there.
 		font-size: 25px;
 		font-family: 'Sole24Serif Big Display';
 	}
-    
-    #titoletto_iniziale {
+
+	#titoletto_iniziale {
 		margin-top: 116px;
 		color: #00FFB2;
 		font-size: 27px;
@@ -1411,63 +1418,63 @@ there.
 		color: #351900;
 		font-family: 'Sole24Sans';
 	}
-    
-    #trattore {
+
+	#trattore {
 		width: 9rem;
 	}
-    
-     #prima_card {
-         visibility: hidden;
-         position: absolute;
-         z-index: -1;
-    }
-    
-    #seconda_card {
- visibility: hidden;
-        position: absolute;
-         z-index: -1;
-    }
-    
-    #terza_card {
- visibility: hidden;
-        position: absolute;
-         z-index: -1;
-    }
-    
-    #quarta_card {
- visibility: hidden;
-        position: absolute;
-         z-index: -1;
-    }
-    
-     #quinta_card {
- visibility: hidden;
-         position: absolute;
-         z-index: -1;
-    }
-    
-     #sesta_card {
- visibility: hidden;
-         position: absolute;
-         z-index: -1;
-    }
-    
-     #settima_card {
- visibility: hidden;
-         position: absolute;
-         z-index: -1;
-    }
-    
-     #ottava_card {
- visibility: hidden;
-         position: absolute;
-         z-index: -1;
-    }
+
+	#prima_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#seconda_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#terza_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#quarta_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#quinta_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#sesta_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#settima_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#ottava_card {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
 
 	#grafico_mercato {
-        position: absolute;
+		position: absolute;
 		margin-top: 5%;
-        display: block;
+		display: block;
 	}
 
 	.panel-mobile {
@@ -1485,23 +1492,23 @@ there.
 		transform: translateY(-50%);
 		padding: 3%;
 	}
-      
-    #contenitore_grafico_mercato_dk{
-        display: none;
-    }
-    
-    #grafico_mercato_dk {
+
+	#contenitore_grafico_mercato_dk {
 		display: none;
 	}
 
-   .panel-desktop {
+	#grafico_mercato_dk {
+		display: none;
+	}
+
+	.panel-desktop {
 		display: none;
 	}
 
 	.panel-desktop p {
 		display: none;
 	}
-    
+
 	.front {
 		width: auto;
 		height: auto;
@@ -1533,4 +1540,3 @@ there.
 		display: inline-block;
 	}
 }
-	
