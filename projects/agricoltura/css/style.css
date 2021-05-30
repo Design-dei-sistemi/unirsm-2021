@@ -1072,18 +1072,20 @@ there.
 
     
 	#didascalia {
+        width: 100%;
         margin-top: 72px;
-		font-size: 15px;
+		font-size: 17px;
 		color: #00FFB2;
 		font-family: 'Sole24Sans';
 	}
+    
 
-	#didascalia_trattore {
+	/*#didascalia_trattore {
 		margin-top: 42px;
 		font-size: 15px;
 		color: #00FFB2;
 		font-family: 'Sole24Sans';
-	}
+	}*/
 
 	#titoletto {
 		margin-top: 116px;
@@ -1091,7 +1093,12 @@ there.
 		font-size: 3rem;
 		font-family: 'Sole24Serif Big Display';
 	}
-
+    #titoletto_iniziale {
+		margin-top: 700px;
+		color: #00FFB2;
+		font-size: 3rem;
+		font-family: 'Sole24Serif Big Display';
+	}
 	#paragrafo {
 		color: #D4D4D4;
 		font-size: 2rem;
@@ -1140,6 +1147,15 @@ there.
 		color: #351900;
 		font-family: 'Sole24Sans';
 	}
+    
+    #didascalia_cards {
+        width: 100%;
+        margin-top: 72px;
+        margin-bottom: 50px;
+		font-size: 17px;
+		color: #00FFB2;
+		font-family: 'Sole24Sans';
+    }
     
     #contenitore_cards {
         visibility:hidden;
@@ -1218,8 +1234,9 @@ there.
 	}
 
    .panel-desktop {
-		width: 100%;
-		font-size: 18px;
+		width: 75%;
+       text-align: center;
+		font-size: 25px;
 		color: #d4d4d4;
 		z-index: 100;
 		height: 100vh;
@@ -1227,6 +1244,7 @@ there.
 
 	.panel-desktop p {
 		background-color: #532c00;
+        left: 17%;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
@@ -1237,7 +1255,6 @@ there.
         display: none;
     }
     
-/*
     #grafico_mercato {
         display: none;
     }
@@ -1245,12 +1262,7 @@ there.
     .panel-mobile {
         display: none;
     }
-*/
-    
 
-#footer {
-	height: 5%;
-}
 }
     
 
@@ -1297,6 +1309,7 @@ there.
 
 	body {
 		background-color: #351900;
+        font-size: 2rem;
 	}
 
 	h1 {
@@ -1324,12 +1337,18 @@ there.
 	}
 
 	#didascalia {
-		/*		margin-top: 72px;*/
+		margin-top: 72px;
 		font-size: 15px;
 		color: #00FFB2;
 		font-family: 'Sole24Sans';
 	}
 
+    #didascalia_cards {
+		margin-top: 72px;
+		font-size: 15px;
+		color: #00FFB2;
+		font-family: 'Sole24Sans';
+	}
 	#didascalia_trattore {
 		margin-top: 42px;
 		font-size: 15px;
@@ -1343,6 +1362,14 @@ there.
 		font-size: 25px;
 		font-family: 'Sole24Serif Big Display';
 	}
+    
+    #titoletto_iniziale {
+		margin-top: 116px;
+		color: #00FFB2;
+		font-size: 27px;
+		font-family: 'Sole24Serif Big Display';
+	}
+
 
 	#paragrafo {
 		color: #D4D4D4;
@@ -1458,8 +1485,7 @@ there.
 		transform: translateY(-50%);
 		padding: 3%;
 	}
-    
-    
+      
     #contenitore_grafico_mercato_dk{
         display: none;
     }
