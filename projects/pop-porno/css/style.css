@@ -1946,6 +1946,9 @@ p {
         width: 60%;
         margin: auto;
     }
+     .datipatreon {
+        transition: opacity 1s;
+    }
 }
 
 
@@ -2382,7 +2385,9 @@ p {
     #intervista_swipe {
         margin-top: 2rem;
     }
-
+ .datipatreon {
+        transition: opacity 1s;
+    }
 }
 
 /*//////////////////////////////////
@@ -2495,7 +2500,7 @@ p {
     }
 
     .datipatreon {
-        transition: opacity 0.8s;
+        transition: opacity 1s;
     }
 
     /*----- CARTE ONLY FANS MOBILE*/
