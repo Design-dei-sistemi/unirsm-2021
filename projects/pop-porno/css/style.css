@@ -1948,7 +1948,7 @@ p {
       text-align: center;
     }
     #grafico_patreon {
-        width: 100%;
+        width: 50%;
         margin: auto;
 
     }
@@ -2405,6 +2405,28 @@ p {
 ////////////////////////////////*/
 
 @media (max-width: 400px) {
+	
+	 #citazione{
+        height: 100hw;
+    }       
+    
+        #citazione h3 {
+        font-size: 3rem;
+        line-height: 33px;
+        color: highlight-color;
+        font-family: 'made_sunflowerregular';
+        color: #EF5476;
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+        -webkit-animation-name: neon;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+        -webkit-animation-duration: 0.8s;
+        -webkit-animation-iteration-count: infinite alternatee;
+        animation: neon 0.8s ease-in-out infinite alternate;
+        font-style: italic;
+    }
+	
     #popporno {
         font-size: 9rem;
         color: #EF374E;
