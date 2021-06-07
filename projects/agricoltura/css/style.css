@@ -1293,35 +1293,9 @@ there.
 	fill: #532c00;
 }
 
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
+}*/
 
-.footer {
-	margin-top: 0;
-	margin-bottom: 10vh;
-    margin-left: 0.8vh;
-}
-
-.footer p {
-    float: center;
-    margin: 0;
-    font-size: 10px;
-    width: 100%;
-}
-
-.footer .four {
-	text-align: left;
-}
-
-.footer svg {
-	max-width: 80px;
-    margin-bottom: 2vh;
-
-}
-
-.footer svg * {
-	fill: #532c00;
-}
-}
 @media screen and (max-width: 750px) {
 	@font-face {
 		font-family: 'Sole24Serif Big Display';
@@ -1589,4 +1563,31 @@ there.
 		width: 85%;
 		display: inline-block;
 	}
+	
+	.footer {
+	margin-top: 0;
+	margin-bottom: 10vh;
+    margin-left: 0.8vh;
+}
+
+.footer p {
+    float: center;
+    margin: 0;
+    font-size: 10px;
+    width: 100%;
+}
+
+.footer .four {
+	text-align: left;
+}
+
+.footer svg {
+	max-width: 80px;
+    margin-bottom: 2vh;
+
+}
+
+.footer svg * {
+	fill: #532c00;
+}
 }
