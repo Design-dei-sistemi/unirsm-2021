@@ -1293,7 +1293,7 @@ there.
 	fill: #532c00;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 		.footer {
 	margin-top: 0;
 	margin-bottom: 10vh;
