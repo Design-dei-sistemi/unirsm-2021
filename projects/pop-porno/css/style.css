@@ -1799,7 +1799,6 @@ p {
 
     #grafico_creators_abbonati {
         width: 60%;
-
     }
 
     p7 {
@@ -1846,7 +1845,7 @@ p {
 
     #leggenda_xxx {
         margin-top: 3rem;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     .titolo_intervista {
@@ -1869,7 +1868,7 @@ p {
     }
 
     #intervista_div {
-        margin-top: 10rem;
+        margin-top: 3rem;
         margin-left: 4rem;
     }
 
@@ -1882,9 +1881,11 @@ p {
         position: relative;
         text-align: center;
         margin:auto;
-
     }
 
+		#grafi{
+			margin-bottom: 6rem;
+		}
 
     #h1_intervista {
         font-size: 4.5rem;
@@ -1943,14 +1944,16 @@ p {
         top: 50%;
         transform: translateX(12%);
     }
+
 #div_padre{
       text-align: center;
     }
+
     #grafico_patreon {
         width: 50%;
         margin: auto;
-
     }
+
      .datipatreon {
         transition: opacity 1s;
     }
@@ -2087,14 +2090,19 @@ p {
         width: 50%;
         margin: auto;
     }
+
+		#grafi{
+			margin-bottom: 6rem;
+		}
+
 #div_padre{
       text-align: center;
     }
+
     #contenitore_svg_patreon {
         position: relative;
         text-align: center;
         margin:auto;
-
     }
 
     #linea {
@@ -2112,7 +2120,7 @@ p {
     }
 
     #intervista_div {
-        margin-top: 16rem;
+        margin-top: 8rem;
         margin-left: 5rem;
     }
 
@@ -2289,7 +2297,6 @@ p {
 
     #h1_intervista {
         font-size: 2.5rem;
-        margin-top: 4%;
         padding-left: 5%;
         line-height: 1rem;
         padding-bottom: 0;
@@ -2315,8 +2322,11 @@ p {
 
     #grafico_creators_abbonati {
         width: 100%;
-
     }
+
+		#grafi{
+			margin-bottom: 6rem;
+		}
 
     #xxx {
         overflow: hidden;
@@ -2386,7 +2396,7 @@ p {
     }
 
     #intervista_div {
-        margin-top: 16rem;
+        margin-top: 4rem;
         margin-left: 3rem;
     }
 
