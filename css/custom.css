@@ -7,7 +7,7 @@ body {
 
 body {
 	background-color: #140411;
-	background-image: linear-gradient(rgba(180, 90, 200, .21) 0.5px, transparent 0.5px), linear-gradient(90deg, rgba(180, 90, 200, .21) 0.5px, transparent 0.5px);
+	background-image: linear-gradient(rgba(180, 90, 200, .21) 1px, transparent 1px), linear-gradient(90deg, rgba(180, 90, 200, .21) 1px, transparent 1px);
 	background-size: 0.2rem;
 	color: #f2bebe;
 	letter-spacing: 0;
