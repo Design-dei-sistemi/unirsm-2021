@@ -1310,8 +1310,8 @@ margin-top: 50px;
 @media screen and (max-width: 400px) {
 
 #contenitore_footer {
-  background-color: black;
-margin-top: 20px;
+    background-color: black;
+    margin-top: 20%;
     padding-top: 30px;
     }
 
@@ -1599,6 +1599,7 @@ margin-top: 20px;
         background-color: black;
         margin-top: 30%;
         padding-top: 30px;
+        display: block;
     }
 
     #testo_footer {
