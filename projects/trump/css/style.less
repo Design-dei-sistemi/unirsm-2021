@@ -44,21 +44,6 @@ body {
 }
 
 ///////////////////////////////////
-//HEADER///////////////////////////
-///////////////////////////////////
-#header {
-	background-color: black;
-	height: 65px;
-}
-
-#header .row {
-	position: relative;
-	text-align: center;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-///////////////////////////////////
 //COPERTINA////////////////////////
 ///////////////////////////////////
 #copertina{
@@ -201,9 +186,14 @@ body {
 	padding-bottom: @body-lineheight;
 }
 
+#content-footer{
+	max-width: 960px;
+	margin: auto;
+}
+
 #logoFooter{
 		display: inline-block;
-		width: 15%;
+		width: 12%;
 		float: left;
 }
 
@@ -215,6 +205,18 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 	display: inline-block;
+}
+
+@media screen and (min-width: 550px) {
+	#content-footer{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	#content-footer{
+		 width: 85%;
+	}
 }
 
 /* Larger than mobile */
@@ -278,6 +280,21 @@ body {
     #lastgrafico .didascalia_dataviz{
         margin-top: 10px;
     }
+
+		#footer {
+			background-color: black;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		#logoFooter{
+				width: 16%;
+				padding-top: 5px;
+		}
+
+		#testoFooter{
+			width: 80%;
+		}
 }
 
 @media screen and (min-width: 801px) {
@@ -371,4 +388,8 @@ body {
     #copertina{
         margin-bottom: 30px;
     }
+
+		#logoFooter{
+				margin-left: 30px;
+		}
 }
