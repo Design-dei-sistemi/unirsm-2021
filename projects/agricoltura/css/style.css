@@ -1595,6 +1595,31 @@ margin-top: 20px;
 		font-family: 'Sole24Sans';
 	}
 
+    #contenitore_footer {
+        background-color: black;
+        margin-top: 30%;
+        padding-top: 30px;
+    }
+
+    #testo_footer {
+        float: right;
+        width: 64%;
+        margin-top: 0;
+        color: white;
+        margin-right: 7%;
+        font-family: "Sole24Sans";
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+    }
+
+    #footer_logo svg {
+        margin-left: 8%;
+        fill: #ffffff;
+        display: inline-block;
+        width: 17%;
+        float: left;
+    }
 
 	.scrolling-wrapper {
 		padding-bottom: 20px;
