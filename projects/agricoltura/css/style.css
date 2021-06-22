@@ -1052,7 +1052,16 @@ there.
 		font-family: 'Sole24Serif Display';
 		margin-top: 700px;
 	}
-
+    .titolo p {
+        color: #D4D4D4;
+		font-family: 'Sole24Serif Big Display';
+		font-size: 1.8rem;
+		position: absolute;
+		z-index: 1;
+		display: block;
+		margin: 280px 160px;
+             
+    }
 	#main {
 		margin-top: 30px;
 	}
@@ -1267,61 +1276,65 @@ there.
 		display: none;
 	}
 
+
+#contenitore_footer {
+  background-color: black;
+margin-top: 50px;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+    }
+
+#testo_footer {
+  float: right;
+  width: 37%;
+    margin-top: 0;
+  color: white;
+    margin-right: 25%;
+  font-family: "Sole24Sans";
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
 }
 
-.footer {
-	margin-top: 30vh;
-	margin-bottom: 20vh;
+#footer_logo svg {
+    margin-left: 30%;
+    fill: #ffffff;
+    display: inline-block;
+    width: 6%;
+    float: left;
 }
-
-.footer p {
-	margin: 0;
-    font-size: 15px;
-    width: 80%;
-}
-
-.footer .four {
-	text-align: right;
-}
-
-.footer svg {
-	max-width: 100px;
-
-}
-
-.footer svg * {
-	fill: #532c00;
 }
 
 @media screen and (max-width: 400px) {
-		.footer {
-	margin-top: 0;
-	margin-bottom: 10vh;
-    margin-left: 0.8vh;
+
+#contenitore_footer {
+  background-color: black;
+margin-top: 20px;
+    padding-top: 30px;
+    }
+
+#testo_footer {
+  float: right;
+  width: 64%;
+    margin-top: 0;
+  color: white;
+    margin-right: 7%;
+  font-family: "Sole24Sans";
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
 }
 
-.footer p {
-    float: center;
-    margin: 0;
-    font-size: 10px;
-    width: 100%;
-}
-
-.footer .four {
-	text-align: left;
-}
-
-.footer svg {
-	max-width: 80px;
-    margin-bottom: 2vh;
-
-}
-
-.footer svg * {
-	fill: #532c00;
+#footer_logo svg {
+    margin-left: 8%;
+    fill: #ffffff;
+    display: inline-block;
+    width: 17%;
+    float: left;
 }
 }
-
 @media screen and (max-width: 750px) {
 	@font-face {
 		font-family: 'Sole24Serif Big Display';
@@ -1381,6 +1394,14 @@ there.
 		font-family: 'Sole24Serif Display';
 		margin-top: 40px;
 	}
+    
+    .titolo p {
+        color: #D4D4D4;
+		font-family: 'Sole24Serif Big Display';
+		font-size: 1.6rem;
+		display: block;
+		margin-top: -40px;        
+    }
 
 	#main {
 		margin-top: 30px;
@@ -1421,7 +1442,7 @@ there.
 	}
 
 	#titoletto_iniziale {
-		margin-top: 116px;
+		margin-top: 130px;
 		color: #00FFB2;
 		font-size: 27px;
 		font-family: 'Sole24Serif Big Display';
