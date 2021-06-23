@@ -34,7 +34,28 @@ html {
 body {
     margin: 0;
 }
+#footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left:25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#logoFooter {
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+#testoFooter {
+  float: right;
+  width: 80%;
+  color: white;
 
+  font-family: "Sole24Sans";
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+}
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -1738,7 +1759,27 @@ p {
         position: absolute;
         color: #F7E2BF;
     }
-
+#footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#logoFooter {
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+#testoFooter {
+  float: right;
+  width: 75%;
+  color: white;
+  font-family: "Sole24Sans";
+  font-size: 18px;
+  line-height: 22px;
+  display: inline-block;
+}
     .container {
         position: relative;
         width: 100%;
@@ -1976,7 +2017,28 @@ p {
         position: absolute;
         color: #F7E2BF;
     }
+#footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left:25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#logoFooter {
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+#testoFooter {
+  float: right;
+  width: 80%;
+  color: white;
 
+  font-family: "Sole24Sans";
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+}
     #citazione h3 {
         font-size: 5rem;
         line-height: 50px;
@@ -2203,7 +2265,27 @@ p {
         animation: neon 0.8s ease-in-out infinite alternate;
         font-style: italic;
     }
-
+#footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left: 8px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#logoFooter {
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+#testoFooter {
+  float: right;
+  width: 80%;
+  color: white;
+  font-family: "Sole24Sans";
+  font-size: 16.8px;
+  line-height: 18px;
+  display: inline-block;
+}
     .linea_timeline {
         stroke-width: 2;
         border-left: 3px solid #FFF9E7;
@@ -2417,7 +2499,27 @@ p {
 #citazione h3{
 	font-size: 2.85rem;
 }
-
+#footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left: 8px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#logoFooter {
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+#testoFooter {
+  float: right;
+  width: 78%;
+  color: white;
+  font-family: "Sole24Sans";
+  font-size: 12.80px;
+  line-height: 18px;
+  display: inline-block;
+}
     #popporno {
         font-size: 9rem;
         color: #EF374E;
@@ -2553,7 +2655,7 @@ p {
 
     }
 
-
+    #autori{font-size: 16px;}
 
     /*----- inizio css XXX mobile*/
     #xxx {
@@ -2695,10 +2797,8 @@ p {
     }
 
     .svg_footer {
-        width: 85%;
-      
+        width: 80%;
         margin: 2rem 0;
-        
     }
 
 
