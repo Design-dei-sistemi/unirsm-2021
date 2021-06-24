@@ -5,6 +5,24 @@
   font-style: normal
 }
 
+@font-face {
+  font-family: 'Sole24Sans';
+  src: url("../fonts/Sole24Sans-Regular.woff2") format('woff2'), url("../fonts/Sole24Sans-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sole24Sans';
+  src: url("../fonts/Sole24Sans-Medium.woff2") format('woff2'), url("../fonts/Sole24Sans-Medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 /* * {
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
@@ -31,6 +49,29 @@ html {
  */
 body {
   margin: 0;
+}
+
+#footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left:25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+#logoFooter {
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+#testoFooter {
+  float: right;
+  width: 80%;
+  color: white;
+
+  font-family: "Sole24Sans";
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
 }
 
 /* HTML5 display definitions
@@ -1648,9 +1689,7 @@ p {
   text-align: center;
 }
 
-/*///////////////////////////////////////////////////
-//////////////FOOTER//////////////////////////////
-/////////////////////////////////////////////////*/
+
 /*///////////////////////////////////////////////////
 //////////////TUTTE LE QUERY////////////////////////
 /////////////////////////////////////////////////*/
@@ -1694,6 +1733,8 @@ p {
     animation: neon 0.8s ease-in-out infinite alternate;
     font-style: italic;
   }
+
+    #autori{font-size: 2rem;}
 
   h4 {
     font-size: 3rem;
@@ -1906,8 +1947,14 @@ p {
     width: 80%;
     margin-bottom: 10%;
     margin-top: -1.4%;
-    font-family: 'sole_text';
+
   }
+
+  /*#testoFooter strong{
+   font-family: 'Sole24Sans';
+   /*font-weight: bold;
+   color: green;
+  }*/
 }
 
 /*
@@ -2123,7 +2170,7 @@ p {
   }
 
 	#crediti {
-		width: 70%;
+		width: 60%;
 		margin:0 auto;
 		margin-top: 5%;
 
@@ -2142,6 +2189,7 @@ p {
 		width: 75%;
 		margin-bottom: 10%;
 		margin-top: -1.4%;
+    font-family: 'Sole24Sans';
 	}
 }
 
@@ -2350,7 +2398,7 @@ p {
   }
 
 	#crediti {
-		width: 90%;
+		width: 70%;
 		margin:0 auto;
 		margin-top: 5%;
 	}
@@ -2368,6 +2416,7 @@ p {
 		width: 65%;
 		margin-bottom: 10%;
 		margin-top: -1.4%;
+    font-family: 'Sole24Sans';
 	}
 
   #donna {
@@ -2404,6 +2453,8 @@ p {
     line-height: 70px;
     color: #FFF9E7;
   }
+
+    #autori{font-size: 16px;}
 
   .linea_timeline {
     stroke-width: 2;
@@ -2696,10 +2747,11 @@ p {
   }
 
   #testoFooter {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 		float: right;
 		width: 80%;
 		margin-bottom: 10%;
 		margin-top: -1.4%;
+    font-family: 'Sole24Sans';
   }
 }
